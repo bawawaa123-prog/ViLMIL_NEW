@@ -1,0 +1,2 @@
+auc,auc_ci_lower_95,auc_ci_upper_95,bootstrap_valid_samples
+0.9450971177944862,0.9127785826439193,0.9726758302005012,1000

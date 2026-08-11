@@ -1,0 +1,36 @@
+[heyuan] mean_cov=0.352 med_cov=0.363 mean_cnt=1.88 med_cnt=1.00 mean_otsu=42.25
+  2434844 cov=0.257 cnt=1 otsu=54.00
+  2440674 cov=0.465 cnt=3 otsu=19.00
+  2450335(1) cov=0.320 cnt=1 otsu=39.00
+  2443845(4) cov=0.496 cnt=1 otsu=70.00
+  2450791 cov=0.405 cnt=1 otsu=35.00
+  2501965(3) cov=0.544 cnt=2 otsu=34.00
+  2516408(1) cov=0.153 cnt=5 otsu=36.00
+  2531257(6) cov=0.177 cnt=1 otsu=51.00
+[jiangxi] mean_cov=0.355 med_cov=0.371 mean_cnt=2.62 med_cnt=2.00 mean_otsu=42.25
+  2434844 cov=0.255 cnt=1 otsu=54.00
+  2440674 cov=0.467 cnt=4 otsu=19.00
+  2450335(1) cov=0.320 cnt=1 otsu=39.00
+  2443845(4) cov=0.495 cnt=1 otsu=70.00
+  2450791 cov=0.422 cnt=5 otsu=35.00
+  2501965(3) cov=0.541 cnt=3 otsu=34.00
+  2516408(1) cov=0.155 cnt=5 otsu=36.00
+  2531257(6) cov=0.187 cnt=1 otsu=51.00
+[tcga] mean_cov=0.389 med_cov=0.405 mean_cnt=2.62 med_cnt=1.00 mean_otsu=15.00
+  2434844 cov=0.275 cnt=9 otsu=15.00
+  2440674 cov=0.479 cnt=3 otsu=15.00
+  2450335(1) cov=0.331 cnt=1 otsu=15.00
+  2443845(4) cov=0.557 cnt=1 otsu=15.00
+  2450791 cov=0.523 cnt=1 otsu=15.00
+  2501965(3) cov=0.559 cnt=1 otsu=15.00
+  2516408(1) cov=0.174 cnt=4 otsu=15.00
+  2531257(6) cov=0.217 cnt=1 otsu=15.00
+[gdmuah_v1] mean_cov=0.353 med_cov=0.366 mean_cnt=2.12 med_cnt=1.50 mean_otsu=42.25
+  2434844 cov=0.256 cnt=1 otsu=54.00
+  2440674 cov=0.464 cnt=3 otsu=19.00
+  2450335(1) cov=0.320 cnt=1 otsu=39.00
+  2443845(4) cov=0.496 cnt=1 otsu=70.00
+  2450791 cov=0.413 cnt=3 otsu=35.00
+  2501965(3) cov=0.542 cnt=2 otsu=34.00
+  2516408(1) cov=0.154 cnt=5 otsu=36.00
+  2531257(6) cov=0.181 cnt=1 otsu=51.00

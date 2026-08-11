@@ -1,0 +1,112 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.vscode.bak.*/
+*.swp
+*.swo
+*~
+
+# Python bytecode, caches, and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.conda/
+.venv/
+venv/
+env/
+
+# Local secrets and authentication
+.env
+.env.*
+!.env.example
+auth.json
+credentials.json
+*credentials*.json
+*.pem
+*.key
+
+# Raw/private datasets and external data links
+**/data
+**/dataset_csv/
+# CSV manifests that contain slide/case identifiers (aggregate metrics stay tracked)
+**/splits_*.csv
+**/strict_fold_assignments.csv
+**/sample_slides.csv
+**/*_raw_results.csv
+**/*_coord_count_comparison.csv
+**/*_csv_vs_wsi.csv
+
+# These project CSV directories are intentionally versioned.
+!ViLa-MIL-main/dataset_csv/
+!ViLa-MIL-main/dataset_csv/**/*.csv
+!ViLa-MIL-main/eval_results
+!ViLa-MIL-main/eval_results/**/*.csv
+!ViLa-MIL-main/splits/
+!ViLa-MIL-main/splits/**/*.csv
+*.svs
+*.ndpi
+*.mrxs
+*.scn
+*.vsi
+*.kfb
+*.tif
+*.tiff
+
+# Downloaded model and package caches
+**/model_cache/
+**/hf_cache
+**/hf_models
+**/ollama_models/
+
+# Model checkpoints and serialized feature files
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Generated image assets. Keep the README architecture figure.
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+!ViLa-MIL-main/image/readme/framework.png
+
+# Training logs and temporary experiment outputs
+*.log
+*.out
+*.tmp
+*.temp
+wandb/
+runs/
+lightning_logs/
+tensorboard/
+events.out.tfevents.*
+
+# Downloaded archives and large third-party binaries
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.jar
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/

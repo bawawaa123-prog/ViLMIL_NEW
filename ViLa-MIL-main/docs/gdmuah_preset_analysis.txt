@@ -1,0 +1,18 @@
+SAMPLED=60
+[heyuan] n=60 mean_cov=0.423 med_cov=0.430 mean_cnt=1.78 med_cnt=1.00 low_cov=0 high_cov=0 frag=0 mean_otsu=43.67
+[jiangxi] n=60 mean_cov=0.424 med_cov=0.430 mean_cnt=2.25 med_cnt=1.00 low_cov=0 high_cov=0 frag=0 mean_otsu=43.67
+[tcga] n=60 mean_cov=0.449 med_cov=0.445 mean_cnt=1.73 med_cnt=1.00 low_cov=0 high_cov=0 frag=0 mean_otsu=15.00
+[gdmuah_v1] n=60 mean_cov=0.423 med_cov=0.430 mean_cnt=1.90 med_cnt=1.00 low_cov=0 high_cov=0 frag=0 mean_otsu=43.67
+TOP_DIFF_SLIDES
+2451320 diff(j-h)=0.009 heyuan=0.456 jiangxi=0.465 gdmuah_v1=0.456
+2502213(1) diff(j-h)=0.009 heyuan=0.472 jiangxi=0.481 gdmuah_v1=0.476
+2448825(6) diff(j-h)=0.008 heyuan=0.391 jiangxi=0.398 gdmuah_v1=0.392
+2452518(1) diff(j-h)=0.007 heyuan=0.515 jiangxi=0.522 gdmuah_v1=0.519
+2451842(3) diff(j-h)=0.007 heyuan=0.366 jiangxi=0.372 gdmuah_v1=0.367
+2509651(7) diff(j-h)=0.007 heyuan=0.282 jiangxi=0.289 gdmuah_v1=0.285
+2522124(4) diff(j-h)=0.005 heyuan=0.231 jiangxi=0.236 gdmuah_v1=0.234
+2448983(6) diff(j-h)=-0.005 heyuan=0.274 jiangxi=0.270 gdmuah_v1=0.269
+2507692(6) diff(j-h)=0.004 heyuan=0.529 jiangxi=0.534 gdmuah_v1=0.530
+2523319 diff(j-h)=0.004 heyuan=0.396 jiangxi=0.400 gdmuah_v1=0.400
+2508709 diff(j-h)=0.004 heyuan=0.396 jiangxi=0.400 gdmuah_v1=0.397
+2444605(6) diff(j-h)=-0.004 heyuan=0.411 jiangxi=0.407 gdmuah_v1=0.409

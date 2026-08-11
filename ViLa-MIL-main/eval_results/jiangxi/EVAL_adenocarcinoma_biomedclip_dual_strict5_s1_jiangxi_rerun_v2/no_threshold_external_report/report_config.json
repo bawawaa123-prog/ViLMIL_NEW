@@ -1,0 +1,11 @@
+{
+  "external_dir": "/private/ljh-data/shared/ViLMIL/ViLa-MIL-main/eval_results/EVAL_adenocarcinoma_biomedclip_dual_strict5_s1_jiangxi_rerun_v2",
+  "output_dir": "/private/ljh-data/shared/ViLMIL/ViLa-MIL-main/eval_results/EVAL_adenocarcinoma_biomedclip_dual_strict5_s1_jiangxi_rerun_v2/no_threshold_external_report",
+  "bootstrap": 1000,
+  "seed": 2026,
+  "best_metric": "accuracy",
+  "best_acc_fold": 2,
+  "plot_name": "Jiangxi",
+  "negative_label": "Adenocarcinoma",
+  "positive_label": "NonAdenocarcinoma"
+}

@@ -1,0 +1,1 @@
+{'task': 'task_tcga_rcc_subtyping', 'split': 'test', 'save_dir': './eval_results/EVAL_tcga_rcc_biomedclip_dual_strict5_eval', 'models_dir': 'results/tcga_rcc_strict5/tcga_rcc_biomedclip_dual_strict5_s1', 'model_type': 'ViLa_MIL_BiomedCLIP', 'mode': 'transformer', 'drop_out': True, 'model_size': 'small'}

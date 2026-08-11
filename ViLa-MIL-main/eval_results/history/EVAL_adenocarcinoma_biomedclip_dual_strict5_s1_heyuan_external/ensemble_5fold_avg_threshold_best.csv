@@ -1,0 +1,2 @@
+method,auc,best_threshold_by_f1,best_acc,best_f1,best_precision,best_recall,best_positive_count,default_0.5_acc,default_0.5_f1,default_0.5_precision,default_0.5_recall,default_0.5_positive_count
+5fold_probability_average,0.9247292895501364,0.7599771878914907,0.8866279069767442,0.6060606060606061,0.4838709677419355,0.8108108108108109,62,0.813953488372093,0.5151515151515151,0.35789473684210527,0.918918918918919,95

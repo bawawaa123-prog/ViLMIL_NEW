@@ -1,0 +1,11 @@
+{
+  "external_dir": "/private/ljh-data/shared/ViLMIL/ViLa-MIL-main/eval_results/heyuan/EVAL_adenocarcinoma_biomedclip_dual_strict5_s1_heyuan_external",
+  "output_dir": "/private/ljh-data/shared/ViLMIL/ViLa-MIL-main/eval_results/heyuan/EVAL_adenocarcinoma_biomedclip_dual_strict5_s1_heyuan_external/no_threshold_external_report_v2",
+  "bootstrap": 1000,
+  "seed": 2026,
+  "best_metric": "accuracy",
+  "best_acc_fold": 2,
+  "plot_name": "Heyuan",
+  "negative_label": "Pre-IAC",
+  "positive_label": "IAC"
+}

@@ -1,0 +1,1 @@
+{'task': 'task_adenocarcinoma', 'split': 'all', 'save_dir': './eval_results/EVAL_adenocarcinoma_biomedclip_dual_strict5_s1_jiangxi_rerun_v2', 'models_dir': 'trained_models/adenocarcinoma_biomedclip_dual_strict5_s1', 'model_type': 'ViLa_MIL_BiomedCLIP', 'mode': 'transformer', 'drop_out': False, 'model_size': 'small'}

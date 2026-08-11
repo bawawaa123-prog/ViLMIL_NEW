@@ -1,0 +1,2 @@
+method,n_samples,auc,acc,f1,threshold
+5fold_probability_average,344,0.9247292895501364,0.813953488372093,0.5151515151515151,0.5

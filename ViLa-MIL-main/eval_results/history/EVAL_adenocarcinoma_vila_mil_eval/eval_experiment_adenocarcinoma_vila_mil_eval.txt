@@ -1,0 +1,1 @@
+{'task': 'task_adenocarcinoma', 'split': 'test', 'save_dir': './eval_results\\EVAL_adenocarcinoma_vila_mil_eval', 'models_dir': 'trained_models\\adenocarcinoma_vila_mil_s1', 'model_type': 'ViLa_MIL', 'mode': 'transformer', 'drop_out': True, 'model_size': 'small'}

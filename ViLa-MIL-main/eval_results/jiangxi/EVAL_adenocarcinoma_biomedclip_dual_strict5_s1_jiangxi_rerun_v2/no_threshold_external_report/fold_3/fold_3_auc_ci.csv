@@ -1,0 +1,2 @@
+fold,auc,auc_ci_lower_95,auc_ci_upper_95,bootstrap_valid_samples
+3,0.9328007518796992,0.8937041444336647,0.9643108991717229,1000
