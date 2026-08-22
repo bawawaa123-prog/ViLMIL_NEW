@@ -375,6 +375,9 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         super().__init__()
         self.loss_ce = nn.CrossEntropyLoss()
         self.num_classes = num_classes
+        self.scale_mode = str(getattr(config, 'scale_mode', 'dual'))
+        if self.scale_mode not in {'dual', 'low', 'high'}:
+            raise ValueError(f"Unsupported scale_mode={self.scale_mode!r}")
 
         # Optional offline/local override for environments without HF access.
         # Example:
@@ -600,7 +603,14 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         # ========== 分类 ==========
         logits_low = image_features_low @ text_features_low.T
         logits_high = image_features_high @ text_features_high.T
-        logits = logits_low + logits_high
+        # Scale ablation: retain the original dual sum exactly, while allowing
+        # controlled single-scale training without changing feature files.
+        if self.scale_mode == 'low':
+            logits = logits_low
+        elif self.scale_mode == 'high':
+            logits = logits_high
+        else:
+            logits = logits_low + logits_high
         
         loss = self.loss_ce(logits, label)
         Y_prob = F.softmax(logits, dim=1)

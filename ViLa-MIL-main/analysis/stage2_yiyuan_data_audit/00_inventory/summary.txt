@@ -1,0 +1,41 @@
+Step 2.0 - Yiyuan dataset inventory and integrity audit
+================================================================
+Project root: /private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main
+Dataset CSV: dataset_csv/all_data.csv
+CSV fields: case_id, slide_id, label
+
+CSV total records: 968
+Unique slide_id count (literal): 968
+Unique slide_id count (normalized): 968
+Unique case_id count: 968
+Slides by label:
+  Adenocarcinoma: 637
+  NonAdenocarcinoma: 331
+
+WSI file total: 968
+5x coordinate file total: 968
+20x coordinate file total: 968
+5x feature file total: 968
+20x feature file total: 968
+
+Complete slide records: 968
+Missing WSI count: 0
+Missing 5x coordinate count: 0
+Missing 20x coordinate count: 0
+Missing 5x feature count: 0
+Missing 20x feature count: 0
+
+Orphan file count: 0
+Duplicate literal slide_id groups: 0
+Duplicate slide_id excess rows: 0
+Completely duplicate CSV excess records: 0
+Normalized CSV slide_id collision groups: 0
+Multiple same-type file groups: 0
+Normalized filename collision groups: 0
+Inventory rows with naming/match warnings: 0
+
+Major anomalies:
+- None.
+
+Scope note: this audit checks file presence and slide_id correspondence only;
+it does not validate WSI magnification/MPP, coordinate geometry, or feature contents.

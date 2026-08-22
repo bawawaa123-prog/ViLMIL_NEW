@@ -1,0 +1,7 @@
+slide_id,reason,figure,success,error
+25032146B2,few_patches,figures/coverage_25032146B2.png,True,
+2476358-B2,median_patches,figures/coverage_2476358-B2.png,True,
+2485803-B2,many_patches,figures/coverage_2485803-B2.png,True,
+2460239-B2,anomaly_patch_footprint_out_of_bounds,figures/coverage_2460239-B2.png,True,
+2469230-B,anomaly_spacing_nonmultiple_fraction_high,figures/coverage_2469230-B.png,True,
+2486859-B2,lowest_bbox_iou,figures/coverage_2486859-B2.png,True,

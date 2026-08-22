@@ -110,3 +110,6 @@ events.out.tfevents.*
 build/
 dist/
 *.egg-info/
+
+# Stage 2 large generated audit artifacts
+ViLa-MIL-main/analysis/stage2_yiyuan_data_audit/04_cross_scale_mapping/high_to_low_statistics.csv

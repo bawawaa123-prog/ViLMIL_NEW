@@ -1,0 +1,11 @@
+slide_id,candidate_exists,read_success,coord_count,feature_coord_count,feature_count,feature_shape,feature_dtype,counts_equal,coord_shape_equal,coord_order_exact,coord_set_equal,features_all_finite,feature_abs_mean,feature_abs_max,validation_ok,error
+2476983-B,True,True,181,181,181,"(181, 512)",float32,True,True,True,True,True,2.4673043343356555,29.85226058959961,True,
+2482607-B,True,True,251,251,251,"(251, 512)",float32,True,True,True,True,True,2.4897225985403355,30.818077087402344,True,
+2482969-B,True,True,302,302,302,"(302, 512)",float32,True,True,True,True,True,2.4432974764380235,33.952171325683594,True,
+2482992-B,True,True,236,236,236,"(236, 512)",float32,True,True,True,True,True,2.5117185512013993,34.11771774291992,True,
+2488767-B,True,True,478,478,478,"(478, 512)",float32,True,True,True,True,True,2.447507865604984,32.54776382446289,True,
+2485632-B,True,True,149,149,149,"(149, 512)",float32,True,True,True,True,True,2.5988447315034406,30.109630584716797,True,
+2487043-B,True,True,109,109,109,"(109, 512)",float32,True,True,True,True,True,2.4233342035106302,32.7542724609375,True,
+2487518-B,True,True,91,91,91,"(91, 512)",float32,True,True,True,True,True,2.435885494466085,32.54006576538086,True,
+2488040-B,True,True,256,256,256,"(256, 512)",float32,True,True,True,True,True,2.4166685327926274,32.51694107055664,True,
+2488335-B,True,True,358,358,358,"(358, 512)",float32,True,True,True,True,True,2.492605745976991,32.64741134643555,True,

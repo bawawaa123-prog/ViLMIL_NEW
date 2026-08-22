@@ -158,6 +158,7 @@ def train(datasets, cur, args):
         config.hidden_size = 192
         config.text_prompt = args.text_prompt
         config.prototype_number = args.prototype_number
+        config.scale_mode = getattr(args, 'scale_mode', 'dual')
         # Control whether BiomedCLIP text encoder is finetuned (default: frozen)
         config.finetune_text_encoder = bool(getattr(args, 'finetune_text_encoder', False))
         # Finetune scope for BiomedCLIP text tower

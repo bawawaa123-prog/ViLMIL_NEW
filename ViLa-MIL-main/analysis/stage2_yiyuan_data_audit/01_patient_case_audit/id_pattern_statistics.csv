@@ -1,0 +1,14 @@
+id_field,pattern_type,count,unique_count,example_ids,is_parsed,grouping_eligible_pattern
+slide_id,numeric_B,81,81,25014268B;25014318B;25014684B;25015422B;25015820B,True,True
+slide_id,numeric_B_hyphen_number,1,1,25045403B-1,True,True
+slide_id,numeric_B_number,494,494,25012148B4;25012153B2;25012170B4;25012170B5;25012175B4,True,True
+slide_id,numeric_B_number_letter,1,1,25028010B2a,True,True
+slide_id,numeric_hyphen_B,59,59,2460602-B;2460643-B;2460960-B;2461698-B;2462483-B,True,True
+slide_id,numeric_hyphen_B_number,332,332,2460239-B2;2460242-B2;2460399-B2;2460404-B3;2460405-B2,True,True
+case_id,numeric_B,81,81,25014268B;25014318B;25014684B;25015422B;25015820B,True,True
+case_id,numeric_B_hyphen_number,1,1,25045403B-1,True,True
+case_id,numeric_B_number,494,494,25012148B4;25012153B2;25012170B4;25012170B5;25012175B4,True,True
+case_id,numeric_B_number_letter,1,1,25028010B2a,True,True
+case_id,numeric_hyphen_B,54,54,2460602-B;2460643-B;2460960-B;2461698-B;2462483-B,True,True
+case_id,numeric_hyphen_B_number,332,332,2460239-B2;2460242-B2;2460399-B2;2460404-B3;2460405-B2,True,True
+case_id,numeric_hyphen_B_trailing_punctuation,5,5,2485632-B.;2487043-B.;2487518-B.;2488040-B.;2488335-B.,True,False

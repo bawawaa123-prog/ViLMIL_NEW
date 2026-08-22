@@ -1,5 +1,0 @@
-preset,patch_level,n_slides,coord_count_min,coord_count_median,coord_count_mean,coord_count_max
-heyuan.csv,1.0,12,202,1255.0,1191.1666666666667,1838
-heyuan.csv,2.0,12,16,89.5,82.83333333333333,128
-tcga.csv,1.0,11,11,695.0,805.0,1829
-tcga.csv,2.0,11,1,55.0,58.09090909090909,122

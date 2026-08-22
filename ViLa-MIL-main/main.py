@@ -34,6 +34,8 @@ parser.add_argument('--opt', type=str, choices = ['adam', 'sgd'], default='adam'
 parser.add_argument('--drop_out', action='store_true', default=False, help='enabel dropout (p=0.25)')
 parser.add_argument('--model_type', type=str, choices=['ViLa_MIL', 'ViLa_MIL_BiomedCLIP'], default='ViLa_MIL_BiomedCLIP', help='type of model')
 parser.add_argument('--mode', type=str, choices=['transformer'], default='transformer')
+parser.add_argument('--scale_mode', type=str, choices=['dual', 'low', 'high'], default='dual',
+                    help='BiomedCLIP scale ablation mode; dual preserves original behavior')
 parser.add_argument('--exp_code', type=str, help='experiment code for saving results')
 parser.add_argument('--weighted_sample', action='store_true', default=False, help='enable weighted sampling')
 parser.add_argument('--reg', type=float, default=1e-5, help='weight decay (default: 1e-5)')
@@ -149,6 +151,7 @@ settings = {'num_splits': args.k,
             'seed': args.seed,
             'model_type': args.model_type,
             'mode': args.mode,
+            'scale_mode': args.scale_mode,
             "use_drop_out": args.drop_out,
             'weighted_sample': args.weighted_sample,
             'opt': args.opt,
