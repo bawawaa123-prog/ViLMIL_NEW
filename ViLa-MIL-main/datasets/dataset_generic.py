@@ -12,6 +12,7 @@ except Exception:
 import h5py
 
 from utils.utils import generate_split, nth
+from utils.cross_scale_mapping import CrossScaleMapping
 
 
 def _resolve_h5_path(data_dir, slide_id):
@@ -30,6 +31,21 @@ def _resolve_h5_path(data_dir, slide_id):
 		f"Feature file not found for slide_id={slide_id}. Tried: "
 		f"{exact_path} and {fallback_path}"
 	)
+
+def _resolve_mapping_path(mapping_path, slide_id):
+	"""Resolve a per-slide Stage 3.1 NPZ mapping cache."""
+	if not mapping_path:
+		return None
+	path = os.fspath(mapping_path)
+	if "{slide_id}" in path:
+		candidate = path.format(slide_id=str(slide_id))
+	elif os.path.isdir(path):
+		candidate = os.path.join(path, f"{slide_id}.npz")
+	else:
+		candidate = path
+	if not os.path.exists(candidate):
+		raise FileNotFoundError(f"Mapping cache not found for slide_id={slide_id}: {candidate}")
+	return candidate
 
 def save_splits(split_datasets, column_keys, filename, boolean_style=False):
 	splits = [split_datasets[i].slide_data['slide_id'] for i in range(len(split_datasets))]
@@ -213,7 +229,7 @@ class Generic_WSI_Classification_Dataset(Dataset):
 		if len(split) > 0:
 			mask = self.slide_data['slide_id'].isin(split.tolist())
 			df_slice = self.slide_data[mask].reset_index(drop=True)
-			split = Generic_Split(df_slice, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode, num_classes=self.num_classes)
+			split = Generic_Split(df_slice, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode, num_classes=self.num_classes, mapping_path=getattr(self, 'mapping_path', None), return_mapping=getattr(self, 'return_mapping', False))
 		else:
 			split = None
 
@@ -229,7 +245,7 @@ class Generic_WSI_Classification_Dataset(Dataset):
 		if len(split) > 0:
 			mask = self.slide_data['slide_id'].isin(merged_split)
 			df_slice = self.slide_data[mask].reset_index(drop=True)
-			split = Generic_Split(df_slice, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode, num_classes=self.num_classes)
+			split = Generic_Split(df_slice, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode, num_classes=self.num_classes, mapping_path=getattr(self, 'mapping_path', None), return_mapping=getattr(self, 'return_mapping', False))
 		else:
 			split = None
 
@@ -240,21 +256,21 @@ class Generic_WSI_Classification_Dataset(Dataset):
 		if from_id:
 			if len(self.train_ids) > 0:
 				train_data = self.slide_data.loc[self.train_ids].reset_index(drop=True)
-				train_split = Generic_Split(train_data, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode,  num_classes=self.num_classes)
+				train_split = Generic_Split(train_data, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode,  num_classes=self.num_classes, mapping_path=getattr(self, 'mapping_path', None), return_mapping=getattr(self, 'return_mapping', False))
 
 			else:
 				train_split = None
 
 			if len(self.val_ids) > 0:
 				val_data = self.slide_data.loc[self.val_ids].reset_index(drop=True)
-				val_split = Generic_Split(val_data, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode,  num_classes=self.num_classes)
+				val_split = Generic_Split(val_data, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode,  num_classes=self.num_classes, mapping_path=getattr(self, 'mapping_path', None), return_mapping=getattr(self, 'return_mapping', False))
 
 			else:
 				val_split = None
 
 			if len(self.test_ids) > 0:
 				test_data = self.slide_data.loc[self.test_ids].reset_index(drop=True)
-				test_split = Generic_Split(test_data, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, num_classes=self.num_classes)
+				test_split = Generic_Split(test_data, data_dir_s=self.data_dir_s, data_dir_l=self.data_dir_l, mode=self.mode, num_classes=self.num_classes, mapping_path=getattr(self, 'mapping_path', None), return_mapping=getattr(self, 'return_mapping', False))
 
 			else:
 				test_split = None
@@ -336,12 +352,18 @@ class Generic_MIL_Dataset(Generic_WSI_Classification_Dataset):
 				 data_dir_s,
 				 data_dir_l,
 				 mode,
+				 mapping_path=None,
+				 return_mapping=False,
 				 **kwargs):
 
 		super(Generic_MIL_Dataset, self).__init__(**kwargs)
 		self.data_dir_s = data_dir_s
 		self.data_dir_l = data_dir_l
 		self.mode = mode
+		self.mapping_path = mapping_path
+		self.return_mapping = bool(return_mapping)
+		if self.return_mapping and not self.mapping_path:
+			raise ValueError("return_mapping=True requires mapping_path")
 		self.use_h5 = False
 		self._filter_unavailable_slides()
 
@@ -401,6 +423,9 @@ class Generic_MIL_Dataset(Generic_WSI_Classification_Dataset):
 					coords_s = torch.from_numpy(np.array(scale_s['coords']))
 					features_l = torch.from_numpy(np.array(scale_l['features']))
 					coords_l = torch.from_numpy(np.array(scale_l['coords']))
+					if self.return_mapping:
+						mapping = CrossScaleMapping.load_npz(_resolve_mapping_path(self.mapping_path, slide_id)).to_dict()
+						return features_s, coords_s, features_l, coords_l, label, slide_id, mapping
 					return features_s, coords_s, features_l, coords_l, label, slide_id
 
 			else:
@@ -417,12 +442,14 @@ class Generic_MIL_Dataset(Generic_WSI_Classification_Dataset):
 
 
 class Generic_Split(Generic_MIL_Dataset):
-	def __init__(self, slide_data, data_dir_s=None, data_dir_l=None, mode='clam', num_classes=2):
+	def __init__(self, slide_data, data_dir_s=None, data_dir_l=None, mode='clam', num_classes=2, mapping_path=None, return_mapping=False):
 		self.use_h5 = False
 		self.slide_data = slide_data
 		self.data_dir_s = data_dir_s
 		self.data_dir_l = data_dir_l
 		self.mode = mode
+		self.mapping_path = mapping_path
+		self.return_mapping = bool(return_mapping)
 		self.num_classes = num_classes
 		self.slide_cls_ids = [[] for i in range(self.num_classes)]
 		for i in range(self.num_classes):

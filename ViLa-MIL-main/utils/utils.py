@@ -36,6 +36,9 @@ def collate_tranformer(batch):
 	img_l = torch.cat([item[2] for item in batch], dim = 0)
 	coord_l = torch.cat([item[3] for item in batch], dim = 0)
 	label = torch.LongTensor([item[4] for item in batch])
+	if len(batch[0]) >= 7:
+		# Ragged mapping arrays stay one payload per slide; future model code can consume them.
+		return [img_s, coord_s, img_l, coord_l, label, [item[5] for item in batch], [item[6] for item in batch]]
 	return [img_s, coord_s, img_l, coord_l, label]
 
 
@@ -231,4 +234,3 @@ def initialize_weights(module):
 		elif isinstance(m, nn.BatchNorm1d):
 			nn.init.constant_(m.weight, 1)
 			nn.init.constant_(m.bias, 0)
-

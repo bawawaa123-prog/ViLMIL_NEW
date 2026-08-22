@@ -1,0 +1,4 @@
+slide_id,low_count,high_count,edges,low_with_child_count,low_child_count_mean,low_child_count_median,high_with_parent_count,unmapped_high_count,high_parent_coverage,low_child_coverage,padding_low_gt50_count,padding_high_gt50_count
+2460239-B2,187,2592,4595,187,24.572192513368982,23.0,2412,180,0.9305555555555556,1.0,2,13
+2460242-B2,426,6128,12923,426,30.335680751173708,35.0,6069,59,0.9903720626631853,1.0,0,0
+2460399-B2,285,4103,8791,285,30.84561403508772,35.0,4084,19,0.9953692420180356,1.0,0,0
