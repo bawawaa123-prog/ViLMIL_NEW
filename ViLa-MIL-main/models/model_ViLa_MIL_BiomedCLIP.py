@@ -108,6 +108,7 @@ _BOOTSTRAP_CACHE_DIR = _bootstrap_hf_environment()
 from open_clip import create_model_from_pretrained, get_tokenizer
 
 from .model_utils import MultiheadAttention
+from .cross_scale_modules import MaskedGatedAttentionPool
 
 logger = logging.getLogger(__name__)
 
@@ -396,6 +397,8 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         self.attention_V = nn.Sequential(nn.Linear(self.L, self.D), nn.Tanh())
         self.attention_U = nn.Sequential(nn.Linear(self.L, self.D), nn.Sigmoid())
         self.attention_weights = nn.Linear(self.D, self.K)
+        # Parameter-free wrapper: legacy attention_* modules remain root-owned.
+        self.gated_attention_pool = MaskedGatedAttentionPool()
         
         # 加载BiomedCLIP
         resolved_model_path, resolved_cache_dir, offline_enabled = _prepare_biomedclip_loading(model_path)
@@ -565,12 +568,9 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         compents = self.norm(compents + self.learnable_image_center)
         
         H = compents.squeeze().float()
-        A_V = self.attention_V(H)
-        A_U = self.attention_U(H)
-        A = self.attention_weights(A_V * A_U)
-        A = torch.transpose(A, 1, 0)
-        A = F.softmax(A, dim=1)
-        image_features_low = torch.mm(A, H)
+        image_features_low, _ = self.gated_attention_pool(
+            H, self.attention_V, self.attention_U, self.attention_weights
+        )
         
         # ========== 高分辨率分支 ==========
         M_high = x_l.float()
@@ -578,12 +578,9 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         compents_high = self.norm(compents_high + self.learnable_image_center)
         
         H_high = compents_high.squeeze().float()
-        A_V_high = self.attention_V(H_high)
-        A_U_high = self.attention_U(H_high)
-        A_high = self.attention_weights(A_V_high * A_U_high)
-        A_high = torch.transpose(A_high, 1, 0)
-        A_high = F.softmax(A_high, dim=1)
-        image_features_high = torch.mm(A_high, H_high)
+        image_features_high, _ = self.gated_attention_pool(
+            H_high, self.attention_V, self.attention_U, self.attention_weights
+        )
         
         # ========== 文本-图像对齐 ==========
         text_features_low = text_features[:self.num_classes]
@@ -640,20 +637,14 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         compents_high = self.norm(compents_high + self.learnable_image_center)
         
         H = compents.squeeze().float()
-        A_V = self.attention_V(H)
-        A_U = self.attention_U(H)
-        A = self.attention_weights(A_V * A_U)
-        A = torch.transpose(A, 1, 0)
-        A = F.softmax(A, dim=1)
-        image_features_low = torch.mm(A, H)
+        image_features_low, A = self.gated_attention_pool(
+            H, self.attention_V, self.attention_U, self.attention_weights
+        )
         
         H_high = compents_high.squeeze().float()
-        A_V_high = self.attention_V(H_high)
-        A_U_high = self.attention_U(H_high)
-        A_high = self.attention_weights(A_V_high * A_U_high)
-        A_high = torch.transpose(A_high, 1, 0)
-        A_high = F.softmax(A_high, dim=1)
-        image_features_high = torch.mm(A_high, H_high)
+        image_features_high, A_high = self.gated_attention_pool(
+            H_high, self.attention_V, self.attention_U, self.attention_weights
+        )
         
         text_features_low = text_features[:self.num_classes]
         image_context = torch.cat((compents.squeeze(), M.squeeze(0)), dim=0)
