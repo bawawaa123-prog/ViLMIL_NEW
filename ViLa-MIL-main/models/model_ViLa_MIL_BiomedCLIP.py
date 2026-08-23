@@ -108,7 +108,7 @@ _BOOTSTRAP_CACHE_DIR = _bootstrap_hf_environment()
 from open_clip import create_model_from_pretrained, get_tokenizer
 
 from .model_utils import MultiheadAttention
-from .cross_scale_modules import MaskedGatedAttentionPool
+from .cross_scale_modules import LowParentContext, MaskedGatedAttentionPool
 
 logger = logging.getLogger(__name__)
 
@@ -399,6 +399,8 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         self.attention_weights = nn.Linear(self.D, self.K)
         # Parameter-free wrapper: legacy attention_* modules remain root-owned.
         self.gated_attention_pool = MaskedGatedAttentionPool()
+        self.low_parent_context = LowParentContext()
+        self._last_mapping_context = None
         
         # 加载BiomedCLIP
         resolved_model_path, resolved_cache_dir, offline_enabled = _prepare_biomedclip_loading(model_path)
@@ -538,7 +540,18 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
                 if hasattr(text_clip, attr):
                     _unfreeze_obj(getattr(text_clip, attr))
     
-    def forward(self, x_s, coord_s, x_l, coords_l, label):
+    def build_mapping_context(self, x_s, x_l, mapping):
+        """Build per-high low-parent context without changing prediction."""
+        if mapping is None:
+            self._last_mapping_context = None
+            return None
+        low_features = x_s.squeeze(0) if x_s.ndim == 3 and x_s.shape[0] == 1 else x_s
+        high_features = x_l.squeeze(0) if x_l.ndim == 3 and x_l.shape[0] == 1 else x_l
+        context = self.low_parent_context(low_features.float(), mapping, high_count=high_features.shape[0])
+        self._last_mapping_context = context
+        return context
+
+    def forward(self, x_s, coord_s, x_l, coords_l, label, mapping=None):
         """
         前向传播
         
@@ -554,6 +567,8 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
             Y_hat: 预测类别 [1, 1]
             loss: 交叉熵损失
         """
+        # Stage 3.3.1 plumbing only: context is constructed but not used in logits.
+        self.build_mapping_context(x_s, x_l, mapping)
         # 生成文本特征（Prompt-learning + 可选文本微调）
         tokenized_prompts = self.prompt_learner.tokenized_prompts.to(x_s.device)
         prompt_embeddings = self.prompt_learner().to(x_s.device)

@@ -54,3 +54,86 @@ class MaskedGatedAttentionPool(nn.Module):
 
 
 __all__ = ["MaskedGatedAttentionPool"]
+
+
+class LowParentContext(nn.Module):
+    """Parameter-free reverse-CSR low context for each high feature row.
+
+    ``parent_indices`` and ``parent_weight`` index rows of ``low_features``;
+    therefore this module never uses standalone coordinate-H5 row order. Invalid
+    low parents are removed and the remaining weights are renormalized. High
+    rows with no usable parent receive a finite zero fallback and remain present.
+    """
+
+    def forward(
+        self,
+        low_features: torch.Tensor,
+        mapping: dict,
+        *,
+        high_count: int | None = None,
+    ) -> dict[str, torch.Tensor]:
+        if low_features.ndim != 2:
+            raise ValueError(f"low_features must be [N_low, D], got {tuple(low_features.shape)}")
+        device = low_features.device
+        dtype = low_features.dtype
+        n_low, dim = low_features.shape
+        def tensor(name, dtype=None):
+            if name not in mapping:
+                raise KeyError(f"mapping is missing {name!r}")
+            return torch.as_tensor(mapping[name], device=device, dtype=dtype)
+
+        ptr = tensor("high_parent_ptr", torch.long)
+        parents = tensor("parent_indices", torch.long)
+        weights = tensor("parent_weight", dtype)
+        n_high = int(ptr.numel() - 1) if high_count is None else int(high_count)
+        if ptr.numel() != n_high + 1 or ptr[0].item() != 0 or ptr[-1].item() != parents.numel():
+            raise ValueError("reverse CSR pointer/index sizes are inconsistent")
+        if parents.numel() and (parents.min().item() < 0 or parents.max().item() >= n_low):
+            raise IndexError("parent_indices do not index low feature rows")
+        if weights.numel() != parents.numel():
+            raise ValueError("parent_weight and parent_indices sizes differ")
+
+        low_valid = tensor("low_valid_mask", torch.bool)
+        if low_valid.numel() != n_low:
+            raise ValueError("low_valid_mask does not match low feature rows")
+        low_padding = tensor("low_padding_ratio", dtype)
+        if low_padding.numel() != n_low:
+            raise ValueError("low_padding_ratio does not match low feature rows")
+        high_valid = tensor("high_valid_mask", torch.bool)
+        high_padding = tensor("high_padding_ratio", dtype)
+        if high_valid.numel() != n_high or high_padding.numel() != n_high:
+            raise ValueError("high masks do not match high feature rows")
+
+        context = low_features.new_zeros((n_high, dim))
+        context_valid = torch.zeros(n_high, dtype=torch.bool, device=device)
+        for high_index in range(n_high):
+            start, end = int(ptr[high_index]), int(ptr[high_index + 1])
+            if end <= start or not bool(high_valid[high_index]):
+                continue
+            p = parents[start:end]
+            w = weights[start:end]
+            usable = low_valid[p] & torch.isfinite(w) & (w > 0)
+            if not bool(usable.any()):
+                continue
+            p, w = p[usable], w[usable]
+            w = w / w.sum().clamp_min(torch.finfo(dtype).eps)
+            context[high_index] = torch.sum(low_features[p] * w.unsqueeze(1), dim=0)
+            context_valid[high_index] = True
+
+        has_parent = tensor("high_has_parent_mask", torch.bool)
+        unmapped = tensor("unmapped_high_indices", torch.long)
+        if has_parent.numel() != n_high:
+            raise ValueError("high_has_parent_mask does not match high rows")
+        if not torch.equal(unmapped, torch.where(~has_parent)[0]):
+            raise ValueError("unmapped_high_indices disagrees with high_has_parent_mask")
+        return {
+            "high_parent_context": context,
+            "high_parent_context_valid_mask": context_valid,
+            "high_has_parent_mask": has_parent,
+            "unmapped_high_indices": unmapped,
+            "high_valid_mask": high_valid,
+            "high_padding_ratio": high_padding,
+        }
+
+
+__all__.append("LowParentContext")
