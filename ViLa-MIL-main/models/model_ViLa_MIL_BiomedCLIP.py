@@ -401,11 +401,20 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         self.gated_attention_pool = MaskedGatedAttentionPool()
         self.low_parent_context = LowParentContext()
         self.use_low_context_routing = bool(getattr(config, 'use_low_context_routing', False))
+        self.routing_scale = float(getattr(config, 'routing_scale', 1.0))
+        if self.routing_scale < 0:
+            raise ValueError('routing_scale must be non-negative')
         if self.use_low_context_routing:
             # Do not let newly introduced router initialization perturb the
             # shared E0/E1 initialization stream under the same seed.
             rng_state = torch.random.get_rng_state()
-            self.high_router = HighRouter(feature_dim=self.L)
+            self.use_routing_stabilization = bool(getattr(config, 'use_routing_stabilization', False))
+            self.routing_residual_ratio = float(getattr(config, 'routing_residual_ratio', 0.10))
+            self.high_router = HighRouter(
+                feature_dim=self.L,
+                stabilize=self.use_routing_stabilization,
+                residual_ratio=self.routing_residual_ratio,
+            )
             torch.random.set_rng_state(rng_state)
             self.last_routing_diagnostics = None
         self._last_mapping_context = None
@@ -601,6 +610,13 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
             high_rows = M_high.squeeze(0)
             routed_rows = self.high_router(high_rows, mapping_context)
             self.last_routing_diagnostics = dict(self.high_router.last_diagnostics)
+            if self.routing_scale != 1.0:
+                residual = routed_rows - high_rows
+                routed_rows = high_rows + self.routing_scale * residual
+                self.last_routing_diagnostics['routing_residual_norm'] = float(
+                    (self.routing_scale * residual).detach().norm().cpu()
+                )
+                self.last_routing_diagnostics['routed_high_change_norm'] = self.last_routing_diagnostics['routing_residual_norm']
             M_high = routed_rows.unsqueeze(0)
         compents_high, _ = self.cross_attention_1(self.learnable_image_center, M_high, M_high)
         compents_high = self.norm(compents_high + self.learnable_image_center)

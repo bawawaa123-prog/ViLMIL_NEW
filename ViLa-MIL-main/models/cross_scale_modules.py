@@ -161,8 +161,13 @@ class HighRouter(nn.Module):
     gates ensure rows without a usable low parent remain unchanged.
     """
 
-    def __init__(self, feature_dim: int = 512, hidden_dim: int = 128):
+    def __init__(self, feature_dim: int = 512, hidden_dim: int = 128,
+                 stabilize: bool = False, residual_ratio: float = 0.10):
         super().__init__()
+        self.stabilize = bool(stabilize)
+        self.residual_ratio = float(residual_ratio)
+        if self.residual_ratio <= 0:
+            raise ValueError("residual_ratio must be positive")
         self.context_projection = nn.Linear(feature_dim, feature_dim)
         nn.init.zeros_(self.context_projection.weight)
         nn.init.zeros_(self.context_projection.bias)
@@ -192,10 +197,20 @@ class HighRouter(nn.Module):
         else:
             padding = padding.to(high_features.device, dtype=high_features.dtype)
         metadata = torch.stack([valid.to(high_features.dtype), padding], dim=1)
-        route_input = torch.cat([high_features, low_context, metadata], dim=1)
+        router_high = F.normalize(high_features, p=2, dim=1, eps=1e-8) if self.stabilize else high_features
+        router_context = F.normalize(low_context, p=2, dim=1, eps=1e-8) if self.stabilize else low_context
+        route_input = torch.cat([router_high, router_context, metadata], dim=1)
         route = torch.sigmoid(self.route_score(route_input))
         route = route * valid.to(route.dtype).unsqueeze(1)
-        residual = route * self.context_projection(low_context)
+        residual = route * self.context_projection(router_context)
+        if self.stabilize:
+            high_norm = high_features.norm(p=2, dim=1, keepdim=True)
+            residual_norm = residual.norm(p=2, dim=1, keepdim=True)
+            max_norm = self.residual_ratio * high_norm
+            residual = residual * torch.minimum(
+                torch.ones_like(residual_norm),
+                max_norm / residual_norm.clamp_min(1e-8),
+            )
         self.last_diagnostics = {
             "route_mean": float(route.detach().mean().cpu()),
             "route_std": float(route.detach().std(unbiased=False).cpu()),
@@ -203,6 +218,11 @@ class HighRouter(nn.Module):
             "route_max": float(route.detach().max().cpu()),
             "routing_residual_norm": float(residual.detach().norm().cpu()),
             "routed_high_change_norm": float(residual.detach().norm().cpu()),
+            "high_norm": float(high_features.detach().norm().cpu()),
+            "context_norm": float(low_context.detach().norm().cpu()),
+            "residual_high_ratio": float(
+                (residual.detach().norm() / high_features.detach().norm().clamp_min(1e-8)).cpu()
+            ),
             "mapped_high_count": int(valid.detach().sum().cpu()),
             "unmapped_high_count": int((~valid).detach().sum().cpu()),
             "high_count": int(high_features.shape[0]),

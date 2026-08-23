@@ -40,6 +40,8 @@ parser.add_argument('--use_low_context_routing', action='store_true', default=Fa
                     help='Enable Stage 3.3.2 soft low-conditioned high routing')
 parser.add_argument('--mapping_path', type=str, default=None,
                     help='Stage 3.1 per-slide mapping directory or template path')
+parser.add_argument('--use_routing_stabilization', action='store_true', default=False,
+                    help='Enable Stage 3.3.4 normalized router input and rho=0.10 residual cap')
 parser.add_argument('--exp_code', type=str, help='experiment code for saving results')
 parser.add_argument('--weighted_sample', action='store_true', default=False, help='enable weighted sampling')
 parser.add_argument('--reg', type=float, default=1e-5, help='weight decay (default: 1e-5)')
@@ -160,6 +162,7 @@ settings = {'num_splits': args.k,
             'scale_mode': args.scale_mode,
             'use_low_context_routing': args.use_low_context_routing,
             'mapping_path': args.mapping_path,
+            'use_routing_stabilization': args.use_routing_stabilization,
             "use_drop_out": args.drop_out,
             'weighted_sample': args.weighted_sample,
             'opt': args.opt,

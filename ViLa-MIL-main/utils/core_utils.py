@@ -168,6 +168,8 @@ def train(datasets, cur, args):
         config.prototype_number = args.prototype_number
         config.scale_mode = getattr(args, 'scale_mode', 'dual')
         config.use_low_context_routing = bool(getattr(args, 'use_low_context_routing', False))
+        config.use_routing_stabilization = bool(getattr(args, 'use_routing_stabilization', False))
+        config.routing_residual_ratio = 0.10
         # Control whether BiomedCLIP text encoder is finetuned (default: frozen)
         config.finetune_text_encoder = bool(getattr(args, 'finetune_text_encoder', False))
         # Finetune scope for BiomedCLIP text tower
