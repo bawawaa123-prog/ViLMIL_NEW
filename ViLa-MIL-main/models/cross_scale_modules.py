@@ -137,3 +137,51 @@ class LowParentContext(nn.Module):
 
 
 __all__.append("LowParentContext")
+
+
+class HighRouter(nn.Module):
+    """Soft, residual low-conditioned routing for raw high features.
+
+    The context projection is zero initialized, so enabling the module starts
+    exactly at the legacy high path.  Route scores are bounded and metadata
+    gates ensure rows without a usable low parent remain unchanged.
+    """
+
+    def __init__(self, feature_dim: int = 512, hidden_dim: int = 128):
+        super().__init__()
+        self.context_projection = nn.Linear(feature_dim, feature_dim)
+        nn.init.zeros_(self.context_projection.weight)
+        nn.init.zeros_(self.context_projection.bias)
+        self.route_score = nn.Sequential(
+            nn.Linear(feature_dim * 2 + 2, hidden_dim),
+            nn.Tanh(),
+            nn.Linear(hidden_dim, 1),
+        )
+        # A zero route logit gives a neutral 0.5 soft gate while the residual
+        # itself is zero at initialization; this keeps exact feature parity.
+        nn.init.zeros_(self.route_score[-1].weight)
+        nn.init.zeros_(self.route_score[-1].bias)
+
+    def forward(self, high_features: torch.Tensor, context: dict[str, torch.Tensor]) -> torch.Tensor:
+        if high_features.ndim != 2:
+            raise ValueError(f"high_features must be [N, D], got {tuple(high_features.shape)}")
+        low_context = context["high_parent_context"].to(device=high_features.device, dtype=high_features.dtype)
+        if low_context.shape != high_features.shape:
+            raise ValueError(f"context shape {tuple(low_context.shape)} != high shape {tuple(high_features.shape)}")
+        valid = context["high_parent_context_valid_mask"].to(high_features.device, dtype=torch.bool)
+        high_valid = context.get("high_valid_mask")
+        if high_valid is not None:
+            valid = valid & high_valid.to(high_features.device, dtype=torch.bool)
+        padding = context.get("high_padding_ratio")
+        if padding is None:
+            padding = torch.zeros(high_features.shape[0], device=high_features.device, dtype=high_features.dtype)
+        else:
+            padding = padding.to(high_features.device, dtype=high_features.dtype)
+        metadata = torch.stack([valid.to(high_features.dtype), padding], dim=1)
+        route_input = torch.cat([high_features, low_context, metadata], dim=1)
+        route = torch.sigmoid(self.route_score(route_input))
+        route = route * valid.to(route.dtype).unsqueeze(1)
+        return high_features + route * self.context_projection(low_context)
+
+
+__all__.append("HighRouter")

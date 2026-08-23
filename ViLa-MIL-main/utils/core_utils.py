@@ -159,6 +159,7 @@ def train(datasets, cur, args):
         config.text_prompt = args.text_prompt
         config.prototype_number = args.prototype_number
         config.scale_mode = getattr(args, 'scale_mode', 'dual')
+        config.use_low_context_routing = bool(getattr(args, 'use_low_context_routing', False))
         # Control whether BiomedCLIP text encoder is finetuned (default: frozen)
         config.finetune_text_encoder = bool(getattr(args, 'finetune_text_encoder', False))
         # Finetune scope for BiomedCLIP text tower
@@ -348,10 +349,12 @@ def train_loop(args, epoch, model, loader, optimizer, n_classes, writer = None, 
 
     print(f'\n🚀 [FOLD {fold+1}] [EPOCH {epoch+1}] Training...')
     pbar = tqdm(enumerate(loader), total=len(loader), ncols=100, desc=f'Train F{fold+1}E{epoch+1}')
-    for batch_idx, (data_s, coord_s, data_l, coords_l, label) in pbar:
+    for batch_idx, batch in pbar:
+        data_s, coord_s, data_l, coords_l, label = batch[:5]
+        mapping = batch[6][0] if len(batch) >= 7 else None
         data_s, coord_s, data_l, coords_l, label = data_s.to(device), coord_s.to(device), data_l.to(device), coords_l.to(device), label.to(device)
         
-        Y_prob, Y_hat, loss = model(data_s, coord_s, data_l, coords_l, label)
+        Y_prob, Y_hat, loss = model(data_s, coord_s, data_l, coords_l, label, mapping=mapping)
 
         loss.backward()
         optimizer.step()
@@ -422,11 +425,13 @@ def validate(cur, epoch, model, loader, n_classes, early_stopping = None, writer
     labels = np.zeros(len(loader))
     with torch.no_grad():
         pbar = tqdm(enumerate(loader), total=len(loader), ncols=100, desc=f'Val   F{cur+1}E{epoch+1}')
-        for batch_idx, (data_s, coord_s, data_l, coords_l, label) in pbar:
+        for batch_idx, batch in pbar:
+            data_s, coord_s, data_l, coords_l, label = batch[:5]
+            mapping = batch[6][0] if len(batch) >= 7 else None
             data_s, coord_s, data_l, coords_l, label = data_s.to(device, non_blocking=True), coord_s.to(device, non_blocking=True), \
                                                                   data_l.to(device, non_blocking=True), coords_l.to(device, non_blocking=True), \
                                                                   label.to(device, non_blocking=True)
-            Y_prob, Y_hat, loss = model(data_s, coord_s, data_l, coords_l, label)
+            Y_prob, Y_hat, loss = model(data_s, coord_s, data_l, coords_l, label, mapping=mapping)
 
             acc_logger.log(Y_hat, label)
             prob[batch_idx] = Y_prob.cpu().numpy()
@@ -489,11 +494,13 @@ def summary(mode, model, loader, n_classes):
     slide_ids = loader.dataset.slide_data['slide_id']
     patient_results = {}
 
-    for batch_idx, (data_s, coord_s, data_l, coords_l, label) in enumerate(loader):
+    for batch_idx, batch in enumerate(loader):
+        data_s, coord_s, data_l, coords_l, label = batch[:5]
+        mapping = batch[6][0] if len(batch) >= 7 else None
         data_s, coord_s, data_l, coords_l, label = data_s.to(device), coord_s.to(device), data_l.to(device), coords_l.to(device), label.to(device)
         slide_id = slide_ids.iloc[batch_idx]
         with torch.no_grad():
-            Y_prob, Y_hat, _ = model(data_s, coord_s, data_l, coords_l, label)
+            Y_prob, Y_hat, _ = model(data_s, coord_s, data_l, coords_l, label, mapping=mapping)
 
         acc_logger.log(Y_hat, label)
         probs = Y_prob.cpu().numpy()

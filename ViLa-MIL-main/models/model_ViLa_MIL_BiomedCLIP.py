@@ -108,7 +108,7 @@ _BOOTSTRAP_CACHE_DIR = _bootstrap_hf_environment()
 from open_clip import create_model_from_pretrained, get_tokenizer
 
 from .model_utils import MultiheadAttention
-from .cross_scale_modules import LowParentContext, MaskedGatedAttentionPool
+from .cross_scale_modules import HighRouter, LowParentContext, MaskedGatedAttentionPool
 
 logger = logging.getLogger(__name__)
 
@@ -400,6 +400,9 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         # Parameter-free wrapper: legacy attention_* modules remain root-owned.
         self.gated_attention_pool = MaskedGatedAttentionPool()
         self.low_parent_context = LowParentContext()
+        self.use_low_context_routing = bool(getattr(config, 'use_low_context_routing', False))
+        if self.use_low_context_routing:
+            self.high_router = HighRouter(feature_dim=self.L)
         self._last_mapping_context = None
         
         # 加载BiomedCLIP
@@ -568,7 +571,7 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
             loss: 交叉熵损失
         """
         # Stage 3.3.1 plumbing only: context is constructed but not used in logits.
-        self.build_mapping_context(x_s, x_l, mapping)
+        mapping_context = self.build_mapping_context(x_s, x_l, mapping)
         # 生成文本特征（Prompt-learning + 可选文本微调）
         tokenized_prompts = self.prompt_learner.tokenized_prompts.to(x_s.device)
         prompt_embeddings = self.prompt_learner().to(x_s.device)
@@ -589,6 +592,10 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         
         # ========== 高分辨率分支 ==========
         M_high = x_l.float()
+        if self.use_low_context_routing and mapping_context is not None:
+            high_rows = M_high.squeeze(0)
+            routed_rows = self.high_router(high_rows, mapping_context)
+            M_high = routed_rows.unsqueeze(0)
         compents_high, _ = self.cross_attention_1(self.learnable_image_center, M_high, M_high)
         compents_high = self.norm(compents_high + self.learnable_image_center)
         

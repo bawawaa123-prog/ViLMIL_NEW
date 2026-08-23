@@ -36,6 +36,10 @@ parser.add_argument('--model_type', type=str, choices=['ViLa_MIL', 'ViLa_MIL_Bio
 parser.add_argument('--mode', type=str, choices=['transformer'], default='transformer')
 parser.add_argument('--scale_mode', type=str, choices=['dual', 'low', 'high'], default='dual',
                     help='BiomedCLIP scale ablation mode; dual preserves original behavior')
+parser.add_argument('--use_low_context_routing', action='store_true', default=False,
+                    help='Enable Stage 3.3.2 soft low-conditioned high routing')
+parser.add_argument('--mapping_path', type=str, default=None,
+                    help='Stage 3.1 per-slide mapping directory or template path')
 parser.add_argument('--exp_code', type=str, help='experiment code for saving results')
 parser.add_argument('--weighted_sample', action='store_true', default=False, help='enable weighted sampling')
 parser.add_argument('--reg', type=float, default=1e-5, help='weight decay (default: 1e-5)')
@@ -79,6 +83,8 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
+if args.use_low_context_routing and not args.mapping_path:
+    parser.error('--use_low_context_routing requires --mapping_path')
 # Robustly load text prompts so the model receives a flat list[str].
 # Expected by ViLa_MIL: first N are low-res prompts, next N are high-res prompts.
 if args.text_prompt_path:
@@ -152,6 +158,8 @@ settings = {'num_splits': args.k,
             'model_type': args.model_type,
             'mode': args.mode,
             'scale_mode': args.scale_mode,
+            'use_low_context_routing': args.use_low_context_routing,
+            'mapping_path': args.mapping_path,
             "use_drop_out": args.drop_out,
             'weighted_sample': args.weighted_sample,
             'opt': args.opt,
@@ -169,7 +177,8 @@ if args.task == 'task_tcga_rcc_subtyping':
                                   print_info = True,
                                   label_dict = {'CCRCC':0, 'PRCC':1, 'CRCC':2},
                                   patient_strat= False,
-                                  ignore=[])
+                                  ignore=[], mapping_path=args.mapping_path,
+                                  return_mapping=args.use_low_context_routing)
                                   
 elif args.task == 'task_tcga_lung_subtyping':
     args.n_classes=2
@@ -181,7 +190,8 @@ elif args.task == 'task_tcga_lung_subtyping':
                                   print_info = True,
                                   label_dict = {'LUAD':0, 'LUSC':1},
                                   patient_strat= False,
-                                  ignore=[])
+                                  ignore=[], mapping_path=args.mapping_path,
+                                  return_mapping=args.use_low_context_routing)
 
 elif args.task == 'task_adenocarcinoma':
     args.n_classes=2
@@ -193,7 +203,8 @@ elif args.task == 'task_adenocarcinoma':
                                   print_info = True,
                                   label_dict = {'Adenocarcinoma':0, 'NonAdenocarcinoma':1},
                                   patient_strat= False,
-                                  ignore=[])
+                                  ignore=[], mapping_path=args.mapping_path,
+                                  return_mapping=args.use_low_context_routing)
 
     # Sanity check for text prompts
     if isinstance(args.text_prompt, list):
