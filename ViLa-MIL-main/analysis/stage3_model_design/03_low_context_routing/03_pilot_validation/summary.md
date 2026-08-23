@@ -95,6 +95,18 @@ experiment subdirectory is printed by `main.py`); logs are
 Stage 3.4 must wait until these E0/E1 artifacts are reviewed and the pilot
 result is replicated sufficiently for a design decision.
 
+## Multi-fold replication preparation
+
+The remaining-fold runner and read-only paired aggregator are in:
+
+```text
+analysis/stage3_model_design/03_low_context_routing/04_multifold_replication/
+```
+
+`LowParentContext` was rechecked after the pilot speed investigation. It has
+no per-high-row Python loop: reverse CSR uses `repeat_interleave` and
+`index_add_`. No additional refactor was made in this preparation stage.
+
 ## Pilot Results (fold 0, seed 1)
 
 Both runs completed with `--early_stopping` and stopped at epoch 13. The
