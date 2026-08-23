@@ -104,21 +104,35 @@ class LowParentContext(nn.Module):
         if high_valid.numel() != n_high or high_padding.numel() != n_high:
             raise ValueError("high masks do not match high feature rows")
 
+        # Vectorized reverse-CSR aggregation.  The previous row-by-row loop
+        # caused one Python/GPU synchronization per high patch, which is
+        # prohibitive for slides with thousands of high rows.
         context = low_features.new_zeros((n_high, dim))
         context_valid = torch.zeros(n_high, dtype=torch.bool, device=device)
-        for high_index in range(n_high):
-            start, end = int(ptr[high_index]), int(ptr[high_index + 1])
-            if end <= start or not bool(high_valid[high_index]):
-                continue
-            p = parents[start:end]
-            w = weights[start:end]
-            usable = low_valid[p] & torch.isfinite(w) & (w > 0)
-            if not bool(usable.any()):
-                continue
-            p, w = p[usable], w[usable]
-            w = w / w.sum().clamp_min(torch.finfo(dtype).eps)
-            context[high_index] = torch.sum(low_features[p] * w.unsqueeze(1), dim=0)
-            context_valid[high_index] = True
+        counts = (ptr[1:] - ptr[:-1]).clamp_min(0)
+        if parents.numel():
+            edge_high = torch.repeat_interleave(
+                torch.arange(n_high, device=device, dtype=torch.long), counts
+            )
+            usable = (
+                low_valid[parents]
+                & high_valid[edge_high]
+                & torch.isfinite(weights)
+                & (weights > 0)
+            )
+            if bool(usable.any()):
+                edge_high = edge_high[usable]
+                edge_parent = parents[usable]
+                edge_weight = weights[usable]
+                denom = low_features.new_zeros(n_high)
+                denom.index_add_(0, edge_high, edge_weight)
+                context.index_add_(
+                    0,
+                    edge_high,
+                    low_features[edge_parent] * edge_weight.unsqueeze(1),
+                )
+                context = context / denom.clamp_min(torch.finfo(dtype).eps).unsqueeze(1)
+                context_valid = denom > 0
 
         has_parent = tensor("high_has_parent_mask", torch.bool)
         unmapped = tensor("unmapped_high_indices", torch.long)
@@ -181,7 +195,19 @@ class HighRouter(nn.Module):
         route_input = torch.cat([high_features, low_context, metadata], dim=1)
         route = torch.sigmoid(self.route_score(route_input))
         route = route * valid.to(route.dtype).unsqueeze(1)
-        return high_features + route * self.context_projection(low_context)
+        residual = route * self.context_projection(low_context)
+        self.last_diagnostics = {
+            "route_mean": float(route.detach().mean().cpu()),
+            "route_std": float(route.detach().std(unbiased=False).cpu()),
+            "route_min": float(route.detach().min().cpu()),
+            "route_max": float(route.detach().max().cpu()),
+            "routing_residual_norm": float(residual.detach().norm().cpu()),
+            "routed_high_change_norm": float(residual.detach().norm().cpu()),
+            "mapped_high_count": int(valid.detach().sum().cpu()),
+            "unmapped_high_count": int((~valid).detach().sum().cpu()),
+            "high_count": int(high_features.shape[0]),
+        }
+        return high_features + residual
 
 
 __all__.append("HighRouter")

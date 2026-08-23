@@ -9,6 +9,7 @@ from sklearn.metrics import roc_auc_score, roc_curve, f1_score
 from sklearn.metrics import auc as calc_auc
 from utils.loss_utils import FocalLoss
 import time
+import json
 from tqdm import tqdm
 
 
@@ -26,6 +27,13 @@ def _lock_hf_offline_for_remaining_folds():
     os.environ.setdefault('HF_HUB_DISABLE_TELEMETRY', '1')
     _HF_OFFLINE_LOCKED = True
     print('[Info] HF Hub offline mode enabled for remaining folds (uses local cache only).')
+
+
+def _write_routing_diagnostic(path, payload):
+    if not path:
+        return
+    with open(path, 'a', encoding='utf-8') as handle:
+        handle.write(json.dumps(payload, sort_keys=True) + '\n')
 
 
 class Accuracy_Logger(object):
@@ -251,6 +259,10 @@ def train(datasets, cur, args):
     train_loader = get_split_loader(train_split, training=True, testing = args.testing, weighted = args.weighted_sample, mode=args.mode)
     val_loader = get_split_loader(val_split,  testing = args.testing, mode=args.mode)
     test_loader = get_split_loader(test_split, testing = args.testing, mode=args.mode)
+    args.routing_diagnostics_path = (
+        os.path.join(args.results_dir, 'routing_diagnostics.jsonl')
+        if bool(getattr(args, 'use_low_context_routing', False)) else None
+    )
     print('Done!')
 
     print('\nSetup EarlyStopping...', end=' ')
@@ -357,6 +369,20 @@ def train_loop(args, epoch, model, loader, optimizer, n_classes, writer = None, 
         Y_prob, Y_hat, loss = model(data_s, coord_s, data_l, coords_l, label, mapping=mapping)
 
         loss.backward()
+        if getattr(args, 'use_low_context_routing', False) and (
+                batch_idx < 5 or batch_idx % 25 == 0):
+            diag = dict(getattr(model, 'last_routing_diagnostics', {}) or {})
+            diag.update({
+                'phase': 'train', 'epoch': int(epoch), 'step': int(batch_idx),
+                'loss': float(loss.detach().cpu()),
+                'context_projection_grad_norm': float(
+                    model.high_router.context_projection.weight.grad.detach().norm().cpu()
+                    if model.high_router.context_projection.weight.grad is not None else 0.0),
+                'route_score_grad_norm': float(
+                    sum(float(p.grad.detach().norm().cpu()) for p in model.high_router.route_score.parameters()
+                        if p.grad is not None)),
+            })
+            _write_routing_diagnostic(args.routing_diagnostics_path, diag)
         optimizer.step()
         optimizer.zero_grad()
 
@@ -432,6 +458,14 @@ def validate(cur, epoch, model, loader, n_classes, early_stopping = None, writer
                                                                   data_l.to(device, non_blocking=True), coords_l.to(device, non_blocking=True), \
                                                                   label.to(device, non_blocking=True)
             Y_prob, Y_hat, loss = model(data_s, coord_s, data_l, coords_l, label, mapping=mapping)
+
+            if getattr(model, 'use_low_context_routing', False) and batch_idx < 3:
+                diag = dict(getattr(model, 'last_routing_diagnostics', {}) or {})
+                diag.update({'phase': 'val', 'epoch': int(epoch), 'step': int(batch_idx),
+                             'loss': float(loss.detach().cpu())})
+                _write_routing_diagnostic(
+                    os.path.join(results_dir, 'routing_diagnostics.jsonl')
+                    if results_dir else None, diag)
 
             acc_logger.log(Y_hat, label)
             prob[batch_idx] = Y_prob.cpu().numpy()

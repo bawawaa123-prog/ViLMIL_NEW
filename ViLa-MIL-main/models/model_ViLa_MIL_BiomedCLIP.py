@@ -402,7 +402,12 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         self.low_parent_context = LowParentContext()
         self.use_low_context_routing = bool(getattr(config, 'use_low_context_routing', False))
         if self.use_low_context_routing:
+            # Do not let newly introduced router initialization perturb the
+            # shared E0/E1 initialization stream under the same seed.
+            rng_state = torch.random.get_rng_state()
             self.high_router = HighRouter(feature_dim=self.L)
+            torch.random.set_rng_state(rng_state)
+            self.last_routing_diagnostics = None
         self._last_mapping_context = None
         
         # 加载BiomedCLIP
@@ -595,6 +600,7 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         if self.use_low_context_routing and mapping_context is not None:
             high_rows = M_high.squeeze(0)
             routed_rows = self.high_router(high_rows, mapping_context)
+            self.last_routing_diagnostics = dict(self.high_router.last_diagnostics)
             M_high = routed_rows.unsqueeze(0)
         compents_high, _ = self.cross_attention_1(self.learnable_image_center, M_high, M_high)
         compents_high = self.norm(compents_high + self.learnable_image_center)
