@@ -417,6 +417,10 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
             )
             torch.random.set_rng_state(rng_state)
             self.last_routing_diagnostics = None
+            # Set only by the diagnostics runner; normal training/inference
+            # leaves this as ``normal`` and follows Stage 3.3.4 exactly.
+            self.routing_diagnostic_mode = str(getattr(config, 'routing_diagnostic_mode', 'normal'))
+            self.routing_diagnostic_seed = int(getattr(config, 'routing_diagnostic_seed', 0))
         self._last_mapping_context = None
         
         # 加载BiomedCLIP
@@ -565,7 +569,23 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         low_features = x_s.squeeze(0) if x_s.ndim == 3 and x_s.shape[0] == 1 else x_s
         high_features = x_l.squeeze(0) if x_l.ndim == 3 and x_l.shape[0] == 1 else x_l
         context = self.low_parent_context(low_features.float(), mapping, high_count=high_features.shape[0])
+        # Preserve the low-to-high CSR relation for per-parent route statistics.
+        context['mapping_parent_ptr'] = torch.as_tensor(mapping['parent_ptr'], device=low_features.device, dtype=torch.long)
+        context['mapping_child_indices'] = torch.as_tensor(mapping['child_indices'], device=low_features.device, dtype=torch.long)
         self._last_mapping_context = context
+        return context
+
+    def _shuffle_parent_context(self, context, high_features):
+        """Shuffle mapped low contexts within a slide for context_shuffle."""
+        valid = context['high_parent_context_valid_mask'].to(high_features.device, dtype=torch.bool)
+        if int(valid.sum()) > 1:
+            indices = torch.where(valid)[0]
+            generator = torch.Generator(device='cpu').manual_seed(self.routing_diagnostic_seed)
+            perm = torch.randperm(indices.numel(), generator=generator).to(indices.device)
+            shuffled = context['high_parent_context'].clone()
+            shuffled[indices] = shuffled[indices[perm]]
+            context = dict(context)
+            context['high_parent_context'] = shuffled
         return context
 
     def forward(self, x_s, coord_s, x_l, coords_l, label, mapping=None):
@@ -608,7 +628,16 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         M_high = x_l.float()
         if self.use_low_context_routing and mapping_context is not None:
             high_rows = M_high.squeeze(0)
-            routed_rows = self.high_router(high_rows, mapping_context)
+            diagnostic_mode = str(getattr(self, 'routing_diagnostic_mode', 'normal'))
+            if diagnostic_mode == 'context_shuffle':
+                mapping_context = self._shuffle_parent_context(mapping_context, high_rows)
+            routed_rows = self.high_router(
+                high_rows,
+                mapping_context,
+                diagnostic_mode=('normal' if diagnostic_mode == 'context_shuffle' else diagnostic_mode),
+            )
+            if diagnostic_mode == 'context_shuffle':
+                self.high_router.last_diagnostics['diagnostic_mode'] = diagnostic_mode
             self.last_routing_diagnostics = dict(self.high_router.last_diagnostics)
             if self.routing_scale != 1.0:
                 residual = routed_rows - high_rows

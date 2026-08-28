@@ -181,7 +181,12 @@ class HighRouter(nn.Module):
         nn.init.zeros_(self.route_score[-1].weight)
         nn.init.zeros_(self.route_score[-1].bias)
 
-    def forward(self, high_features: torch.Tensor, context: dict[str, torch.Tensor]) -> torch.Tensor:
+    def forward(
+        self,
+        high_features: torch.Tensor,
+        context: dict[str, torch.Tensor],
+        diagnostic_mode: str = "normal",
+    ) -> torch.Tensor:
         if high_features.ndim != 2:
             raise ValueError(f"high_features must be [N, D], got {tuple(high_features.shape)}")
         low_context = context["high_parent_context"].to(device=high_features.device, dtype=high_features.dtype)
@@ -202,15 +207,67 @@ class HighRouter(nn.Module):
         route_input = torch.cat([router_high, router_context, metadata], dim=1)
         route = torch.sigmoid(self.route_score(route_input))
         route = route * valid.to(route.dtype).unsqueeze(1)
+
+        # Inference-only ablations.  The default path is intentionally the
+        # Stage 3.3.4 operation above; diagnostics only replace route values
+        # after the learned route has been computed.
+        mode = str(diagnostic_mode or "normal")
+        if mode not in {"normal", "residual_off", "route_one", "route_mean", "route_shuffle"}:
+            raise ValueError(f"unsupported routing diagnostic mode: {mode!r}")
+        mapped = valid
+        if mode == "route_one" and bool(mapped.any()):
+            route = route.clone()
+            route[mapped] = 1.0
+        elif mode == "route_mean" and bool(mapped.any()):
+            route = route.clone()
+            route[mapped] = route[mapped].mean()
+        elif mode == "route_shuffle" and int(mapped.sum()) > 1:
+            route = route.clone()
+            mapped_idx = torch.where(mapped)[0]
+            perm = torch.randperm(mapped_idx.numel(), device=route.device)
+            route[mapped_idx] = route[mapped_idx[perm]]
+
         residual = route * self.context_projection(router_context)
+        if mode == "residual_off":
+            residual = torch.zeros_like(residual)
         if self.stabilize:
             high_norm = high_features.norm(p=2, dim=1, keepdim=True)
             residual_norm = residual.norm(p=2, dim=1, keepdim=True)
             max_norm = self.residual_ratio * high_norm
+            cap_trigger = residual_norm > max_norm
             residual = residual * torch.minimum(
                 torch.ones_like(residual_norm),
                 max_norm / residual_norm.clamp_min(1e-8),
             )
+        else:
+            high_norm = high_features.norm(p=2, dim=1, keepdim=True)
+            residual_norm = residual.norm(p=2, dim=1, keepdim=True)
+            cap_trigger = torch.zeros_like(residual_norm, dtype=torch.bool)
+
+        mapped_route = route[mapped].reshape(-1)
+        if mapped_route.numel():
+            mapped_stats = {
+                "mapped_route_mean": float(mapped_route.detach().mean().cpu()),
+                "mapped_route_std": float(mapped_route.detach().std(unbiased=False).cpu()),
+                "mapped_route_min": float(mapped_route.detach().min().cpu()),
+                "mapped_route_max": float(mapped_route.detach().max().cpu()),
+            }
+        else:
+            mapped_stats = {f"mapped_route_{key}": 0.0 for key in ("mean", "std", "min", "max")}
+
+        # Aggregate route variation among children of the same low parent.
+        parent_stds = []
+        ptr = context.get("mapping_parent_ptr")
+        children = context.get("mapping_child_indices")
+        if ptr is not None and children is not None:
+            ptr = ptr.to(route.device, dtype=torch.long)
+            children = children.to(route.device, dtype=torch.long)
+            for start, end in zip(ptr.detach().cpu().tolist()[:-1], ptr.detach().cpu().tolist()[1:]):
+                group = children[start:end]
+                group = group[valid[group]]
+                if group.numel() > 1:
+                    parent_stds.append(route[group].reshape(-1).std(unbiased=False))
+        parent_std = torch.stack(parent_stds) if parent_stds else route.new_zeros(1)
         self.last_diagnostics = {
             "route_mean": float(route.detach().mean().cpu()),
             "route_std": float(route.detach().std(unbiased=False).cpu()),
@@ -219,6 +276,8 @@ class HighRouter(nn.Module):
             "routing_residual_norm": float(residual.detach().norm().cpu()),
             "routed_high_change_norm": float(residual.detach().norm().cpu()),
             "high_norm": float(high_features.detach().norm().cpu()),
+            "high_feature_norm": float(high_features.detach().norm().cpu()),
+            "residual_norm": float(residual.detach().norm().cpu()),
             "context_norm": float(low_context.detach().norm().cpu()),
             "residual_high_ratio": float(
                 (residual.detach().norm() / high_features.detach().norm().clamp_min(1e-8)).cpu()
@@ -226,7 +285,16 @@ class HighRouter(nn.Module):
             "mapped_high_count": int(valid.detach().sum().cpu()),
             "unmapped_high_count": int((~valid).detach().sum().cpu()),
             "high_count": int(high_features.shape[0]),
+            "same_low_parent_route_std_mean": float(parent_std.detach().mean().cpu()),
+            "same_low_parent_route_std_max": float(parent_std.detach().max().cpu()),
+            "same_low_parent_group_count": int(len(parent_stds)),
+            "residual_cap_trigger_rate": float(cap_trigger.detach().float().mean().cpu()),
+            "residual_cap_trigger_rate_mapped": float(
+                cap_trigger[mapped].detach().float().mean().cpu()
+            ) if bool(mapped.any()) else 0.0,
+            "diagnostic_mode": mode,
         }
+        self.last_diagnostics.update(mapped_stats)
         return high_features + residual
 
 
