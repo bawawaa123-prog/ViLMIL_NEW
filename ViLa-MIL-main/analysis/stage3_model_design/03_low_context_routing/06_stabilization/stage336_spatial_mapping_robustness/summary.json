@@ -1,0 +1,74 @@
+[
+  {
+    "fold": 0,
+    "summary": "normal",
+    "auc": 0.9698153409090909,
+    "accuracy": 0.9432989690721649,
+    "macro_f1": 0.937077989090373,
+    "delta_auc": 0.0,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.0,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 0,
+    "summary": "shuffle_mean",
+    "auc": 0.9700047348484848,
+    "accuracy": 0.9432989690721649,
+    "macro_f1": 0.937077989090373,
+    "delta_auc": 0.0001893939393939448,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.000882489160973289,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 0,
+    "summary": "shuffle_std",
+    "auc": 5.7989813986345825e-05,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "delta_auc": 5.7989813986345825e-05,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 3.467907689803136e-05,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 1,
+    "summary": "normal",
+    "auc": 0.9890703960512398,
+    "accuracy": 0.9639175257731959,
+    "macro_f1": 0.95966376570529,
+    "delta_auc": 0.0,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.0,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 1,
+    "summary": "shuffle_mean",
+    "auc": 0.988741332706546,
+    "accuracy": 0.9639175257731958,
+    "macro_f1": 0.9597234488171134,
+    "delta_auc": -0.0003290633446938251,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 5.968311182340536e-05,
+    "mean_absolute_probability_change": 0.003831353346497514,
+    "changed_prediction_count": 0.4
+  },
+  {
+    "fold": 1,
+    "summary": "shuffle_std",
+    "auc": 0.00022788482112661465,
+    "accuracy": 0.0032600800620292457,
+    "macro_f1": 0.0036316653077797254,
+    "delta_auc": 0.00022788482112661465,
+    "delta_accuracy": 0.0032600800620292457,
+    "delta_macro_f1": 0.0036316653077797254,
+    "mean_absolute_probability_change": 0.0006232312895393163,
+    "changed_prediction_count": 0.48989794855663565
+  }
+]
