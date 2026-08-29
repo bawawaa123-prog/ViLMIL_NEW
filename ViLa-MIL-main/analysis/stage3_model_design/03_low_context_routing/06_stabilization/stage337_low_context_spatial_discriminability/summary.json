@@ -1,0 +1,74 @@
+[
+  {
+    "fold": 0,
+    "mode": "normal",
+    "auc": 0.9698153409090909,
+    "accuracy": 0.9432989690721649,
+    "macro_f1": 0.937077989090373,
+    "delta_auc": 0.0,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.0,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 0,
+    "mode": "context_mean",
+    "auc": 0.9700520833333334,
+    "accuracy": 0.9432989690721649,
+    "macro_f1": 0.937077989090373,
+    "delta_auc": 0.00023674242424243097,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.0008433375891735119,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 0,
+    "mode": "residual_off",
+    "auc": 0.9698153409090909,
+    "accuracy": 0.9432989690721649,
+    "macro_f1": 0.937077989090373,
+    "delta_auc": 0.0,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.001289666215493221,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "normal",
+    "auc": 0.9890703960512398,
+    "accuracy": 0.9639175257731959,
+    "macro_f1": 0.95966376570529,
+    "delta_auc": 0.0,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.0,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "context_mean",
+    "auc": 0.9890703960512399,
+    "accuracy": 0.9639175257731959,
+    "macro_f1": 0.95966376570529,
+    "delta_auc": 1.1102230246251565e-16,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.002671079515095353,
+    "changed_prediction_count": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "residual_off",
+    "auc": 0.9880126924432954,
+    "accuracy": 0.9639175257731959,
+    "macro_f1": 0.95966376570529,
+    "delta_auc": -0.001057703607944438,
+    "delta_accuracy": 0.0,
+    "delta_macro_f1": 0.0,
+    "mean_absolute_probability_change": 0.003735855914184286,
+    "changed_prediction_count": 0.0
+  }
+]

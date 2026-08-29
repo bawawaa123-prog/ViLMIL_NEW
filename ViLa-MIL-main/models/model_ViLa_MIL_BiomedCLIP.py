@@ -572,6 +572,23 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         # Preserve the low-to-high CSR relation for per-parent route statistics.
         context['mapping_parent_ptr'] = torch.as_tensor(mapping['parent_ptr'], device=low_features.device, dtype=torch.long)
         context['mapping_child_indices'] = torch.as_tensor(mapping['child_indices'], device=low_features.device, dtype=torch.long)
+        if getattr(self, 'routing_diagnostic_mode', 'normal') == 'context_mean':
+            # Inference-only ablation: replace each mapped high row's local
+            # parent context with this slide's mean valid low-parent feature.
+            low_valid = torch.as_tensor(
+                mapping['low_valid_mask'], device=low_features.device, dtype=torch.bool
+            )
+            parent_ptr = context['mapping_parent_ptr']
+            has_child = (parent_ptr[1:] - parent_ptr[:-1]) > 0
+            valid_low_parent = low_valid & has_child
+            if bool(valid_low_parent.any()):
+                mean_context = low_features.float()[valid_low_parent].mean(dim=0)
+                mapped_high = context['high_parent_context_valid_mask'].to(
+                    low_features.device, dtype=torch.bool
+                )
+                mean_parent_context = context['high_parent_context'].clone()
+                mean_parent_context[mapped_high] = mean_context.to(mean_parent_context.dtype)
+                context['high_parent_context'] = mean_parent_context
         self._last_mapping_context = context
         return context
 
@@ -634,9 +651,12 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
             routed_rows = self.high_router(
                 high_rows,
                 mapping_context,
-                diagnostic_mode=('normal' if diagnostic_mode == 'context_shuffle' else diagnostic_mode),
+                diagnostic_mode=(
+                    'normal' if diagnostic_mode in {'context_shuffle', 'context_mean'}
+                    else diagnostic_mode
+                ),
             )
-            if diagnostic_mode == 'context_shuffle':
+            if diagnostic_mode in {'context_shuffle', 'context_mean'}:
                 self.high_router.last_diagnostics['diagnostic_mode'] = diagnostic_mode
             self.last_routing_diagnostics = dict(self.high_router.last_diagnostics)
             if self.routing_scale != 1.0:
