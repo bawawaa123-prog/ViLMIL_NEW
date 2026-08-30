@@ -10,6 +10,7 @@ from sklearn.metrics import auc as calc_auc
 from utils.loss_utils import FocalLoss
 import time
 import json
+import glob
 from tqdm import tqdm
 
 
@@ -169,6 +170,7 @@ def train(datasets, cur, args):
         config.scale_mode = getattr(args, 'scale_mode', 'dual')
         config.use_low_context_routing = bool(getattr(args, 'use_low_context_routing', False))
         config.use_routing_stabilization = bool(getattr(args, 'use_routing_stabilization', False))
+        config.use_global_proto_context = bool(getattr(args, 'use_global_proto_context', False))
         config.routing_residual_ratio = 0.10
         # Control whether BiomedCLIP text encoder is finetuned (default: frozen)
         config.finetune_text_encoder = bool(getattr(args, 'finetune_text_encoder', False))
@@ -202,6 +204,37 @@ def train(datasets, cur, args):
     else:
         model = model.to(torch.device('cuda:0'))
     print('Done!')
+
+    # Optional Stage 3.3.8 warm-start. Load only compatible shared weights;
+    # historical routing parameters and newly added conditioning parameters
+    # are intentionally left out of the transfer.
+    init_template = getattr(args, 'init_checkpoint_template', None)
+    if init_template:
+        init_path = str(init_template).format(fold=cur, split='train')
+        matches = sorted(glob.glob(init_path))
+        if len(matches) != 1:
+            raise FileNotFoundError(
+                f'Expected exactly one init checkpoint for fold {cur}, got {matches} from {init_path}'
+            )
+        try:
+            init_state = torch.load(matches[0], map_location='cpu', weights_only=True)
+        except TypeError:
+            init_state = torch.load(matches[0], map_location='cpu')
+        init_state = {
+            key.replace('.module', ''): value
+            for key, value in init_state.items()
+            if 'instance_loss_fn' not in key
+        }
+        current_state = model.state_dict()
+        compatible = {
+            key: value for key, value in init_state.items()
+            if key in current_state and tuple(value.shape) == tuple(current_state[key].shape)
+        }
+        model.load_state_dict(compatible, strict=False)
+        print(
+            f'[Stage 3.3.8] warm-start fold={cur} from {matches[0]}: '
+            f'loaded={len(compatible)} ignored={len(init_state) - len(compatible)}'
+        )
     print_network(model)
 
     # After BiomedCLIP loads successfully once, lock HF Hub into offline mode so later folds

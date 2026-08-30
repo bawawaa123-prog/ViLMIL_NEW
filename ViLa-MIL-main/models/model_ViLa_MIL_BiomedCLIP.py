@@ -477,6 +477,20 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
             torch.Tensor(config.prototype_number, 1, self.L)
         )
         trunc_normal_(self.learnable_image_center, std=0.02)
+
+        # Stage 3.3.8: optional slide-level Low conditioning for High
+        # prototype Queries. Modules are absent when disabled so legacy
+        # checkpoints keep the original state-dict structure.
+        self.use_global_proto_context = bool(
+            getattr(config, 'use_global_proto_context', False)
+        )
+        if self.use_global_proto_context:
+            self.global_proto_context_norm = nn.LayerNorm(self.L)
+            self.global_proto_context_projection = nn.Linear(self.L, self.L)
+            # Near-zero initial effect, while retaining non-zero gradients.
+            self.global_proto_context_gamma = nn.Parameter(
+                torch.tensor(1e-3, dtype=self.learnable_image_center.dtype)
+            )
         
         # 文本编码器微调开关：如果关闭则冻结，否则保持可训练
         # Notes:
@@ -561,6 +575,30 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
                 if hasattr(text_clip, attr):
                     _unfreeze_obj(getattr(text_clip, attr))
     
+    def _high_prototype_query(self, low_features):
+        """Build High prototype Query with optional slide-level Low context."""
+        if not getattr(self, 'use_global_proto_context', False):
+            return self.learnable_image_center
+        low = low_features.float()
+        if low.ndim == 3:
+            global_context = low.mean(dim=1, keepdim=True)
+        elif low.ndim == 2:
+            global_context = low.mean(dim=0, keepdim=True).unsqueeze(0)
+        else:
+            raise ValueError(
+                f'Expected Low features [N,D] or [B,N,D], got {tuple(low.shape)}'
+            )
+        if low.shape[-2] == 0:
+            global_context = torch.zeros(
+                (*global_context.shape[:-1], self.L),
+                device=low.device,
+                dtype=low.dtype,
+            )
+        delta_low = self.global_proto_context_projection(
+            self.global_proto_context_norm(global_context)
+        )
+        return self.learnable_image_center + self.global_proto_context_gamma * delta_low
+
     def build_mapping_context(self, x_s, x_l, mapping):
         """Build per-high low-parent context without changing prediction."""
         if mapping is None:
@@ -667,7 +705,8 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
                 )
                 self.last_routing_diagnostics['routed_high_change_norm'] = self.last_routing_diagnostics['routing_residual_norm']
             M_high = routed_rows.unsqueeze(0)
-        compents_high, _ = self.cross_attention_1(self.learnable_image_center, M_high, M_high)
+        high_query = self._high_prototype_query(x_s)
+        compents_high, _ = self.cross_attention_1(high_query, M_high, M_high)
         compents_high = self.norm(compents_high + self.learnable_image_center)
         
         H_high = compents_high.squeeze().float()
@@ -724,8 +763,9 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         compents = self.norm(compents + self.learnable_image_center)
         
         M_high = x_l.float()
+        high_query = self._high_prototype_query(x_s)
         compents_high, cross_attn_weights_l = self.cross_attention_1(
-            self.learnable_image_center, M_high, M_high
+            high_query, M_high, M_high
         )
         compents_high = self.norm(compents_high + self.learnable_image_center)
         

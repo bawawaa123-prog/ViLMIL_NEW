@@ -44,6 +44,9 @@ parser.add_argument('--csv_path', type=str, default='dataset_csv/all_data.csv',
 parser.add_argument("--text_prompt", type=str, default=None)
 parser.add_argument("--text_prompt_path", type=str, default=None)
 parser.add_argument("--prototype_number", type=int, default=16, help='number of prototypes (default: 16)')
+parser.add_argument('--scale_mode', type=str, choices=['dual', 'low', 'high'], default='dual')
+parser.add_argument('--use_global_proto_context', action='store_true', default=False,
+                    help='Stage 3.3.8: enable slide-level Low-conditioned High prototype Queries')
 
 args = parser.parse_args()
 
@@ -76,6 +79,8 @@ settings = {'task': args.task,
             'models_dir': args.models_dir,
             'model_type': args.model_type,
             'mode': args.mode,
+            'scale_mode': args.scale_mode,
+            'use_global_proto_context': args.use_global_proto_context,
             'drop_out': args.drop_out,
             'model_size': args.model_size}
 

@@ -34,7 +34,9 @@ def initiate_model(args, ckpt_path):
         config.hidden_size = 192
         config.text_prompt = args.text_prompt
         config.prototype_number = args.prototype_number
+        config.scale_mode = getattr(args, 'scale_mode', 'dual')
         config.finetune_text_encoder = bool(getattr(args, 'finetune_text_encoder', False))
+        config.use_global_proto_context = bool(getattr(args, 'use_global_proto_context', False))
         model = ViLa_MIL_BiomedCLIP(config=config, num_classes=args.n_classes)
 
     else: # args.model_type == 'mil'
@@ -57,7 +59,25 @@ def initiate_model(args, ckpt_path):
         if 'instance_loss_fn' in key:
             continue
         ckpt_clean.update({key.replace('.module', ''):ckpt[key]})
-    model.load_state_dict(ckpt_clean, strict=True)
+    if bool(getattr(args, 'use_global_proto_context', False)):
+        missing, unexpected = model.load_state_dict(ckpt_clean, strict=False)
+        allowed = {
+            'global_proto_context_norm.weight',
+            'global_proto_context_norm.bias',
+            'global_proto_context_projection.weight',
+            'global_proto_context_projection.bias',
+            'global_proto_context_gamma',
+        }
+        unexpected = set(unexpected)
+        missing = set(missing)
+        if unexpected or not missing.issubset(allowed):
+            raise RuntimeError(
+                f'Incompatible checkpoint for global prototype conditioning: '
+                f'missing={sorted(missing)}, unexpected={sorted(unexpected)}'
+            )
+        print(f'[Info] Legacy checkpoint loaded; initialized {len(missing)} Stage 3.3.8 parameters.')
+    else:
+        model.load_state_dict(ckpt_clean, strict=True)
 
     if hasattr(model, "relocate"):
         model.relocate()
