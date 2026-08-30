@@ -139,7 +139,10 @@ def train(datasets, cur, args):
     print('Done!')
     print("Training on {} samples".format(len(train_split)))
     print("Validating on {} samples".format(len(val_split)))
-    print("Testing on {} samples".format(len(test_split)))
+    if getattr(args, 'skip_test_evaluation', False):
+        print("Test evaluation disabled (--skip_test_evaluation)")
+    else:
+        print("Testing on {} samples".format(len(test_split)))
 
     print('\nInit loss function...', end=' ')
     if args.bag_loss == 'svm':
@@ -293,7 +296,9 @@ def train(datasets, cur, args):
     print('\nInit Loaders...', end=' ')
     train_loader = get_split_loader(train_split, training=True, testing = args.testing, weighted = args.weighted_sample, mode=args.mode)
     val_loader = get_split_loader(val_split,  testing = args.testing, mode=args.mode)
-    test_loader = get_split_loader(test_split, testing = args.testing, mode=args.mode)
+    test_loader = None if getattr(args, 'skip_test_evaluation', False) else get_split_loader(
+        test_split, testing=args.testing, mode=args.mode
+    )
     args.routing_diagnostics_path = (
         os.path.join(args.results_dir, 'routing_diagnostics.jsonl')
         if bool(getattr(args, 'use_low_context_routing', False)) else None
@@ -357,23 +362,36 @@ def train(datasets, cur, args):
     _, val_error, val_auc, _, val_f1 = summary(args.mode, model, val_loader, args.n_classes)
     print(f'🎯 FOLD {cur+1} Final Validation: Error={val_error:.4f}, AUC={val_auc:.4f}, F1={val_f1:.4f}')
 
-    results_dict, test_error, test_auc, acc_logger, test_f1 = summary(args.mode, model, test_loader, args.n_classes)
-    print(f'🎯 FOLD {cur+1} Final Test: Error={test_error:.4f}, AUC={test_auc:.4f}, F1={test_f1:.4f}')
+    if getattr(args, 'skip_test_evaluation', False):
+        # Preserve train()'s historical return shape while ensuring no test
+        # samples or test metrics are consumed by a validation-only pilot.
+        results_dict = {}
+        test_error = float('nan')
+        test_auc = float('nan')
+        test_f1 = float('nan')
+        each_class_acc = []
+        print(f'🎯 FOLD {cur+1} Test evaluation skipped (validation-only mode)')
+    else:
+        results_dict, test_error, test_auc, acc_logger, test_f1 = summary(
+            args.mode, model, test_loader, args.n_classes
+        )
+        print(f'🎯 FOLD {cur+1} Final Test: Error={test_error:.4f}, AUC={test_auc:.4f}, F1={test_f1:.4f}')
 
-    each_class_acc = []
-    for i in range(args.n_classes):
-        acc, correct, count = acc_logger.get_summary(i)
-        each_class_acc.append(acc)
-        print(f'   Class {i}: acc {acc:.4f}, correct {correct}/{count}')
+        each_class_acc = []
+        for i in range(args.n_classes):
+            acc, correct, count = acc_logger.get_summary(i)
+            each_class_acc.append(acc)
+            print(f'   Class {i}: acc {acc:.4f}, correct {correct}/{count}')
 
-        if writer:
-            writer.add_scalar('final/test_class_{}_acc'.format(i), acc, 0)
+            if writer:
+                writer.add_scalar('final/test_class_{}_acc'.format(i), acc, 0)
 
     if writer:
         writer.add_scalar('final/val_error', val_error, 0)
         writer.add_scalar('final/val_auc', val_auc, 0)
-        writer.add_scalar('final/test_error', test_error, 0)
-        writer.add_scalar('final/test_auc', test_auc, 0)
+        if not getattr(args, 'skip_test_evaluation', False):
+            writer.add_scalar('final/test_error', test_error, 0)
+            writer.add_scalar('final/test_auc', test_auc, 0)
         writer.close()
         
     return results_dict, test_auc, val_auc, 1-test_error, 1-val_error, each_class_acc, test_f1, epoch_details

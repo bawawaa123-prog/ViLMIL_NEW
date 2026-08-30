@@ -28,6 +28,8 @@ parser.add_argument('--results_dir', default='./results', help='results director
 parser.add_argument('--split_dir', type=str, default=None)
 parser.add_argument('--log_data', action='store_true', default=True, help='log data using tensorboard')
 parser.add_argument('--testing', action='store_true', default=False, help='debugging tool')
+parser.add_argument('--skip_test_evaluation', action='store_true', default=False,
+                    help='validation-only training: do not evaluate or report the held-out test split')
 parser.add_argument('--early_stopping', action='store_true', default=False, help='enable early stopping')
 parser.add_argument('--patience', type=int, default=15, help='early stopping patience (fixed: 15)')
 parser.add_argument('--opt', type=str, choices = ['adam', 'sgd'], default='adam')
@@ -164,6 +166,7 @@ settings = {'num_splits': args.k,
             'model_type': args.model_type,
             'mode': args.mode,
             'scale_mode': args.scale_mode,
+            'skip_test_evaluation': args.skip_test_evaluation,
             'use_low_context_routing': args.use_low_context_routing,
             'mapping_path': args.mapping_path,
             'use_routing_stabilization': args.use_routing_stabilization,
