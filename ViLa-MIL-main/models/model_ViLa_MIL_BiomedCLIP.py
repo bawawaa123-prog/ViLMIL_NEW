@@ -643,7 +643,8 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
             context['high_parent_context'] = shuffled
         return context
 
-    def forward(self, x_s, coord_s, x_l, coords_l, label, mapping=None):
+    def forward(self, x_s, coord_s, x_l, coords_l, label, mapping=None,
+                return_branch_logits=False):
         """
         前向传播
         
@@ -745,6 +746,12 @@ class ViLa_MIL_BiomedCLIP(nn.Module):
         Y_prob = F.softmax(logits, dim=1)
         Y_hat = torch.topk(Y_prob, 1, dim=1)[1]
         
+        if return_branch_logits:
+            return Y_prob, Y_hat, loss, {
+                'logits_low': logits_low,
+                'logits_high': logits_high,
+                'logits_dual': logits_low + logits_high,
+            }
         return Y_prob, Y_hat, loss
     
     def forward_with_attention(self, x_s, coord_s, x_l, coords_l, label):
