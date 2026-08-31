@@ -1,0 +1,7 @@
+fold,subset,samples_n,samples_class_0,samples_class_1
+0,all_disagreement,25,15,10
+0,rescue,4,4,0
+0,harmful,21,11,10
+1,all_disagreement,24,11,13
+1,rescue,5,1,4
+1,harmful,19,10,9
