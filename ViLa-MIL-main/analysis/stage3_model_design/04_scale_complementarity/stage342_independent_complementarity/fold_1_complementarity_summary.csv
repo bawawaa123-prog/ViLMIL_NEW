@@ -1,0 +1,2 @@
+fold,n_slides,high_wrong_low_correct,low_wrong_high_correct,both_correct,both_wrong,disagreement_count,disagreement_rate,conditional_high_error_rescue_count,conditional_high_error_rescue_rate,oracle_correct,oracle_accuracy,high_wrong_count,high_wrong_low_correct_conditional_rate
+1,194,5,19,168,2,24,0.12371134020618557,5,0.7142857142857143,192,0.9896907216494846,7,0.7142857142857143
