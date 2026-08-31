@@ -17,8 +17,8 @@ A separability AUC near 0.5 indicates little rescue-versus-harmful separation. F
 
 ## Cross-fold transfer
 
-- Fold 0 -> Fold 1: `high_margin` `ge` threshold `7.47985`; target switched/rescue/harm/net = 1/0/1/-1; accuracy delta `-0.0052`, AUC delta `-0.0006`, macro-F1 delta `-0.0056`.
-- Fold 1 -> Fold 0: `margin_delta` `ge` threshold `1.5803`; target switched/rescue/harm/net = 4/0/4/-4; accuracy delta `-0.0206`, AUC delta `-0.0272`, macro-F1 delta `-0.0229`.
+- Fold 0 -> Fold 1: `always_high` / `no_switch` (threshold `n/a`); target switched/rescue/harm/net = 0/0/0/0; accuracy delta `+0.0000`, AUC delta `+0.0000`, macro-F1 delta `+0.0000`.
+- Fold 1 -> Fold 0: `threshold` `margin_delta` `ge` threshold `1.5803`; target switched/rescue/harm/net = 4/0/4/-4; accuracy delta `-0.0206`, AUC delta `-0.0272`, macro-F1 delta `-0.0229`.
 
 The within-fold rules are exploratory upper bounds only; they are not cross-fold generalization results. Rule selection maximized source-fold net_gain over the fixed one-dimensional candidate space, then froze the rule for the target fold.
 

@@ -167,7 +167,17 @@ def _thresholds(values: np.ndarray) -> list[float]:
     return [float(value) for value in np.unique(candidates)]
 
 
-def _apply_rule(frame: pd.DataFrame, feature: str, orientation: str, threshold: float) -> np.ndarray:
+def _apply_rule(
+    frame: pd.DataFrame,
+    feature: str,
+    orientation: str,
+    threshold: float,
+    rule_type: str = "threshold",
+) -> np.ndarray:
+    if rule_type == "always_high":
+        return np.zeros(len(frame), dtype=bool)
+    if rule_type != "threshold":
+        raise ValueError(f"unsupported rule_type={rule_type!r}")
     disagreement = frame.disagreement.to_numpy(dtype=bool)
     values = frame[feature].to_numpy(dtype=float)
     trigger = values >= threshold if orientation == "ge" else values <= threshold
@@ -201,22 +211,33 @@ def _select_rule(frame: pd.DataFrame) -> dict:
             for threshold in _thresholds(frame.loc[frame.disagreement, feature].to_numpy(dtype=float)):
                 stats = _rule_stats(frame, _apply_rule(frame, feature, orientation, threshold))
                 candidates.append({
-                    "feature": feature, "orientation": orientation, "threshold": threshold,
+                    "rule_type": "threshold", "feature": feature, "orientation": orientation, "threshold": threshold,
                     **stats,
                 })
     if not candidates:
         raise AssertionError("no threshold candidates generated")
     # Primary objective is explicitly net_gain. Remaining terms only make ties
     # deterministic and favor a precise, sparse switch rule.
-    return max(candidates, key=lambda row: (
+    best = max(candidates, key=lambda row: (
         row["net_gain"], row["rescue_count"], -row["harm_count"],
         row["switch_precision"], -row["switched_count"],
         -feature_priority[row["feature"]], 1 if row["orientation"] == "ge" else 0,
     ))
+    if best["switched_count"] == 0:
+        # A zero-switch source optimum is a policy, not an extrapolatable
+        # threshold outside the observed source-fold distribution.
+        return {
+            "rule_type": "always_high", "feature": "", "orientation": "none", "threshold": float("nan"),
+            "switched_count": 0, "rescue_count": 0, "harm_count": 0,
+            "net_gain": 0, "switch_precision": 0.0,
+        }
+    return best
 
 
 def _evaluate_rule(frame: pd.DataFrame, rule: dict) -> dict:
-    trigger = _apply_rule(frame, rule["feature"], rule["orientation"], rule["threshold"])
+    trigger = _apply_rule(
+        frame, rule["feature"], rule["orientation"], rule["threshold"], rule.get("rule_type", "threshold")
+    )
     current_stats = _rule_stats(frame, trigger)
     labels = frame.label.to_numpy(dtype=int)
     high_logits = frame[["high_logit_0", "high_logit_1"]].to_numpy(dtype=float)
@@ -278,8 +299,12 @@ def _write_summary(output: Path, frames: dict[int, pd.DataFrame], transfers: pd.
         "",
     ]
     for _, row in transfers.iterrows():
+        if row.rule_type == "always_high":
+            rule_text = "`always_high` / `no_switch` (threshold `n/a`)"
+        else:
+            rule_text = f"`{row.rule_type}` `{row.selected_feature}` `{row.orientation}` threshold `{row.threshold:.6g}`"
         lines.append(
-            f"- Fold {int(row.source_fold)} -> Fold {int(row.target_fold)}: `{row.selected_feature}` `{row.orientation}` threshold `{row.threshold:.6g}`; "
+            f"- Fold {int(row.source_fold)} -> Fold {int(row.target_fold)}: {rule_text}; "
             f"target switched/rescue/harm/net = {int(row.switched_count)}/{int(row.rescue_count)}/{int(row.harm_count)}/{int(row.net_gain)}; "
             f"accuracy delta `{row.delta_accuracy:+.4f}`, AUC delta `{row.delta_auc:+.4f}`, macro-F1 delta `{row.delta_macro_f1:+.4f}`."
         )
@@ -325,7 +350,7 @@ def main():
         target_eval = _evaluate_rule(frames[target_fold], source_rule)
         transfers.append({
             "source_fold": source_fold, "target_fold": target_fold,
-            "selected_feature": source_rule["feature"], "orientation": source_rule["orientation"], "threshold": source_rule["threshold"],
+            "rule_type": source_rule["rule_type"], "selected_feature": source_rule["feature"], "orientation": source_rule["orientation"], "threshold": source_rule["threshold"],
             "source_switched_count": source_eval["switched_count"], "source_rescue_count": source_eval["rescue_count"], "source_harm_count": source_eval["harm_count"], "source_net_gain": source_eval["net_gain"], "source_switch_precision": source_eval["switch_precision"],
             "switched_count": target_eval["switched_count"], "rescue_count": target_eval["rescue_count"], "harm_count": target_eval["harm_count"], "net_gain": target_eval["net_gain"], "switch_precision": target_eval["switch_precision"],
             "high_auc": target_eval["high_auc"], "high_accuracy": target_eval["high_accuracy"], "high_macro_f1": target_eval["high_macro_f1"],
