@@ -1,0 +1,10 @@
+comparison,metric,n_pairs,mean_delta,improvement_folds,max_degradation,worst_delta,worst_fold,status
+E1-E0,val_auc,5,-0.004118238665299168,2.0,0.013397579033964213,-0.013397579033964213,1.0,Fivefold
+E1-E0,val_acc,5,-0.005143955985257254,1.0,0.020618556701030966,-0.020618556701030966,0.0,Fivefold
+E1-E0,val_macro_f1,5,-0.006110340060804598,1.0,0.026548153767536387,-0.026548153767536387,0.0,Fivefold
+E2-E0,val_auc,0,,,,,,Pending
+E2-E0,val_acc,0,,,,,,Pending
+E2-E0,val_macro_f1,0,,,,,,Pending
+E1-E2,val_auc,0,,,,,,Pending
+E1-E2,val_acc,0,,,,,,Pending
+E1-E2,val_macro_f1,0,,,,,,Pending

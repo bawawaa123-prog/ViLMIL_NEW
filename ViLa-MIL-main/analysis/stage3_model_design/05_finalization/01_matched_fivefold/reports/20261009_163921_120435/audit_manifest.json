@@ -1,0 +1,39 @@
+{
+  "python": "/opt/conda/envs/vila_mil_overlay_rt/bin/python",
+  "argv": [],
+  "sha256": {
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/dataset_csv/all_data.csv": "f432b81135a8b2bdce9932dbd6ebdc7b8b5049e4c6d21a9468059fc5bd6e12d0",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/text_prompt/adenocarcinoma_dual_scale_prompt.csv": "a54e2d9221f56f1e19ed130cbd589404c882a6b70c832f0024ed550ffad9d8aa",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/splits/strict/task_adenocarcinoma_100_k5_s1/splits_0.csv": "3fdd740d34c0c37be340a92eb1fdf4eba5dea9062e603a605d22b0ff930d621a",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/splits/strict/task_adenocarcinoma_100_k5_s1/splits_1.csv": "f751e56f3490deb26f1e9feb872aa1ba938a9c6eea1efb12f70399523c002526",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/splits/strict/task_adenocarcinoma_100_k5_s1/splits_2.csv": "dc1c1362793a81a191e764aead7df5a3002af55b32604943cfc40a07bafbc283",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/splits/strict/task_adenocarcinoma_100_k5_s1/splits_3.csv": "a80228608ab0cbb9a1953418caae48af22f43baa000567edffa33ec91db07a73",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/splits/strict/task_adenocarcinoma_100_k5_s1/splits_4.csv": "1c69fe35117094bf4a84a3f17e074e28bf142aba63833fc7cedf90d7c6b3cd74",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/main.py": "9b1b976516989d03e5da719ef906cbed18abfd193871f430346dad9cd992a3dd",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/utils/core_utils.py": "b4285a59aaf260bebceb21de91ac1703e6100566c143b978ae47eae817995373",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/utils/utils.py": "9dbc540750b8208a3eeee15adec1416217c16cb296e19e16b3a448b5090b2733",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/datasets/dataset_generic.py": "3218e2fb21c39d68d7e687e10e699037e0926d0d952bcd4ab169b31ff60fa645",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/models/model_ViLa_MIL_BiomedCLIP.py": "73eb4e3e6ff544e42727da68093782c50c034b333f13ab02a3461c7bcff35278",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/models/cross_scale_modules.py": "c0f4b50da598b6d2eab980263ec3e03c8687bcaf53052c6c2e359284ecc78c5c",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_matched_fivefold/aggregate_fivefold.py": "bd3f9f40ec64cea9545333077f0479475bc1e16eefed39c161f5278553e085ec",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_matched_fivefold/run_experiment.py": "44ba22c7f07caa3f33538972ceb569b0d435b325ea2d56fe621431ed0ca355de",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_matched_fivefold/common.py": "0edac103ebcb1ca53c57d92a39e7acd8500864342193694796a0014156e37eef",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_matched_fivefold/activate_env.sh": "b3ece831d1ae5cd1cc157bd97b293698f62ee33fe561bd5daa3f306523f0288b",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_matched_fivefold/run_E1_remaining_folds.sh": "8731dca2ec52e3fefb7d0ee17e79dcd7c4fc3c90ef0386dcb4f70c3d3a040084",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_matched_fivefold/run_E2_fivefold.sh": "c00c5bd4dc06b351f099d51d0f1fac149424c4fbb0cc2c9d8930449f6228f99c",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_matched_fivefold/run_E0_remaining_folds.sh": "8277e618364ec4c9745f9691881b4476599698c6138181abde3525f7ac30c97f"
+  },
+  "protocol": {
+    "reg": 1e-05,
+    "prototype_number": 16,
+    "prompt_lr": 0.001,
+    "text_encoder_frozen": true,
+    "rho": 0.1,
+    "checkpoint_selection": "first maximum validation accuracy"
+  },
+  "feature_paths": [
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/features_biomedclip_5x",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/features_biomedclip_20x"
+  ],
+  "note": "Feature contents are reused, not rehashed; old runs have no retrospective source/input hashes."
+}

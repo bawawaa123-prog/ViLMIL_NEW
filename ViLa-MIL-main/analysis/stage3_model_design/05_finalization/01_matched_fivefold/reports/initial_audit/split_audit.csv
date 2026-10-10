@@ -1,0 +1,6 @@
+fold,train,val,test,literal_case_overlap,candidate_cross_split_groups
+0,580,194,194,0,39
+1,580,194,194,0,43
+2,581,193,194,0,45
+3,582,193,193,0,45
+4,581,194,193,0,41
