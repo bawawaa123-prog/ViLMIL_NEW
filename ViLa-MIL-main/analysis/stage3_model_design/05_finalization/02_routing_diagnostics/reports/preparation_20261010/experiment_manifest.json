@@ -1,0 +1,400 @@
+{
+  "status": "Pending",
+  "sources": [
+    {
+      "arm": "E0",
+      "fold": 0,
+      "status": "Complete",
+      "val_auc": 0.9725378787878788,
+      "val_acc": 0.9381443298969072,
+      "val_macro_f1": 0.9325217391304348,
+      "selected_epoch": 3,
+      "epochs_run": 13,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/clean_high/stage350_clean_high_folds01_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/clean_high/stage350_clean_high_folds01_s1/s_0_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E1",
+      "fold": 0,
+      "status": "Complete",
+      "val_auc": 0.9673295454545454,
+      "val_acc": 0.9175257731958762,
+      "val_macro_f1": 0.9059735853628984,
+      "selected_epoch": 3,
+      "epochs_run": 13,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/routed_control/stage350_routed_control_folds01_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/routed_control/stage350_routed_control_folds01_s1/s_0_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E0",
+      "fold": 1,
+      "status": "Complete",
+      "val_auc": 0.98907039605124,
+      "val_acc": 0.963917525773196,
+      "val_macro_f1": 0.9602400819792124,
+      "selected_epoch": 24,
+      "epochs_run": 34,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/clean_high/stage350_clean_high_folds01_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/clean_high/stage350_clean_high_folds01_s1/s_1_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E1",
+      "fold": 1,
+      "status": "Complete",
+      "val_auc": 0.9756728170172758,
+      "val_acc": 0.9536082474226804,
+      "val_macro_f1": 0.94774176169525,
+      "selected_epoch": 4,
+      "epochs_run": 14,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/routed_control/stage350_routed_control_folds01_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/routed_control/stage350_routed_control_folds01_s1/s_1_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E0",
+      "fold": 2,
+      "status": "Complete",
+      "val_auc": 0.9723216416129802,
+      "val_acc": 0.9378238341968912,
+      "val_macro_f1": 0.9304086538461538,
+      "selected_epoch": 4,
+      "epochs_run": 14,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold2/stage351_clean_high_fold2_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold2/stage351_clean_high_fold2_s1/s_2_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E1",
+      "fold": 2,
+      "status": "Complete",
+      "val_auc": 0.9597947983774756,
+      "val_acc": 0.932642487046632,
+      "val_macro_f1": 0.925436119944129,
+      "selected_epoch": 10,
+      "epochs_run": 20,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/routed_control/fold2/stage351_routed_control_fold2_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/routed_control/fold2/stage351_routed_control_fold2_s1/s_2_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E0",
+      "fold": 3,
+      "status": "Complete",
+      "val_auc": 0.9537699832975424,
+      "val_acc": 0.927461139896373,
+      "val_macro_f1": 0.9194106418515868,
+      "selected_epoch": 9,
+      "epochs_run": 19,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold3/stage351_clean_high_fold3_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold3/stage351_clean_high_fold3_s1/s_3_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E1",
+      "fold": 3,
+      "status": "Complete",
+      "val_auc": 0.9621808637556668,
+      "val_acc": 0.9430051813471504,
+      "val_macro_f1": 0.9377656611848856,
+      "selected_epoch": 13,
+      "epochs_run": 23,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/routed_control/fold3/stage351_routed_control_fold3_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/routed_control/fold3/stage351_routed_control_fold3_s1/s_3_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E0",
+      "fold": 4,
+      "status": "Complete",
+      "val_auc": 0.9777462121212122,
+      "val_acc": 0.9329896907216496,
+      "val_macro_f1": 0.9250898505955386,
+      "selected_epoch": 5,
+      "epochs_run": 15,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold4/stage351_clean_high_fold4_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold4/stage351_clean_high_fold4_s1/s_4_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E1",
+      "fold": 4,
+      "status": "Complete",
+      "val_auc": 0.979876893939394,
+      "val_acc": 0.9278350515463918,
+      "val_macro_f1": 0.9202021389117404,
+      "selected_epoch": 4,
+      "epochs_run": 14,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/routed_control/fold4/stage351_routed_control_fold4_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/routed_control/fold4/stage351_routed_control_fold4_s1/s_4_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    }
+  ],
+  "plan": [
+    {
+      "fold": 0,
+      "arm": "E0",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 0,
+      "arm": "E1",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 0,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 352
+    },
+    {
+      "fold": 0,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 353
+    },
+    {
+      "fold": 0,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 354
+    },
+    {
+      "fold": 0,
+      "arm": "E1",
+      "mode": "context_mean",
+      "seed": 0
+    },
+    {
+      "fold": 0,
+      "arm": "E1",
+      "mode": "residual_off",
+      "seed": 0
+    },
+    {
+      "fold": 1,
+      "arm": "E0",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 1,
+      "arm": "E1",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 1,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 352
+    },
+    {
+      "fold": 1,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 353
+    },
+    {
+      "fold": 1,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 354
+    },
+    {
+      "fold": 1,
+      "arm": "E1",
+      "mode": "context_mean",
+      "seed": 0
+    },
+    {
+      "fold": 1,
+      "arm": "E1",
+      "mode": "residual_off",
+      "seed": 0
+    },
+    {
+      "fold": 2,
+      "arm": "E0",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 2,
+      "arm": "E1",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 2,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 352
+    },
+    {
+      "fold": 2,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 353
+    },
+    {
+      "fold": 2,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 354
+    },
+    {
+      "fold": 2,
+      "arm": "E1",
+      "mode": "context_mean",
+      "seed": 0
+    },
+    {
+      "fold": 2,
+      "arm": "E1",
+      "mode": "residual_off",
+      "seed": 0
+    },
+    {
+      "fold": 3,
+      "arm": "E0",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 3,
+      "arm": "E1",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 3,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 352
+    },
+    {
+      "fold": 3,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 353
+    },
+    {
+      "fold": 3,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 354
+    },
+    {
+      "fold": 3,
+      "arm": "E1",
+      "mode": "context_mean",
+      "seed": 0
+    },
+    {
+      "fold": 3,
+      "arm": "E1",
+      "mode": "residual_off",
+      "seed": 0
+    },
+    {
+      "fold": 4,
+      "arm": "E0",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 4,
+      "arm": "E1",
+      "mode": "normal",
+      "seed": 0
+    },
+    {
+      "fold": 4,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 352
+    },
+    {
+      "fold": 4,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 353
+    },
+    {
+      "fold": 4,
+      "arm": "E1",
+      "mode": "context_shuffle",
+      "seed": 354
+    },
+    {
+      "fold": 4,
+      "arm": "E1",
+      "mode": "context_mean",
+      "seed": 0
+    },
+    {
+      "fold": 4,
+      "arm": "E1",
+      "mode": "residual_off",
+      "seed": 0
+    }
+  ],
+  "split_audit": [
+    {
+      "fold": 0,
+      "train": 580,
+      "val": 194,
+      "test": 194,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 39
+    },
+    {
+      "fold": 1,
+      "train": 580,
+      "val": 194,
+      "test": 194,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 43
+    },
+    {
+      "fold": 2,
+      "train": 581,
+      "val": 193,
+      "test": 194,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 45
+    },
+    {
+      "fold": 3,
+      "train": 582,
+      "val": 193,
+      "test": 193,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 45
+    },
+    {
+      "fold": 4,
+      "train": 581,
+      "val": 194,
+      "test": 193,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 41
+    }
+  ],
+  "split": "val"
+}

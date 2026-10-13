@@ -1,0 +1,73 @@
+{
+  "run": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/02_routing_diagnostics/runs/stage352_full_v1",
+  "report": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/02_routing_diagnostics/reports/20261010_130747_580789",
+  "status": "Complete figures",
+  "selection": "Lexicographically first Slide ID, fixed bounded samples",
+  "spatial_examples": [
+    {
+      "fold": 0,
+      "slide_id": "2461703-B3",
+      "source": "patch_samples.csv",
+      "n_points": 256
+    },
+    {
+      "fold": 0,
+      "slide_id": "2461703-B3",
+      "source": "region_samples.csv",
+      "n_points": 253
+    },
+    {
+      "fold": 1,
+      "slide_id": "2460602-B",
+      "source": "patch_samples.csv",
+      "n_points": 256
+    },
+    {
+      "fold": 1,
+      "slide_id": "2460602-B",
+      "source": "region_samples.csv",
+      "n_points": 252
+    },
+    {
+      "fold": 2,
+      "slide_id": "2460399-B2",
+      "source": "patch_samples.csv",
+      "n_points": 256
+    },
+    {
+      "fold": 2,
+      "slide_id": "2460399-B2",
+      "source": "region_samples.csv",
+      "n_points": 256
+    },
+    {
+      "fold": 3,
+      "slide_id": "2460242-B2",
+      "source": "patch_samples.csv",
+      "n_points": 256
+    },
+    {
+      "fold": 3,
+      "slide_id": "2460242-B2",
+      "source": "region_samples.csv",
+      "n_points": 256
+    },
+    {
+      "fold": 4,
+      "slide_id": "2460239-B2",
+      "source": "patch_samples.csv",
+      "n_points": 256
+    },
+    {
+      "fold": 4,
+      "slide_id": "2460239-B2",
+      "source": "region_samples.csv",
+      "n_points": 187
+    }
+  ],
+  "report_hashes": {
+    "routing_gate_statistics.csv": "ece654dbd04aabef20bb79540b5a3cbab38073e748a439ffc2c44b764c1c727c",
+    "routing_residual_statistics.csv": "cd205a74714578b8253374d1a20773d249045074c461d0843dc4c57b1a0f72ea",
+    "routing_intervention_metrics.csv": "76798eafb767a9705b874bc198ae49e42033599424e9ca0456da69b34ebc49c1"
+  }
+}
