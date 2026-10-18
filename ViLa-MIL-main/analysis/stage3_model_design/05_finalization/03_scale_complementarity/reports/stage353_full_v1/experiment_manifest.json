@@ -1,0 +1,46 @@
+{
+  "status": "Complete fivefold calculations",
+  "morphology_status": "Pending expert review",
+  "source_inference": {
+    "run_dir": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/runs/independent_val_v1",
+    "manifest_sha256": "b73c6ea288e757507d5959cbd314acee7cd2d25e6a5ce6b99ac24d01a5d155a5",
+    "stage352_run": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/02_routing_diagnostics/runs/stage352_full_v1",
+    "stage352_report": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/02_routing_diagnostics/reports/20261010_130747_580789"
+  },
+  "margin_bins": [
+    0.0,
+    0.1,
+    0.5,
+    0.9,
+    1.0
+  ],
+  "review_selection": "All G3; class/fold G2 first lexicographic IDs, min(available G2,max(1,G3 count))",
+  "output_sha256": {
+    "conditional_complementarity.csv": "2581be32d3d230ed1d115b00364ab5ffaa5cb5af391f8db2284acef3207db6ee",
+    "paired_scale_differences.csv": "cf9a7eb0abda6874b806d2d5737ca27eac43f0e35a2f4a295cbff780fc2e7d7e",
+    "fivefold_complementarity_statistics.csv": "1003c7f614a3017df371f4adf8574ce95096b40ec95c7724f2b188e0b7365749",
+    "pathology_review_template.csv": "378bf60ebef2632ad4ea29813b6d9bc20ef217fa7f4a0372e617ab95c4cfa7f4",
+    "fivefold_scale_statistics.csv": "2f2520ce8c4b18ad7645803c8d1db587675624e439ac5fdb8a6864d972a9daaf",
+    "experiment_status.csv": "b59833dad9115fe02a0e89fec412bf436a207902aff9920139e1efad7fa4ec8d",
+    "complementarity_summary.csv": "c6281b2974a5e10f34d74eb7d73b82701c5f7f28f2cbf38ea03e29f3110a0719",
+    "case_level_complementarity.csv": "dcdf0910bc8bd465b74e6cc8c2132a11b9afab2279651c6fc4414177a5d65a6c",
+    "case_review_selection.csv": "9a0d5603ea50799a68478830c7a11dd418342c5f2805be797d8d7ecd8dd9e113",
+    "routing_complementarity_association.csv": "299b4560e0448dda1df3a5781a042ab4411ba7563a04f9e18d22a2bbf239270a",
+    "routing_group_statistics.csv": "de079e75afce4248a2425bdfb0b06dc8fafd4986152722394215a38123d4e586",
+    "case_group_statistics.csv": "f88aa3f0d8792991a34c616e79959debdedd51854c4921b01ca41db0d5bce7af",
+    "independent_scale_metrics.csv": "ba438f5aa53778a61ae6138ff3d587001d2e17f69716c04890c12106e3e2a308",
+    "stage353_summary.md": "a307ff919ea2d6c3c4f51504fa538cbf30213b16200da7141cdd5b529ffc3524",
+    "private/slide_id_mapping.csv": "bbb187e41f8d55cbeef47e1d2e0a3b09de78700e1f8c65249d4c6d5ba63947e0",
+    "private/id_salt.bin": "ac1aca2c7248e7a4075bcab160463e904493386ce1ed7c98de6be527705fd0f4"
+  },
+  "analysis_code_sha256": {
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/run_independent_inference.py": "b5614fc8bdc73f20dc3864c0c45670478e40e30e2adde92d2059eed4a15bfc3f",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/stage353_common.py": "e4ccebfc1da39153959d64f12c7c535237b270a763235e81ca70e57181083c8e",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/train_low.py": "cf74827925ef65326ac479338c7e9dc92105e0cb7d0920f52fa7e48ac86331b7",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/finalize_stage352.py": "c7fa9e53fb563f7d8d0b4595837d7cbb70cf6074bccaee5b21c601d86822abd7",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/aggregate_stage353.py": "970995af31d5c40a6aedc5fe8e805e43582cb888f4da4403323e289bd18ed9b8",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/preflight.py": "3c94b5c676ed28af814dce6354683eed3ca2d8d40122f2d57695343fca6e9ac4",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/analyze_complementarity.py": "f32c4c1e056e07ea16db7c7f7b10e3eca0393eb7acd79a9d9dd677eb259defae",
+    "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/prepare_case_visualizations.py": "a454b4b9ae8a139d227804814f22ce9a67a7716b6bd8ca63d94b4bca547e5c0e"
+  }
+}

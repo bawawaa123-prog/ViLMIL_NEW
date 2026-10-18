@@ -1,0 +1,1201 @@
+fold,case_token,arm,rank,patch_index,x,y,status,patch_path,icc_profile_omitted
+0,C719c5ef7a2a2cb9fb6afa6d4,L,1,93,132384,49328,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_132384_49328.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,2,59,124192,41136,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_124192_41136.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,3,110,136480,49328,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_136480_49328.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,4,26,116000,32944,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_116000_32944.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,5,259,56944,57617,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_56944_57617.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,6,203,44656,16657,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_44656_16657.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,7,209,44656,41233,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_44656_41233.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,8,246,52848,65809,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_52848_65809.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,9,58,124192,37040,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_124192_37040.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,L,10,265,61040,33041,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464929-B/2464929-B_61040_33041.png,True
+0,Cd34a767d1605ac079bada1a7,L,1,54,125924,75082,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_125924_75082.png,True
+0,Cd34a767d1605ac079bada1a7,L,2,98,32336,23569,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_32336_23569.png,True
+0,Cd34a767d1605ac079bada1a7,L,3,197,91042,43424,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_91042_43424.png,True
+0,Cd34a767d1605ac079bada1a7,L,4,53,125924,70986,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_125924_70986.png,True
+0,Cd34a767d1605ac079bada1a7,L,5,68,20048,15377,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_20048_15377.png,True
+0,Cd34a767d1605ac079bada1a7,L,6,183,86946,43424,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_86946_43424.png,True
+0,Cd34a767d1605ac079bada1a7,L,7,40,11856,19473,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_11856_19473.png,True
+0,Cd34a767d1605ac079bada1a7,L,8,149,7760,35857,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_7760_35857.png,True
+0,Cd34a767d1605ac079bada1a7,L,9,52,124852,6528,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_124852_6528.png,True
+0,Cd34a767d1605ac079bada1a7,L,10,195,91042,35232,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2466899-B2/2466899-B2_91042_35232.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,1,77,148985,944,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_148985_944.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,2,76,148985,5040,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_148985_5040.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,3,134,42929,40256,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_42929_40256.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,4,7,102885,55456,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_102885_55456.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,5,6,102885,43168,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_102885_43168.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,6,97,26545,48448,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_26545_48448.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,7,86,22449,44352,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_22449_44352.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,8,125,38833,44352,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_38833_44352.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,9,207,98789,55456,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_98789_55456.png,True
+0,C2c8e790b2fb98e90e09f22ec,L,10,96,26545,44352,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474124-B2/2474124-B2_26545_44352.png,True
+0,C2ca097559a1e9e8e3977e24f,L,1,82,30048,44305,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_30048_44305.png,True
+0,C2ca097559a1e9e8e3977e24f,L,2,69,25952,44305,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_25952_44305.png,True
+0,C2ca097559a1e9e8e3977e24f,L,3,70,25952,48401,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_25952_48401.png,True
+0,C2ca097559a1e9e8e3977e24f,L,4,83,30048,48401,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_30048_48401.png,True
+0,C2ca097559a1e9e8e3977e24f,L,5,57,21856,44305,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_21856_44305.png,True
+0,C2ca097559a1e9e8e3977e24f,L,6,65,25952,27921,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_25952_27921.png,True
+0,C2ca097559a1e9e8e3977e24f,L,7,138,87203,37011,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_87203_37011.png,True
+0,C2ca097559a1e9e8e3977e24f,L,8,135,87203,24723,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_87203_24723.png,True
+0,C2ca097559a1e9e8e3977e24f,L,9,93,34144,40209,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_34144_40209.png,True
+0,C2ca097559a1e9e8e3977e24f,L,10,56,21856,40209,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476681-B2/2476681-B2_21856_40209.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,1,75,141847,51761,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_141847_51761.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,2,121,154135,27185,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_154135_27185.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,3,180,62179,23952,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_62179_23952.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,4,130,158231,23089,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_158231_23089.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,5,134,158231,39473,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_158231_39473.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,6,117,150039,76337,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_150039_76337.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,7,35,129559,27185,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_129559_27185.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,8,129,158231,18993,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_158231_18993.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,9,126,154135,59953,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_154135_59953.png,True
+0,Cab2bbb32378ed8fe65bb44e9,L,10,112,150039,55857,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483014-B4/2483014-B4_150039_55857.png,True
+0,C55b802a079e6333a554886f4,L,1,133,147320,74116,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_147320_74116.png,True
+0,C55b802a079e6333a554886f4,L,2,131,146776,9680,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_146776_9680.png,True
+0,C55b802a079e6333a554886f4,L,3,19,105909,33552,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_105909_33552.png,True
+0,C55b802a079e6333a554886f4,L,4,130,146776,5584,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_146776_5584.png,True
+0,C55b802a079e6333a554886f4,L,5,11,101813,58128,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_101813_58128.png,True
+0,C55b802a079e6333a554886f4,L,6,9,101813,49936,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_101813_49936.png,True
+0,C55b802a079e6333a554886f4,L,7,59,118197,37648,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_118197_37648.png,True
+0,C55b802a079e6333a554886f4,L,8,132,147320,70020,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_147320_70020.png,True
+0,C55b802a079e6333a554886f4,L,9,140,16016,56128,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_16016_56128.png,True
+0,C55b802a079e6333a554886f4,L,10,6,101813,41744,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483220-B1/2483220-B1_101813_41744.png,True
+0,C09688992267b182b14037ffd,L,1,248,81832,47568,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_81832_47568.png,True
+0,C09688992267b182b14037ffd,L,2,257,85928,39376,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_85928_39376.png,True
+0,C09688992267b182b14037ffd,L,3,259,85928,47568,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_85928_47568.png,True
+0,C09688992267b182b14037ffd,L,4,249,81832,51664,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_81832_51664.png,True
+0,C09688992267b182b14037ffd,L,5,247,81832,43472,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_81832_43472.png,True
+0,C09688992267b182b14037ffd,L,6,266,90024,35280,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_90024_35280.png,True
+0,C09688992267b182b14037ffd,L,7,103,141198,69360,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_141198_69360.png,True
+0,C09688992267b182b14037ffd,L,8,110,16080,35232,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_16080_35232.png,True
+0,C09688992267b182b14037ffd,L,9,160,32464,35232,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_32464_35232.png,True
+0,C09688992267b182b14037ffd,L,10,175,36560,27040,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2483973-B1/2483973-B1_36560_27040.png,True
+0,C51f677215243cd69f8716f8b,L,1,32,76841,31136,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_76841_31136.png,True
+0,C51f677215243cd69f8716f8b,L,2,27,74330,14432,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_74330_14432.png,True
+0,C51f677215243cd69f8716f8b,L,3,8,16017,16272,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_16017_16272.png,True
+0,C51f677215243cd69f8716f8b,L,4,4,11921,28560,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_11921_28560.png,True
+0,C51f677215243cd69f8716f8b,L,5,22,72745,14752,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_72745_14752.png,True
+0,C51f677215243cd69f8716f8b,L,6,13,16017,36752,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_16017_36752.png,True
+0,C51f677215243cd69f8716f8b,L,7,44,80937,27040,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_80937_27040.png,True
+0,C51f677215243cd69f8716f8b,L,8,20,68649,18848,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_68649_18848.png,True
+0,C51f677215243cd69f8716f8b,L,9,31,76841,27040,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_76841_27040.png,True
+0,C51f677215243cd69f8716f8b,L,10,34,7825,16272,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014217B2/25014217B2_7825_16272.png,True
+0,Cda771da4cab493e378b5d71d,L,1,61,20064,16609,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_20064_16609.png,True
+0,Cda771da4cab493e378b5d71d,L,2,85,28256,24801,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_28256_24801.png,True
+0,Cda771da4cab493e378b5d71d,L,3,192,96374,26593,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_96374_26593.png,True
+0,Cda771da4cab493e378b5d71d,L,4,84,28256,20705,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_28256_20705.png,True
+0,Cda771da4cab493e378b5d71d,L,5,49,120950,59361,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_120950_59361.png,True
+0,Cda771da4cab493e378b5d71d,L,6,51,15968,16609,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_15968_16609.png,True
+0,Cda771da4cab493e378b5d71d,L,7,106,36448,32993,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_36448_32993.png,True
+0,Cda771da4cab493e378b5d71d,L,8,72,24160,12513,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_24160_12513.png,True
+0,Cda771da4cab493e378b5d71d,L,9,73,24160,16609,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_24160_16609.png,True
+0,Cda771da4cab493e378b5d71d,L,10,101,32352,53473,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25014265B2/25014265B2_32352_53473.png,True
+0,Ce1507d359352ca1cb5531213,L,1,160,31184,32272,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_31184_32272.png,True
+0,Ce1507d359352ca1cb5531213,L,2,100,145796,56225,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_145796_56225.png,True
+0,Ce1507d359352ca1cb5531213,L,3,201,47568,36368,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_47568_36368.png,True
+0,Ce1507d359352ca1cb5531213,L,4,245,63952,48656,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_63952_48656.png,True
+0,Ce1507d359352ca1cb5531213,L,5,234,59856,48656,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_59856_48656.png,True
+0,Ce1507d359352ca1cb5531213,L,6,255,68048,48656,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_68048_48656.png,True
+0,Ce1507d359352ca1cb5531213,L,7,130,18896,15888,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_18896_15888.png,True
+0,Ce1507d359352ca1cb5531213,L,8,118,149892,56225,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_149892_56225.png,True
+0,Ce1507d359352ca1cb5531213,L,9,219,55760,40464,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_55760_40464.png,True
+0,Ce1507d359352ca1cb5531213,L,10,254,68048,44560,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017539B2/25017539B2_68048_44560.png,True
+0,C31782b967ea84631f8de1d22,L,1,86,144332,67267,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_144332_67267.png,True
+0,C31782b967ea84631f8de1d22,L,2,8,103878,44768,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_103878_44768.png,True
+0,C31782b967ea84631f8de1d22,L,3,115,24160,26128,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_24160_26128.png,True
+0,C31782b967ea84631f8de1d22,L,4,173,40544,13840,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_40544_13840.png,True
+0,C31782b967ea84631f8de1d22,L,5,147,32352,30224,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_32352_30224.png,True
+0,C31782b967ea84631f8de1d22,L,6,125,24160,67088,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_24160_67088.png,True
+0,C31782b967ea84631f8de1d22,L,7,11,103878,69344,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_103878_69344.png,True
+0,C31782b967ea84631f8de1d22,L,8,222,61024,30224,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_61024_30224.png,True
+0,C31782b967ea84631f8de1d22,L,9,97,15968,58896,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_15968_58896.png,True
+0,C31782b967ea84631f8de1d22,L,10,109,20064,58896,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2463367-B2/2463367-B2_20064_58896.png,True
+0,C719c5ef7a2a2cb9fb6afa6d4,H,1,771,51824,72977,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,2,2932,52848,13585,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,3,1819,53872,67857,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,4,2557,53872,15633,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,5,4132,51824,71953,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,6,2216,38512,58641,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,7,417,68208,32017,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,8,1472,53872,20753,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,9,1074,36464,39185,Pending patch image,,False
+0,C719c5ef7a2a2cb9fb6afa6d4,H,10,1232,41584,76049,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,1,274,23120,53265,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,2,1046,19024,32785,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,3,1547,85922,26016,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,4,2299,37456,34833,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,5,621,13904,33809,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,6,1500,94114,20896,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,7,531,43600,25617,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,8,452,16976,16401,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,9,48,14928,22545,Pending patch image,,False
+0,Cd34a767d1605ac079bada1a7,H,10,2416,125924,76106,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,1,3082,116197,42144,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,2,1968,119269,39072,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,3,1156,119269,29856,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,4,522,39857,51520,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,5,1873,118245,42144,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,6,295,118245,38048,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,7,1500,119269,41120,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,8,1476,118245,40096,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,9,140,37809,21824,Pending patch image,,False
+0,C2c8e790b2fb98e90e09f22ec,H,10,1483,38833,54592,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,1,1782,21856,32017,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,2,1126,20832,30993,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,3,289,36192,44305,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,4,1984,19808,33041,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,5,915,19808,30993,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,6,188,25952,29969,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,7,1664,88227,27795,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,8,1474,19808,28945,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,9,473,20832,32017,Pending patch image,,False
+0,C2ca097559a1e9e8e3977e24f,H,10,140,17760,33041,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,1,897,160279,35377,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,2,3797,160279,49713,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,3,3731,163351,35377,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,4,62,153111,42545,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,5,871,162327,42545,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,6,1128,151063,43569,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,7,2721,90851,28048,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,8,1898,154135,53809,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,9,734,150039,40497,Pending patch image,,False
+0,Cab2bbb32378ed8fe65bb44e9,H,10,375,155159,40497,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,1,1994,17040,70464,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,2,3549,45712,56128,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,3,2203,129461,58128,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,4,1599,111029,64272,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,5,1244,111029,35600,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,6,1400,101813,61200,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,7,2046,21136,63296,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,8,222,101813,45840,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,9,2945,99765,62224,Pending patch image,,False
+0,C55b802a079e6333a554886f4,H,10,513,129461,48912,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,1,1017,124840,21968,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,2,2748,89000,39376,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,3,2479,104360,37328,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,4,3666,106408,31184,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,5,2462,43728,39328,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,6,1212,87976,40400,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,7,1326,86952,37328,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,8,1216,119720,25040,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,9,1487,108456,30160,Pending patch image,,False
+0,C09688992267b182b14037ffd,H,10,2283,102312,37328,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,1,149,14993,12176,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,2,325,77865,33184,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,3,35,13969,28560,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,4,406,19089,29584,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,5,379,17041,13200,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,6,3,18065,11152,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,7,287,19089,10128,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,8,115,17041,16272,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,9,252,22161,28560,Pending patch image,,False
+0,C51f677215243cd69f8716f8b,H,10,67,17041,11152,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,1,1578,10848,26849,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,2,1549,96374,28641,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,3,2207,31328,22753,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,4,2254,14944,43233,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,5,2656,31328,25825,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,6,495,28256,23777,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,7,2688,29280,24801,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,8,1351,99446,34785,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,9,1969,32352,28897,Pending patch image,,False
+0,Cda771da4cab493e378b5d71d,H,10,270,30304,23777,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,1,2569,71120,46608,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,2,2617,75216,49680,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,3,3668,38352,44560,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,4,360,72144,49680,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,5,1703,75216,50704,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,6,1776,66000,47632,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,7,894,67024,65040,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,8,788,73168,49680,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,9,771,76240,58896,Pending patch image,,False
+0,Ce1507d359352ca1cb5531213,H,10,2992,74192,49680,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,1,927,30304,44560,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,2,3761,28256,45584,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,3,2288,22112,60944,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,4,2634,21088,59920,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,5,173,32352,70160,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,6,2228,94662,61152,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,7,34,33376,44560,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,8,3439,44640,49680,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,9,4205,30304,46608,Pending patch image,,False
+0,C31782b967ea84631f8de1d22,H,10,4264,42592,28176,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,L,1,122,86402,5632,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_86402_5632.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,2,18,107139,69047,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_107139_69047.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,3,40,12016,25169,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_12016_25169.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,4,107,7920,33361,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_7920_33361.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,5,115,86402,13824,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_86402_13824.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,6,113,82306,5632,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_82306_5632.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,7,134,90498,5632,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_90498_5632.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,8,123,86402,9728,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_86402_9728.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,9,108,7920,37457,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_7920_37457.png,True
+1,C0b21aa830f023f6fd9c2cad3,L,10,118,86402,26112,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2461857-B2/2461857-B2_86402_26112.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,1,196,52752,48017,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_52752_48017.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,2,75,127607,47073,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_127607_47073.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,3,74,127607,42977,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_127607_42977.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,4,112,24080,23441,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_24080_23441.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,5,148,36368,23441,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_36368_23441.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,6,187,48656,56209,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_48656_56209.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,7,180,48656,27537,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_48656_27537.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,8,135,32272,23441,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_32272_23441.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,9,76,127607,51169,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_127607_51169.png,True
+1,C042fd7b70d2c9a3d23c0daaf,L,10,13,107127,18401,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2465643-B3/2465643-B3_107127_18401.png,True
+1,Cb8b30ab27e0939565714243a,L,1,110,145730,4560,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_145730_4560.png,True
+1,Cb8b30ab27e0939565714243a,L,2,25,115537,17504,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_115537_17504.png,True
+1,Cb8b30ab27e0939565714243a,L,3,102,141890,72928,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_141890_72928.png,True
+1,Cb8b30ab27e0939565714243a,L,4,198,50064,39216,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_50064_39216.png,True
+1,Cb8b30ab27e0939565714243a,L,5,112,145986,68832,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_145986_68832.png,True
+1,Cb8b30ab27e0939565714243a,L,6,63,127825,33888,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_127825_33888.png,True
+1,Cb8b30ab27e0939565714243a,L,7,8,107345,17504,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_107345_17504.png,True
+1,Cb8b30ab27e0939565714243a,L,8,19,111441,33888,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_111441_33888.png,True
+1,Cb8b30ab27e0939565714243a,L,9,167,41872,26928,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_41872_26928.png,True
+1,Cb8b30ab27e0939565714243a,L,10,53,123729,37984,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476376-B2/2476376-B2_123729_37984.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,1,130,40496,24818,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_40496_24818.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,2,121,36400,24818,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_36400_24818.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,3,35,11824,24818,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_11824_24818.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,4,131,40496,28914,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_40496_28914.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,5,58,15920,20722,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_15920_20722.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,6,110,32304,28914,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_32304_28914.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,7,59,15920,24818,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_15920_24818.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,8,24,111828,28546,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_111828_28546.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,9,30,115924,24450,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_115924_24450.png,True
+1,Cafd6e729ede13c5756ef7ce5,L,10,103,28208,61682,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25017538B4/25017538B4_28208_61682.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,1,299,96544,59248,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_96544_59248.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,2,271,88352,46960,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_88352_46960.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,3,272,88352,51056,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_88352_51056.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,4,286,92448,63344,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_92448_63344.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,5,174,32304,33553,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_32304_33553.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,6,145,24112,37649,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_24112_37649.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,7,144,24112,33553,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_24112_33553.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,8,18,104736,18288,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_104736_18288.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,9,172,32304,25361,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_32304_25361.png,True
+1,Ce998c14c3fe27e31f714a5d8,L,10,293,96544,30576,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2476286-B2/2476286-B2_96544_30576.png,True
+1,C175e50a892b953ca4bd5c16e,L,1,157,86305,50449,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_86305_50449.png,True
+1,C175e50a892b953ca4bd5c16e,L,2,185,94497,50449,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_94497_50449.png,True
+1,C175e50a892b953ca4bd5c16e,L,3,163,90401,21777,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_90401_21777.png,True
+1,C175e50a892b953ca4bd5c16e,L,4,25,106785,58641,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_106785_58641.png,True
+1,C175e50a892b953ca4bd5c16e,L,5,56,15824,48274,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_15824_48274.png,True
+1,C175e50a892b953ca4bd5c16e,L,6,178,94497,21777,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_94497_21777.png,True
+1,C175e50a892b953ca4bd5c16e,L,7,169,90401,46353,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_90401_46353.png,True
+1,C175e50a892b953ca4bd5c16e,L,8,9,102689,50449,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_102689_50449.png,True
+1,C175e50a892b953ca4bd5c16e,L,9,144,82209,38161,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_82209_38161.png,True
+1,C175e50a892b953ca4bd5c16e,L,10,201,98593,54545,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015608B2/25015608B2_98593_54545.png,True
+1,C6619657ed62e3f16e4fa31c5,L,1,109,86401,41826,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_86401_41826.png,True
+1,C6619657ed62e3f16e4fa31c5,L,2,122,94593,33634,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_94593_33634.png,True
+1,C6619657ed62e3f16e4fa31c5,L,3,117,90497,33634,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_90497_33634.png,True
+1,C6619657ed62e3f16e4fa31c5,L,4,51,32304,17600,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_32304_17600.png,True
+1,C6619657ed62e3f16e4fa31c5,L,5,52,32304,21696,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_32304_21696.png,True
+1,C6619657ed62e3f16e4fa31c5,L,6,41,28208,21696,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_28208_21696.png,True
+1,C6619657ed62e3f16e4fa31c5,L,7,80,75169,27778,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_75169_27778.png,True
+1,C6619657ed62e3f16e4fa31c5,L,8,44,28208,33984,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_28208_33984.png,True
+1,C6619657ed62e3f16e4fa31c5,L,9,29,24112,17600,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_24112_17600.png,True
+1,C6619657ed62e3f16e4fa31c5,L,10,98,82305,37730,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B5/25015640B5_82305_37730.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,1,66,28304,15968,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_28304_15968.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,2,18,110614,23456,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_110614_23456.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,3,5,102422,39840,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_102422_39840.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,4,17,110614,19360,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_110614_19360.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,5,26,114710,23456,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_114710_23456.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,6,54,20112,40544,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_20112_40544.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,7,67,28304,20064,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_28304_20064.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,8,44,16016,36448,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_16016_36448.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,9,55,20112,44640,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_20112_44640.png,True
+1,C80c5acc0f3d5f87edfb8531b,L,10,27,114710,27552,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25025567B4/25025567B4_114710_27552.png,True
+1,Cc45922bac00d3d6b9847149f,L,1,157,36352,40656,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_36352_40656.png,True
+1,Cc45922bac00d3d6b9847149f,L,2,168,40448,36560,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_40448_36560.png,True
+1,Cc45922bac00d3d6b9847149f,L,3,182,44544,36560,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_44544_36560.png,True
+1,Cc45922bac00d3d6b9847149f,L,4,275,97984,35121,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_97984_35121.png,True
+1,Cc45922bac00d3d6b9847149f,L,5,70,122560,31025,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_122560_31025.png,True
+1,Cc45922bac00d3d6b9847149f,L,6,140,28160,52944,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_28160_52944.png,True
+1,Cc45922bac00d3d6b9847149f,L,7,164,40448,20176,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_40448_20176.png,True
+1,Cc45922bac00d3d6b9847149f,L,8,13,106176,39217,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_106176_39217.png,True
+1,Cc45922bac00d3d6b9847149f,L,9,180,44544,28368,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_44544_28368.png,True
+1,Cc45922bac00d3d6b9847149f,L,10,24,110272,26929,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028879B3/25028879B3_110272_26929.png,True
+1,C5c21aff85e73a2fb95379215,L,1,34,126590,10624,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_126590_10624.png,True
+1,C5c21aff85e73a2fb95379215,L,2,63,21921,17873,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_21921_17873.png,True
+1,C5c21aff85e73a2fb95379215,L,3,35,126590,6528,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_126590_6528.png,True
+1,C5c21aff85e73a2fb95379215,L,4,153,75560,29250,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_75560_29250.png,True
+1,C5c21aff85e73a2fb95379215,L,5,78,26017,17873,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_26017_17873.png,True
+1,C5c21aff85e73a2fb95379215,L,6,229,9633,58833,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_9633_58833.png,True
+1,C5c21aff85e73a2fb95379215,L,7,64,21921,21969,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_21921_21969.png,True
+1,C5c21aff85e73a2fb95379215,L,8,231,9633,67025,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_9633_67025.png,True
+1,C5c21aff85e73a2fb95379215,L,9,69,21921,42449,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_21921_42449.png,True
+1,C5c21aff85e73a2fb95379215,L,10,93,30113,26065,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045625B2/25045625B2_30113_26065.png,True
+1,C0b21aa830f023f6fd9c2cad3,H,1,433,10992,13905,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,2,404,85378,7680,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,3,141,88450,7680,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,4,416,17136,20049,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,5,1639,7920,16977,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,6,1843,36592,44625,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,7,477,90498,8704,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,8,273,10992,31313,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,9,103,12016,14929,Pending patch image,,False
+1,C0b21aa830f023f6fd9c2cad3,H,10,1166,82306,9728,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,1,2960,56848,58257,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,2,193,23056,24465,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,3,1321,31248,24465,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,4,2254,56848,51089,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,5,957,42512,26513,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,6,973,55824,52113,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,7,1567,55824,58257,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,8,1048,26128,26513,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,9,1836,52752,31633,Pending patch image,,False
+1,C042fd7b70d2c9a3d23c0daaf,H,10,614,98935,20449,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,1,2358,35728,41264,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,2,2078,33680,44336,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,3,2662,49040,37168,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,4,329,49040,36144,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,5,1281,37776,43312,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,6,3210,36752,39216,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,7,1391,35728,40240,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,8,941,50064,46384,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,9,2714,46992,33072,Pending patch image,,False
+1,Cb8b30ab27e0939565714243a,H,10,3614,32656,43312,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,1,775,33328,64754,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,2,2617,38448,30962,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,3,1968,52784,61682,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,4,410,37424,30962,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,5,1444,12848,24818,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,6,660,40496,24818,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,7,2084,27184,37106,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,8,72,47664,51442,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,9,1400,95444,22402,Pending patch image,,False
+1,Cafd6e729ede13c5756ef7ce5,H,10,3070,29232,26866,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,1,329,56880,38673,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,2,528,126240,30576,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,3,1941,116000,31600,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,4,2440,55856,37649,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,5,1961,56880,37649,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,6,743,126240,33648,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,7,3541,129312,33648,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,8,3356,81184,61296,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,9,1558,39472,30481,Pending patch image,,False
+1,Ce998c14c3fe27e31f714a5d8,H,10,2484,98592,43888,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,1,1543,105761,54545,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,2,1531,110881,55569,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,3,2646,96545,57617,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,4,1691,104737,15633,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,5,1172,93473,52497,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,6,814,90401,44305,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,7,2092,108833,54545,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,8,2039,88353,22801,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,9,931,107809,26897,Pending patch image,,False
+1,C175e50a892b953ca4bd5c16e,H,10,868,110881,48401,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,1,940,26160,32960,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,2,1351,30256,20672,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,3,127,22064,19648,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,4,1593,24112,19648,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,5,1078,42544,29888,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,6,713,28208,37056,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,7,82,34352,20672,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,8,800,34352,29888,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,9,1257,84353,35682,Pending patch image,,False
+1,C6619657ed62e3f16e4fa31c5,H,10,1287,35376,30912,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,1,458,28304,18016,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,2,841,22160,38496,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,3,1121,26256,38496,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,4,1163,25232,40544,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,5,1000,105494,24480,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,6,91,23184,21088,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,7,1297,20112,29280,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,8,781,20112,37472,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,9,1299,24208,44640,Pending patch image,,False
+1,C80c5acc0f3d5f87edfb8531b,H,10,723,30352,18016,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,1,3022,20992,33488,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,2,3425,105152,48433,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,3,1389,102080,41265,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,4,3301,45568,41680,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,5,249,115392,24881,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,6,3975,45568,17104,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,7,1266,103104,59697,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,8,2808,110272,36145,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,9,2297,113344,54577,Pending patch image,,False
+1,Cc45922bac00d3d6b9847149f,H,10,1960,50688,19152,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,1,2748,21921,18897,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,2,2452,128638,6528,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,3,1425,20897,21969,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,4,2887,128638,13696,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,5,1112,42401,68049,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,6,423,22945,18897,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,7,2631,129662,6528,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,8,987,78632,34370,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,9,904,129662,7552,Pending patch image,,False
+1,C5c21aff85e73a2fb95379215,H,10,725,21921,20945,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,L,1,30,117733,56387,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_117733_56387.png,True
+2,C15d25205f1722ee9163e7937,L,2,53,25984,33684,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_25984_33684.png,True
+2,C15d25205f1722ee9163e7937,L,3,16,109541,44099,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_109541_44099.png,True
+2,C15d25205f1722ee9163e7937,L,4,45,149017,8977,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_149017_8977.png,True
+2,C15d25205f1722ee9163e7937,L,5,33,121829,48195,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_121829_48195.png,True
+2,C15d25205f1722ee9163e7937,L,6,71,38272,37780,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_38272_37780.png,True
+2,C15d25205f1722ee9163e7937,L,7,46,17792,33684,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_17792_33684.png,True
+2,C15d25205f1722ee9163e7937,L,8,84,50560,45972,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_50560_45972.png,True
+2,C15d25205f1722ee9163e7937,L,9,11,105445,48195,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_105445_48195.png,True
+2,C15d25205f1722ee9163e7937,L,10,27,117733,44099,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462830-B2/2462830-B2_117733_44099.png,True
+2,C8ef0200f7e09143c6740afd4,L,1,195,48976,19904,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_48976_19904.png,True
+2,C8ef0200f7e09143c6740afd4,L,2,148,32592,56768,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_32592_56768.png,True
+2,C8ef0200f7e09143c6740afd4,L,3,165,36688,69056,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_36688_69056.png,True
+2,C8ef0200f7e09143c6740afd4,L,4,74,125520,35296,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_125520_35296.png,True
+2,C8ef0200f7e09143c6740afd4,L,5,14,105040,35296,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_105040_35296.png,True
+2,C8ef0200f7e09143c6740afd4,L,6,51,117328,35296,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_117328_35296.png,True
+2,C8ef0200f7e09143c6740afd4,L,7,82,129616,23008,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_129616_23008.png,True
+2,C8ef0200f7e09143c6740afd4,L,8,37,113232,31200,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_113232_31200.png,True
+2,C8ef0200f7e09143c6740afd4,L,9,49,117328,23008,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_117328_23008.png,True
+2,C8ef0200f7e09143c6740afd4,L,10,71,125520,18912,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2464690-B2/2464690-B2_125520_18912.png,True
+2,C30e37c244d35d5be06043b63,L,1,269,90048,28672,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_90048_28672.png,True
+2,C30e37c244d35d5be06043b63,L,2,233,48960,26688,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_48960_26688.png,True
+2,C30e37c244d35d5be06043b63,L,3,73,12096,26688,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_12096_26688.png,True
+2,C30e37c244d35d5be06043b63,L,4,190,32576,43072,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_32576_43072.png,True
+2,C30e37c244d35d5be06043b63,L,5,118,139200,28672,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_139200_28672.png,True
+2,C30e37c244d35d5be06043b63,L,6,156,24384,26688,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_24384_26688.png,True
+2,C30e37c244d35d5be06043b63,L,7,112,135104,36864,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_135104_36864.png,True
+2,C30e37c244d35d5be06043b63,L,8,85,122816,40960,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_122816_40960.png,True
+2,C30e37c244d35d5be06043b63,L,9,121,139200,45056,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_139200_45056.png,True
+2,C30e37c244d35d5be06043b63,L,10,194,32576,6208,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2468105-B2/2468105-B2_32576_6208.png,True
+2,C968b42ea06019f3e66865359,L,1,63,84680,51888,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_84680_51888.png,True
+2,C968b42ea06019f3e66865359,L,2,62,84680,47792,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_84680_47792.png,True
+2,C968b42ea06019f3e66865359,L,3,64,84680,55984,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_84680_55984.png,True
+2,C968b42ea06019f3e66865359,L,4,54,80584,55984,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_80584_55984.png,True
+2,C968b42ea06019f3e66865359,L,5,11,19889,52528,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_19889_52528.png,True
+2,C968b42ea06019f3e66865359,L,6,75,88776,55984,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_88776_55984.png,True
+2,C968b42ea06019f3e66865359,L,7,53,80584,51888,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_80584_51888.png,True
+2,C968b42ea06019f3e66865359,L,8,10,19889,48432,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_19889_48432.png,True
+2,C968b42ea06019f3e66865359,L,9,65,84680,60080,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_84680_60080.png,True
+2,C968b42ea06019f3e66865359,L,10,52,80584,47792,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2469661-B/2469661-B_80584_47792.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,1,49,88627,40960,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_88627_40960.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,2,317,109107,12288,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_109107_12288.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,3,232,84531,69632,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_84531_69632.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,4,387,113203,57344,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_113203_57344.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,5,249,92723,49152,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_92723_49152.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,6,62,84531,65536,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_84531_65536.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,7,9,88627,69632,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_88627_69632.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,8,339,80435,69632,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_80435_69632.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,9,416,129587,16384,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_129587_16384.png,True
+2,Ce36c0b4fea9fcc8f50f16abf,L,10,424,88627,45056,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484228-B/2484228-B_88627_45056.png,True
+2,Cfab4b2741b77fd0484139ef8,L,1,190,42864,55057,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_42864_55057.png,True
+2,Cfab4b2741b77fd0484139ef8,L,2,238,59248,22289,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_59248_22289.png,True
+2,Cfab4b2741b77fd0484139ef8,L,3,61,112758,34912,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_112758_34912.png,True
+2,Cfab4b2741b77fd0484139ef8,L,4,248,63344,34577,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_63344_34577.png,True
+2,Cfab4b2741b77fd0484139ef8,L,5,207,46960,55057,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_46960_55057.png,True
+2,Cfab4b2741b77fd0484139ef8,L,6,247,59248,63249,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_59248_63249.png,True
+2,Cfab4b2741b77fd0484139ef8,L,7,44,108662,30816,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_108662_30816.png,True
+2,Cfab4b2741b77fd0484139ef8,L,8,90,125046,30816,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_125046_30816.png,True
+2,Cfab4b2741b77fd0484139ef8,L,9,50,108662,55392,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_108662_55392.png,True
+2,Cfab4b2741b77fd0484139ef8,L,10,256,67440,42769,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019102B4/25019102B4_67440_42769.png,True
+2,Cdd4448359c47a1d0b6974b94,L,1,56,42992,31762,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_42992_31762.png,True
+2,Cdd4448359c47a1d0b6974b94,L,2,19,22512,27666,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_22512_27666.png,True
+2,Cdd4448359c47a1d0b6974b94,L,3,74,84048,31682,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_84048_31682.png,True
+2,Cdd4448359c47a1d0b6974b94,L,4,20,22512,31762,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_22512_31762.png,True
+2,Cdd4448359c47a1d0b6974b94,L,5,16,22512,15378,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_22512_15378.png,True
+2,Cdd4448359c47a1d0b6974b94,L,6,29,26608,35858,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_26608_35858.png,True
+2,Cdd4448359c47a1d0b6974b94,L,7,39,34800,11282,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_34800_11282.png,True
+2,Cdd4448359c47a1d0b6974b94,L,8,81,88144,31682,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_88144_31682.png,True
+2,Cdd4448359c47a1d0b6974b94,L,9,18,22512,23570,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_22512_23570.png,True
+2,Cdd4448359c47a1d0b6974b94,L,10,40,34800,15378,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462939-B/2462939-B_34800_15378.png,True
+2,C7f031b0e1a7512a5f96ac492,L,1,90,33505,39392,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_33505_39392.png,True
+2,C7f031b0e1a7512a5f96ac492,L,2,77,29409,31200,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_29409_31200.png,True
+2,C7f031b0e1a7512a5f96ac492,L,3,165,53985,18912,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_53985_18912.png,True
+2,C7f031b0e1a7512a5f96ac492,L,4,94,33505,55776,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_33505_55776.png,True
+2,C7f031b0e1a7512a5f96ac492,L,5,83,33505,10720,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_33505_10720.png,True
+2,C7f031b0e1a7512a5f96ac492,L,6,107,37601,47584,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_37601_47584.png,True
+2,C7f031b0e1a7512a5f96ac492,L,7,81,29409,68064,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_29409_68064.png,True
+2,C7f031b0e1a7512a5f96ac492,L,8,106,37601,43488,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_37601_43488.png,True
+2,C7f031b0e1a7512a5f96ac492,L,9,74,29409,14816,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_29409_14816.png,True
+2,C7f031b0e1a7512a5f96ac492,L,10,116,41697,18912,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2484791-B2/2484791-B2_41697_18912.png,True
+2,Cc7be695e77cc97701f9bb15a,L,1,43,32256,20626,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_32256_20626.png,True
+2,Cc7be695e77cc97701f9bb15a,L,2,42,28160,41106,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_28160_41106.png,True
+2,Cc7be695e77cc97701f9bb15a,L,3,45,32256,28818,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_32256_28818.png,True
+2,Cc7be695e77cc97701f9bb15a,L,4,103,84001,39185,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_84001_39185.png,True
+2,Cc7be695e77cc97701f9bb15a,L,5,34,24064,45202,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_24064_45202.png,True
+2,Cc7be695e77cc97701f9bb15a,L,6,53,63521,6417,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_63521_6417.png,True
+2,Cc7be695e77cc97701f9bb15a,L,7,46,32256,32914,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_32256_32914.png,True
+2,Cc7be695e77cc97701f9bb15a,L,8,25,19968,49298,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_19968_49298.png,True
+2,Cc7be695e77cc97701f9bb15a,L,9,106,88097,22801,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_88097_22801.png,True
+2,Cc7be695e77cc97701f9bb15a,L,10,51,63521,26897,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018956B3/25018956B3_63521_26897.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,1,98,24080,45713,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_24080_45713.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,2,5,102424,50769,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_102424_50769.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,3,195,94232,50769,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_94232_50769.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,4,99,24080,49809,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_24080_49809.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,5,86,19984,29329,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_19984_29329.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,6,25,110616,42577,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_110616_42577.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,7,165,48656,41617,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_48656_41617.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,8,129,36368,25233,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_36368_25233.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,9,111,28176,49809,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_28176_49809.png,True
+2,C2fbc76e34eb8c40cda25caf1,L,10,120,32272,37521,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25032788B4/25032788B4_32272_37521.png,True
+2,C15d25205f1722ee9163e7937,H,1,598,116709,46147,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,2,1317,37248,41876,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,3,1379,20864,37780,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,4,1005,18816,34708,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,5,1301,27008,39828,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,6,652,109541,44099,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,7,1372,19840,38804,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,8,1408,110565,47171,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,9,1150,52608,50068,Pending patch image,,False
+2,C15d25205f1722ee9163e7937,H,10,973,50560,50068,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,1,1684,50000,48576,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,2,1436,36688,20928,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,3,368,48976,43456,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,4,2580,54096,51648,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,5,133,42832,46528,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,6,1806,122448,25056,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,7,2776,48976,50624,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,8,2238,48976,44480,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,9,2188,116304,16864,Pending patch image,,False
+2,C8ef0200f7e09143c6740afd4,H,10,1722,123472,21984,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,1,666,124864,38912,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,2,42,107456,46080,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,3,81,93120,27648,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,4,3371,126912,36864,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,5,231,18240,36928,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,6,3715,19264,35904,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,7,3327,96192,17408,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,8,1143,98240,37888,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,9,3834,17216,32832,Pending patch image,,False
+2,C30e37c244d35d5be06043b63,H,10,198,103360,26624,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,1,1147,85704,61104,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,2,861,22481,67409,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,3,1006,86728,53936,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,4,1094,81608,51888,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,5,736,84680,66224,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,6,291,86728,62128,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,7,430,84680,46768,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,8,857,25553,63313,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,9,802,87752,61104,Pending patch image,,False
+2,C968b42ea06019f3e66865359,H,10,1026,19889,56624,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,1,6227,81459,1024,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,2,2888,81459,5120,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,3,295,85555,4096,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,4,2319,123443,38912,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,5,1443,88627,5120,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,6,273,79411,3072,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,7,6719,119347,28672,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,8,6865,88627,6144,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,9,2778,89651,6144,Pending patch image,,False
+2,Ce36c0b4fea9fcc8f50f16abf,H,10,2556,80435,4096,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,1,1835,41840,23313,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,2,1680,67440,49937,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,3,4370,38768,24337,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,4,4465,46960,34577,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,5,951,45936,33553,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,6,2209,115830,39008,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,7,3536,42864,19217,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,8,682,40816,23313,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,9,2181,46960,56081,Pending patch image,,False
+2,Cfab4b2741b77fd0484139ef8,H,10,2177,51056,24337,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,1,324,25584,31762,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,2,531,90192,38850,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,3,928,36848,29714,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,4,336,30704,28690,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,5,846,36848,28690,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,6,637,30704,29714,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,7,257,23536,39954,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,8,241,22512,25618,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,9,656,29680,38930,Pending patch image,,False
+2,Cdd4448359c47a1d0b6974b94,H,10,1420,27632,31762,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,1,920,52961,39392,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,2,354,53985,21984,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,3,4,14752,61267,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,4,2750,52961,47584,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,5,656,16800,67411,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,6,1686,55009,19936,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,7,1261,13728,62291,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,8,45,47841,25056,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,9,1850,31457,16864,Pending patch image,,False
+2,C7f031b0e1a7512a5f96ac492,H,10,2361,53985,20960,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,1,368,10752,19602,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,2,1286,13824,41106,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,3,1358,11776,35986,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,4,222,33280,22674,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,5,618,12800,37010,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,6,105,17920,42130,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,7,571,25088,46226,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,8,802,20992,40082,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,9,665,8704,30866,Pending patch image,,False
+2,Cc7be695e77cc97701f9bb15a,H,10,667,23040,39058,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,1,2046,104472,52817,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,2,1612,31248,52881,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,3,1577,19984,50833,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,4,2758,25104,56977,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,5,2810,43536,51857,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,6,2289,118808,37457,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,7,1429,37392,38545,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,8,946,28176,49809,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,9,2700,34320,50833,Pending patch image,,False
+2,C2fbc76e34eb8c40cda25caf1,H,10,1124,103448,52817,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,L,1,37,75810,39828,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_75810_39828.png,True
+3,C809df6c27a12c433806bdaeb,L,2,42,75810,60308,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_75810_60308.png,True
+3,C809df6c27a12c433806bdaeb,L,3,38,75810,43924,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_75810_43924.png,True
+3,C809df6c27a12c433806bdaeb,L,4,32,71714,43924,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_71714_43924.png,True
+3,C809df6c27a12c433806bdaeb,L,5,17,16272,45027,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_16272_45027.png,True
+3,C809df6c27a12c433806bdaeb,L,6,27,67618,43924,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_67618_43924.png,True
+3,C809df6c27a12c433806bdaeb,L,7,16,16272,40931,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_16272_40931.png,True
+3,C809df6c27a12c433806bdaeb,L,8,45,79906,39828,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_79906_39828.png,True
+3,C809df6c27a12c433806bdaeb,L,9,6,12176,28643,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_12176_28643.png,True
+3,C809df6c27a12c433806bdaeb,L,10,7,12176,32739,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2474189-B7/2474189-B7_12176_32739.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,1,161,46896,31697,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_46896_31697.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,2,254,91970,65232,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_91970_65232.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,3,121,34608,35793,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_34608_35793.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,4,112,30512,64465,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_30512_64465.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,5,269,96066,61136,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_96066_61136.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,6,59,14128,60369,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_14128_60369.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,7,111,30512,60369,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_30512_60369.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,8,149,42800,31697,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_42800_31697.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,9,262,96066,32464,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_96066_32464.png,True
+3,Cd0e9b181d2eacd068ef663f0,L,10,118,34608,23505,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2478091-B4/2478091-B4_34608_23505.png,True
+3,Cb821066050e06181a39d626e,L,1,148,26449,15680,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_26449_15680.png,True
+3,Cb821066050e06181a39d626e,L,2,5,102710,34128,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_102710_34128.png,True
+3,Cb821066050e06181a39d626e,L,3,198,38737,19776,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_38737_19776.png,True
+3,Cb821066050e06181a39d626e,L,4,229,46929,15680,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_46929_15680.png,True
+3,Cb821066050e06181a39d626e,L,5,49,114998,25936,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_114998_25936.png,True
+3,Cb821066050e06181a39d626e,L,6,231,46929,23872,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_46929_23872.png,True
+3,Cb821066050e06181a39d626e,L,7,349,98614,5456,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_98614_5456.png,True
+3,Cb821066050e06181a39d626e,L,8,6,102710,38224,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_102710_38224.png,True
+3,Cb821066050e06181a39d626e,L,9,134,22353,23872,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_22353_23872.png,True
+3,Cb821066050e06181a39d626e,L,10,65,119094,30032,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021164B2/25021164B2_119094_30032.png,True
+3,C0666d24aa4b428262972e911,L,1,116,89264,41281,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_89264_41281.png,True
+3,C0666d24aa4b428262972e911,L,2,127,93360,37185,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_93360_37185.png,True
+3,C0666d24aa4b428262972e911,L,3,108,85168,53569,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_85168_53569.png,True
+3,C0666d24aa4b428262972e911,L,4,38,23504,59315,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_23504_59315.png,True
+3,C0666d24aa4b428262972e911,L,5,9,105648,16705,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_105648_16705.png,True
+3,C0666d24aa4b428262972e911,L,6,64,35792,30643,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_35792_30643.png,True
+3,C0666d24aa4b428262972e911,L,7,128,93360,41281,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_93360_41281.png,True
+3,C0666d24aa4b428262972e911,L,8,79,43984,26547,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_43984_26547.png,True
+3,C0666d24aa4b428262972e911,L,9,45,27600,47027,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_27600_47027.png,True
+3,C0666d24aa4b428262972e911,L,10,63,35792,26547,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015640B3/25015640B3_35792_26547.png,True
+3,C544a9321140dc3d33defcc39,L,1,209,92337,35120,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_92337_35120.png,True
+3,C544a9321140dc3d33defcc39,L,2,196,88241,26928,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_88241_26928.png,True
+3,C544a9321140dc3d33defcc39,L,3,92,20320,29072,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_20320_29072.png,True
+3,C544a9321140dc3d33defcc39,L,4,79,16224,24976,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_16224_24976.png,True
+3,C544a9321140dc3d33defcc39,L,5,197,88241,31024,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_88241_31024.png,True
+3,C544a9321140dc3d33defcc39,L,6,62,12128,33168,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_12128_33168.png,True
+3,C544a9321140dc3d33defcc39,L,7,61,12128,29072,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_12128_29072.png,True
+3,C544a9321140dc3d33defcc39,L,8,80,16224,29072,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_16224_29072.png,True
+3,C544a9321140dc3d33defcc39,L,9,207,92337,26928,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_92337_26928.png,True
+3,C544a9321140dc3d33defcc39,L,10,194,88241,18736,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25018478B2/25018478B2_88241_18736.png,True
+3,Cdf037beb6adbdbc92c074c72,L,1,85,138791,11504,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_138791_11504.png,True
+3,Cdf037beb6adbdbc92c074c72,L,2,86,138791,7408,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_138791_7408.png,True
+3,Cdf037beb6adbdbc92c074c72,L,3,132,28304,38498,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_28304_38498.png,True
+3,Cdf037beb6adbdbc92c074c72,L,4,131,28304,34402,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_28304_34402.png,True
+3,Cdf037beb6adbdbc92c074c72,L,5,129,28304,26210,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_28304_26210.png,True
+3,Cdf037beb6adbdbc92c074c72,L,6,130,28304,30306,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_28304_30306.png,True
+3,Cdf037beb6adbdbc92c074c72,L,7,88,142151,71544,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_142151_71544.png,True
+3,Cdf037beb6adbdbc92c074c72,L,8,210,56529,50354,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_56529_50354.png,True
+3,Cdf037beb6adbdbc92c074c72,L,9,180,48337,29874,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_48337_29874.png,True
+3,Cdf037beb6adbdbc92c074c72,L,10,218,60625,38066,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25020799B5/25020799B5_60625_38066.png,True
+3,C982a7e78192baad6c63d0e9f,L,1,128,83841,14721,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_83841_14721.png,True
+3,C982a7e78192baad6c63d0e9f,L,2,64,24000,20162,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_24000_20162.png,True
+3,C982a7e78192baad6c63d0e9f,L,3,57,19904,20162,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_19904_20162.png,True
+3,C982a7e78192baad6c63d0e9f,L,4,4,100225,27009,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_100225_27009.png,True
+3,C982a7e78192baad6c63d0e9f,L,5,153,96129,27009,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_96129_27009.png,True
+3,C982a7e78192baad6c63d0e9f,L,6,106,44480,32450,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_44480_32450.png,True
+3,C982a7e78192baad6c63d0e9f,L,7,27,109425,39110,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_109425_39110.png,True
+3,C982a7e78192baad6c63d0e9f,L,8,135,87937,10625,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_87937_10625.png,True
+3,C982a7e78192baad6c63d0e9f,L,9,98,40384,32450,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_40384_32450.png,True
+3,C982a7e78192baad6c63d0e9f,L,10,42,116609,22913,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021735B5/25021735B5_116609_22913.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,1,218,40448,49201,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_40448_49201.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,2,213,40448,28721,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_40448_28721.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,3,188,32256,36913,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_32256_36913.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,4,25,104406,56912,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_104406_56912.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,5,216,40448,41009,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_40448_41009.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,6,217,40448,45105,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_40448_45105.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,7,50,112598,44624,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_112598_44624.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,8,192,32256,53297,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_32256_53297.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,9,47,112598,36432,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_112598_36432.png,True
+3,C293ca6711b0a8fbd86bcb6b8,L,10,49,112598,40528,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027636B2/25027636B2_112598_40528.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,1,236,52096,63696,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_52096_63696.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,2,31,112930,16480,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_112930_16480.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,3,176,35712,22736,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_35712_22736.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,4,209,43904,59600,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_43904_59600.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,5,1,100642,16480,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_100642_16480.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,6,224,48000,71888,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_48000_71888.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,7,94,129314,57440,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_129314_57440.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,8,43,117026,20576,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_117026_20576.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,9,34,112930,28768,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_112930_28768.png,True
+3,Cdf2d7a792c63f1d7923f56bc,L,10,18,108834,16480,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25028186B2/25028186B2_108834_16480.png,True
+3,Ca1494fb57bc5716405e7fb93,L,1,238,97698,39809,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_97698_39809.png,True
+3,Ca1494fb57bc5716405e7fb93,L,2,154,34768,41777,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_34768_41777.png,True
+3,Ca1494fb57bc5716405e7fb93,L,3,30,109986,27521,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_109986_27521.png,True
+3,Ca1494fb57bc5716405e7fb93,L,4,53,118178,23425,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_118178_23425.png,True
+3,Ca1494fb57bc5716405e7fb93,L,5,162,38864,21297,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_38864_21297.png,True
+3,Ca1494fb57bc5716405e7fb93,L,6,176,42960,25393,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_42960_25393.png,True
+3,Ca1494fb57bc5716405e7fb93,L,7,160,38864,13105,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_38864_13105.png,True
+3,Ca1494fb57bc5716405e7fb93,L,8,52,118178,19329,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_118178_19329.png,True
+3,Ca1494fb57bc5716405e7fb93,L,9,64,122274,23425,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_122274_23425.png,True
+3,Ca1494fb57bc5716405e7fb93,L,10,19,105890,31617,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25029425B3/25029425B3_105890_31617.png,True
+3,C2d69782b77977b199010d5ab,L,1,3,11953,29233,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_11953_29233.png,True
+3,C2d69782b77977b199010d5ab,L,2,12,16049,33329,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_16049_33329.png,True
+3,C2d69782b77977b199010d5ab,L,3,29,58552,26176,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_58552_26176.png,True
+3,C2d69782b77977b199010d5ab,L,4,42,66744,38464,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_66744_38464.png,True
+3,C2d69782b77977b199010d5ab,L,5,5,11953,37425,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_11953_37425.png,True
+3,C2d69782b77977b199010d5ab,L,6,24,54456,34368,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_54456_34368.png,True
+3,C2d69782b77977b199010d5ab,L,7,20,24241,25137,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_24241_25137.png,True
+3,C2d69782b77977b199010d5ab,L,8,14,16049,45617,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_16049_45617.png,True
+3,C2d69782b77977b199010d5ab,L,9,36,62648,22080,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_62648_22080.png,True
+3,C2d69782b77977b199010d5ab,L,10,17,20145,29233,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25045807B4/25045807B4_20145_29233.png,True
+3,C809df6c27a12c433806bdaeb,H,1,4,99075,69400,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,2,310,105939,4560,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,3,140,100819,4560,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,4,67,101123,69400,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,5,455,100099,69400,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,6,396,20368,41955,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,7,491,101843,6608,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,8,8,104195,69400,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,9,173,15248,27619,Pending patch image,,False
+3,C809df6c27a12c433806bdaeb,H,10,22,101843,7632,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,1,3068,20272,41937,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,2,1909,19248,35793,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,3,1074,87874,31440,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,4,3803,34608,51153,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,5,2336,22320,40913,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,6,1749,22320,41937,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,7,112,15152,56273,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,8,515,15152,62417,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,9,3980,22320,39889,Pending patch image,,False
+3,Cd0e9b181d2eacd068ef663f0,H,10,2261,78658,38608,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,1,4198,41809,27968,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,2,848,101686,19792,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,3,3737,27473,28992,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,4,4026,25425,19776,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,5,1227,102710,21840,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,6,284,26449,13632,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,7,3610,38737,35136,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,8,528,21329,28992,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,9,715,97590,39248,Pending patch image,,False
+3,Cb821066050e06181a39d626e,H,10,1121,21329,33088,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,1,923,36816,30643,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,2,981,36816,31667,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,3,1439,25552,44979,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,4,1276,28624,59315,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,5,886,38864,19379,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,6,1604,25552,57267,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,7,196,17392,25731,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,8,621,24528,51123,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,9,1050,38864,36787,Pending patch image,,False
+3,C0666d24aa4b428262972e911,H,10,1264,26576,61363,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,1,2422,41824,11664,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,2,2105,42848,12688,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,3,2249,33632,45456,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,4,1090,32608,49552,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,5,20,26464,55696,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,6,161,27488,56720,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,7,2921,14176,50576,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,8,1185,34656,17808,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,9,3073,15200,46480,Pending patch image,,False
+3,C544a9321140dc3d33defcc39,H,10,1228,112817,10544,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,1,737,13968,30306,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,2,3075,24208,29282,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,3,1042,23184,45666,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,4,849,60625,41138,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,5,75,28304,32354,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,6,1301,140839,8432,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,7,3349,141127,78712,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,8,3139,28304,31330,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,9,2873,45265,46258,Pending patch image,,False
+3,Cdf037beb6adbdbc92c074c72,H,10,3282,27280,38498,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,1,702,32192,38594,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,2,1815,39360,32450,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,3,2067,22976,20162,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,4,606,93057,10625,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,5,656,116513,61178,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,6,639,34240,36546,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,7,2125,35136,47015,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,8,1923,35264,35522,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,9,209,34240,34498,Pending patch image,,False
+3,C982a7e78192baad6c63d0e9f,H,10,610,82817,18817,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,1,4029,45568,42033,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,2,3793,48640,39985,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,3,900,49664,50225,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,4,3627,55808,48177,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,5,2360,109526,47696,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,6,3850,47616,39985,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,7,361,47616,47153,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,8,2048,51712,50225,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,9,2132,29184,52273,Pending patch image,,False
+3,C293ca6711b0a8fbd86bcb6b8,H,10,4,53760,34865,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,1,1041,38784,44240,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,2,2257,55168,67792,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,3,2631,123170,39008,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,4,4170,40832,43216,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,5,2467,102690,28768,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,6,781,48000,56528,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,7,2226,28544,17616,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,8,3070,42880,40144,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,9,350,125218,66656,Pending patch image,,False
+3,Cdf2d7a792c63f1d7923f56bc,H,10,2552,42880,42192,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,1,2669,98722,49025,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,2,2567,105890,50049,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,3,632,97698,46977,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,4,267,47056,29489,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,5,2852,115106,43905,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,6,3454,40912,52017,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,7,1701,113058,45953,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,8,1445,114082,9089,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,9,263,115106,11137,Pending patch image,,False
+3,Ca1494fb57bc5716405e7fb93,H,10,2671,39888,11057,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,1,579,64696,39488,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,2,280,11953,40497,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,3,321,60600,27200,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,4,181,62648,27200,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,5,206,17073,33329,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,6,41,15025,33329,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,7,424,18097,34353,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,8,230,24241,27185,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,9,368,59576,34368,Pending patch image,,False
+3,C2d69782b77977b199010d5ab,H,10,254,14001,33329,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,L,1,46,113600,51410,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_113600_51410.png,True
+4,Cc26ca9054f39a0029ceaf872,L,2,136,40704,54674,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_40704_54674.png,True
+4,Cc26ca9054f39a0029ceaf872,L,3,45,113600,47314,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_113600_47314.png,True
+4,Cc26ca9054f39a0029ceaf872,L,4,41,113600,30930,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_113600_30930.png,True
+4,Cc26ca9054f39a0029ceaf872,L,5,29,109504,47314,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_109504_47314.png,True
+4,Cc26ca9054f39a0029ceaf872,L,6,27,109504,39122,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_109504_39122.png,True
+4,Cc26ca9054f39a0029ceaf872,L,7,44,113600,43218,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_113600_43218.png,True
+4,Cc26ca9054f39a0029ceaf872,L,8,125,36608,54674,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_36608_54674.png,True
+4,Cc26ca9054f39a0029ceaf872,L,9,30,109504,51410,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_109504_51410.png,True
+4,Cc26ca9054f39a0029ceaf872,L,10,16,105408,39122,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2462598-B/2462598-B_105408_39122.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,1,92,77377,41700,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_77377_41700.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,2,91,77377,37604,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_77377_37604.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,3,15,105473,50737,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_105473_50737.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,4,112,93185,17969,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_93185_17969.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,5,106,89089,34353,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_89089_34353.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,6,101,84993,42545,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_84993_42545.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,7,102,89089,17969,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_89089_17969.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,8,133,97281,42545,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_97281_42545.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,9,11,105473,30257,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_105473_30257.png,True
+4,C0c1d931ebcfe630867fe5a9e,L,10,108,89089,42545,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471884-B2/2471884-B2_89089_42545.png,True
+4,Cea650c44b7385045a4a31e34,L,1,8,20128,22864,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_20128_22864.png,True
+4,Cea650c44b7385045a4a31e34,L,2,46,78021,35712,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_78021_35712.png,True
+4,Cea650c44b7385045a4a31e34,L,3,25,28320,18768,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_28320_18768.png,True
+4,Cea650c44b7385045a4a31e34,L,4,30,28320,39248,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_28320_39248.png,True
+4,Cea650c44b7385045a4a31e34,L,5,18,24224,31056,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_24224_31056.png,True
+4,Cea650c44b7385045a4a31e34,L,6,4,11936,39248,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_11936_39248.png,True
+4,Cea650c44b7385045a4a31e34,L,7,9,20128,26960,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_20128_26960.png,True
+4,Cea650c44b7385045a4a31e34,L,8,20,24224,39248,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_24224_39248.png,True
+4,Cea650c44b7385045a4a31e34,L,9,32,28320,6480,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_28320_6480.png,True
+4,Cea650c44b7385045a4a31e34,L,10,51,82117,39808,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471957-B/2471957-B_82117_39808.png,True
+4,C1d323f84fab152d4470d620b,L,1,242,80611,43601,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_80611_43601.png,True
+4,C1d323f84fab152d4470d620b,L,2,154,33472,58978,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_33472_58978.png,True
+4,C1d323f84fab152d4470d620b,L,3,237,80611,19025,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_80611_19025.png,True
+4,C1d323f84fab152d4470d620b,L,4,91,12992,46690,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_12992_46690.png,True
+4,C1d323f84fab152d4470d620b,L,5,116,17088,26210,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_17088_26210.png,True
+4,C1d323f84fab152d4470d620b,L,6,241,80611,39505,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_80611_39505.png,True
+4,C1d323f84fab152d4470d620b,L,7,129,21184,54882,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_21184_54882.png,True
+4,C1d323f84fab152d4470d620b,L,8,195,49856,58978,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_49856_58978.png,True
+4,C1d323f84fab152d4470d620b,L,9,263,8896,42594,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_8896_42594.png,True
+4,C1d323f84fab152d4470d620b,L,10,186,45760,54882,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2471963-B/2471963-B_45760_54882.png,True
+4,C869961af51d5fa74cf696631,L,1,44,24720,14752,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_24720_14752.png,True
+4,C869961af51d5fa74cf696631,L,2,111,94471,14720,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_94471_14720.png,True
+4,C869961af51d5fa74cf696631,L,3,20,12432,35232,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_12432_35232.png,True
+4,C869961af51d5fa74cf696631,L,4,65,32912,22944,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_32912_22944.png,True
+4,C869961af51d5fa74cf696631,L,5,87,82183,31104,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_82183_31104.png,True
+4,C869961af51d5fa74cf696631,L,6,68,32912,35232,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_32912_35232.png,True
+4,C869961af51d5fa74cf696631,L,7,94,86279,14720,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_86279_14720.png,True
+4,C869961af51d5fa74cf696631,L,8,117,94471,43392,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_94471_43392.png,True
+4,C869961af51d5fa74cf696631,L,9,97,86279,27008,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_86279_27008.png,True
+4,C869961af51d5fa74cf696631,L,10,127,98567,39296,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477189-B3/2477189-B3_98567_39296.png,True
+4,C682dba685c00e97d571fd767,L,1,109,40624,27056,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_40624_27056.png,True
+4,C682dba685c00e97d571fd767,L,2,111,40624,35248,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_40624_35248.png,True
+4,C682dba685c00e97d571fd767,L,3,99,36528,31152,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_36528_31152.png,True
+4,C682dba685c00e97d571fd767,L,4,7,104035,48000,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_104035_48000.png,True
+4,C682dba685c00e97d571fd767,L,5,89,32432,31152,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_32432_31152.png,True
+4,C682dba685c00e97d571fd767,L,6,13,108131,23424,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_108131_23424.png,True
+4,C682dba685c00e97d571fd767,L,7,110,40624,31152,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_40624_31152.png,True
+4,C682dba685c00e97d571fd767,L,8,34,116323,35712,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_116323_35712.png,True
+4,C682dba685c00e97d571fd767,L,9,121,44720,35248,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_44720_35248.png,True
+4,C682dba685c00e97d571fd767,L,10,122,44720,39344,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2477977-B3/2477977-B3_44720_39344.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,1,208,39968,31713,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_39968_31713.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,2,277,68640,52193,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_68640_52193.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,3,48,113696,31713,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_113696_31713.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,4,283,72736,52193,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_72736_52193.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,5,226,44064,52193,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_44064_52193.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,6,47,113696,27617,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_113696_27617.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,7,108,138272,52193,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_138272_52193.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,8,264,60448,56289,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_60448_56289.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,9,213,39968,52193,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_39968_52193.png,True
+4,C53fdb4da7c2b6cae8d154e86,L,10,219,44064,23521,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2485275-B2/2485275-B2_44064_23521.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,1,85,24368,41666,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_24368_41666.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,2,113,32560,49858,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_32560_49858.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,3,7,102496,48514,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_102496_48514.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,4,211,90208,40322,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_90208_40322.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,5,99,28464,45762,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_28464_45762.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,6,82,24368,29378,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_24368_29378.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,7,120,36656,29378,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_36656_29378.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,8,108,32560,29378,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_32560_29378.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,9,134,40752,37570,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_40752_37570.png,True
+4,C7b6bf99a7fc1310a67e2e9af,L,10,125,36656,49858,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/2488050-B3/2488050-B3_36656_49858.png,True
+4,C66be5c371c776564e484e3b3,L,1,208,37008,60065,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_37008_60065.png,True
+4,C66be5c371c776564e484e3b3,L,2,11,101621,55105,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_101621_55105.png,True
+4,C66be5c371c776564e484e3b3,L,3,21,105717,26433,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_105717_26433.png,True
+4,C66be5c371c776564e484e3b3,L,4,243,45200,55969,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_45200_55969.png,True
+4,C66be5c371c776564e484e3b3,L,5,56,113909,34625,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_113909_34625.png,True
+4,C66be5c371c776564e484e3b3,L,6,229,41104,72353,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_41104_72353.png,True
+4,C66be5c371c776564e484e3b3,L,7,139,20624,51873,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_20624_51873.png,True
+4,C66be5c371c776564e484e3b3,L,8,57,113909,38721,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_113909_38721.png,True
+4,C66be5c371c776564e484e3b3,L,9,237,45200,31393,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_45200_31393.png,True
+4,C66be5c371c776564e484e3b3,L,10,28,105717,55105,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25021640B3/25021640B3_105717_55105.png,True
+4,Cbede2aba47b09ab24587308c,L,1,121,81745,38993,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_81745_38993.png,True
+4,Cbede2aba47b09ab24587308c,L,2,62,33296,38226,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_33296_38226.png,True
+4,Cbede2aba47b09ab24587308c,L,3,63,33296,46418,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_33296_46418.png,True
+4,Cbede2aba47b09ab24587308c,L,4,169,98129,63569,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_98129_63569.png,True
+4,Cbede2aba47b09ab24587308c,L,5,74,37392,38226,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_37392_38226.png,True
+4,Cbede2aba47b09ab24587308c,L,6,40,25104,34130,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_25104_34130.png,True
+4,Cbede2aba47b09ab24587308c,L,7,166,98129,47185,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_98129_47185.png,True
+4,Cbede2aba47b09ab24587308c,L,8,128,85841,30801,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_85841_30801.png,True
+4,Cbede2aba47b09ab24587308c,L,9,127,85841,26705,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_85841_26705.png,True
+4,Cbede2aba47b09ab24587308c,L,10,73,37392,34130,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023690B3/25023690B3_37392_34130.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,1,153,82712,49616,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_82712_49616.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,2,77,34497,36880,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_34497_36880.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,3,23,15473,26272,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_15473_26272.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,4,127,73799,21424,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_73799_21424.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,5,63,28913,69808,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_28913_69808.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,6,16,116957,9072,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_116957_9072.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,7,156,82712,61904,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_82712_61904.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,8,17,117741,69504,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_117741_69504.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,9,62,28913,65712,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_28913_65712.png,True
+4,Cfdd605beaccb4b9ea1ee878a,L,10,18,117741,73600,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023977B2/25023977B2_117741_73600.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,1,116,50049,29074,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_50049_29074.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,2,113,45953,29074,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_45953_29074.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,3,106,36272,59969,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_36272_59969.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,4,4,102530,42353,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_102530_42353.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,5,19,115444,20929,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_115444_20929.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,6,43,15792,19009,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_15792_19009.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,7,12,106626,50545,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_106626_50545.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,8,96,32176,47681,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_32176_47681.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,9,16,110722,50545,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_110722_50545.png,True
+4,C51be2bdb5a1d8ecc5724eccd,L,10,132,82050,42353,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25001929B3/25001929B3_82050_42353.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,1,234,32144,49025,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_32144_49025.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,2,221,28048,49025,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_28048_49025.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,3,55,119376,44720,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_119376_44720.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,4,134,143952,7856,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_143952_7856.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,5,37,115280,40624,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_115280_40624.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,6,25,111184,40624,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_111184_40624.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,7,227,32144,12161,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_32144_12161.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,8,357,94800,28336,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_94800_28336.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,9,40,115280,52912,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_115280_52912.png,True
+4,Cadcc9e73ae8db15eda7d1c6f,L,10,249,36240,65409,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25013629B6/25013629B6_36240_65409.png,True
+4,C92ad5491d5f2ab10689e11a9,L,1,201,40464,28913,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_40464_28913.png,True
+4,C92ad5491d5f2ab10689e11a9,L,2,143,15888,24817,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_15888_24817.png,True
+4,C92ad5491d5f2ab10689e11a9,L,3,153,19984,28913,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_19984_28913.png,True
+4,C92ad5491d5f2ab10689e11a9,L,4,211,44560,28913,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_44560_28913.png,True
+4,C92ad5491d5f2ab10689e11a9,L,5,191,36368,28913,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_36368_28913.png,True
+4,C92ad5491d5f2ab10689e11a9,L,6,161,24080,28913,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_24080_28913.png,True
+4,C92ad5491d5f2ab10689e11a9,L,7,79,128976,15073,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_128976_15073.png,True
+4,C92ad5491d5f2ab10689e11a9,L,8,20,108496,27361,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_108496_27361.png,True
+4,C92ad5491d5f2ab10689e11a9,L,9,126,149456,15073,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_149456_15073.png,True
+4,C92ad5491d5f2ab10689e11a9,L,10,278,96208,39649,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015052B3/25015052B3_96208_39649.png,True
+4,C69fae561585cddcec1613730,L,1,146,98049,39474,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_98049_39474.png,True
+4,C69fae561585cddcec1613730,L,2,112,81665,27186,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_81665_27186.png,True
+4,C69fae561585cddcec1613730,L,3,91,36496,43505,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_36496_43505.png,True
+4,C69fae561585cddcec1613730,L,4,47,20112,31217,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_20112_31217.png,True
+4,C69fae561585cddcec1613730,L,5,17,106241,47666,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_106241_47666.png,True
+4,C69fae561585cddcec1613730,L,6,16,106241,43570,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_106241_43570.png,True
+4,C69fae561585cddcec1613730,L,7,90,36496,39409,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_36496_39409.png,True
+4,C69fae561585cddcec1613730,L,8,125,89857,31282,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_89857_31282.png,True
+4,C69fae561585cddcec1613730,L,9,137,93953,39474,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_93953_39474.png,True
+4,C69fae561585cddcec1613730,L,10,120,85761,39474,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25015191B3/25015191B3_85761_39474.png,True
+4,C5f09db2ecc71890dddff9f59,L,1,303,57184,50641,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_57184_50641.png,True
+4,C5f09db2ecc71890dddff9f59,L,2,232,36704,54737,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_36704_54737.png,True
+4,C5f09db2ecc71890dddff9f59,L,3,235,36704,67025,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_36704_67025.png,True
+4,C5f09db2ecc71890dddff9f59,L,4,38,109265,27153,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_109265_27153.png,True
+4,C5f09db2ecc71890dddff9f59,L,5,225,36704,26065,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_36704_26065.png,True
+4,C5f09db2ecc71890dddff9f59,L,6,45,109265,55825,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_109265_55825.png,True
+4,C5f09db2ecc71890dddff9f59,L,7,77,117457,55825,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_117457_55825.png,True
+4,C5f09db2ecc71890dddff9f59,L,8,48,109265,68113,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_109265_68113.png,True
+4,C5f09db2ecc71890dddff9f59,L,9,249,40800,58833,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_40800_58833.png,True
+4,C5f09db2ecc71890dddff9f59,L,10,280,48992,54737,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25019273B/25019273B_48992_54737.png,True
+4,Ce31406186dd3f0cf749dea54,L,1,72,141616,62144,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_141616_62144.png,True
+4,Ce31406186dd3f0cf749dea54,L,2,176,57392,48481,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_57392_48481.png,True
+4,Ce31406186dd3f0cf749dea54,L,3,64,141616,17088,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_141616_17088.png,True
+4,Ce31406186dd3f0cf749dea54,L,4,111,153904,58048,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_153904_58048.png,True
+4,Ce31406186dd3f0cf749dea54,L,5,129,162096,53952,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_162096_53952.png,True
+4,Ce31406186dd3f0cf749dea54,L,6,99,149808,58048,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_149808_58048.png,True
+4,Ce31406186dd3f0cf749dea54,L,7,83,145712,49856,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_145712_49856.png,True
+4,Ce31406186dd3f0cf749dea54,L,8,37,125232,49856,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_125232_49856.png,True
+4,Ce31406186dd3f0cf749dea54,L,9,168,53296,52577,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_53296_52577.png,True
+4,Ce31406186dd3f0cf749dea54,L,10,100,149808,62144,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25023972B3/25023972B3_149808_62144.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,1,34,108688,49984,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_108688_49984.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,2,17,104592,41792,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_104592_41792.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,3,77,120976,29504,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_120976_29504.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,4,55,116880,21312,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_116880_21312.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,5,162,36448,23632,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_36448_23632.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,6,31,108688,37696,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_108688_37696.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,7,63,116880,62272,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_116880_62272.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,8,58,116880,33600,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_116880_33600.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,9,95,125072,54080,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_125072_54080.png,True
+4,C6e7550586d2f5b6cd08c79a1,L,10,138,28256,40016,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_5x/25027723B4/25027723B4_28256_40016.png,True
+4,Cc26ca9054f39a0029ceaf872,H,1,2407,46848,47506,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,2,513,118720,43218,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,3,458,121792,46290,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,4,1289,44800,43410,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,5,390,48896,49554,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,6,1617,109504,43218,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,7,274,112576,44242,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,8,2590,119744,44242,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,9,5,37632,49554,Pending patch image,,False
+4,Cc26ca9054f39a0029ceaf872,H,10,88,118720,44242,Pending patch image,,False
+4,C0c1d931ebcfe630867fe5a9e,H,1,1148,80449,37604,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_80449_37604.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,2,1230,25104,44035,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_25104_44035.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,3,1382,100353,23089,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_100353_23089.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,4,1097,90113,32305,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_90113_32305.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,5,815,29200,29699,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_29200_29699.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,6,349,21008,33795,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_21008_33795.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,7,985,38416,68611,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_38416_68611.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,8,1481,24080,30723,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_24080_30723.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,9,1546,33296,35843,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_33296_35843.png,True
+4,C0c1d931ebcfe630867fe5a9e,H,10,1098,107521,63025,Available,/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/data/yiyuan/patches_20x/2471884-B2/2471884-B2_107521_63025.png,True
+4,Cea650c44b7385045a4a31e34,H,1,591,22176,25936,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,2,383,22176,26960,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,3,790,28320,16720,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,4,615,18080,33104,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,5,319,27296,43344,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,6,61,25248,41296,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,7,426,22176,39248,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,8,787,24224,41296,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,9,877,29344,32080,Pending patch image,,False
+4,Cea650c44b7385045a4a31e34,H,10,992,15008,31056,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,1,1766,19136,28258,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,2,1721,87779,28241,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,3,2866,86755,22097,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,4,255,47808,58978,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,5,3305,53952,51810,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,6,3328,52928,39522,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,7,2843,20160,29282,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,8,2135,16064,28258,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,9,1792,87779,21073,Pending patch image,,False
+4,C1d323f84fab152d4470d620b,H,10,3764,18112,34402,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,1,168,17552,29088,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,2,1588,104711,18816,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,3,279,90375,31104,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,4,1217,32912,17824,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,5,1399,96519,19840,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,6,472,105735,30080,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,7,337,27792,20896,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,8,560,100615,32128,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,9,1112,90375,32128,Pending patch image,,False
+4,C869961af51d5fa74cf696631,H,10,1391,87303,30080,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,1,773,44720,40368,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,2,819,47792,48560,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,3,331,45744,39344,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,4,2110,35504,27056,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,5,729,44720,47536,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,6,2452,48816,38320,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,7,593,40624,23984,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,8,1451,46768,40368,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,9,2526,47792,37296,Pending patch image,,False
+4,C682dba685c00e97d571fd767,H,10,1612,37552,29104,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,1,885,57376,45025,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,2,1554,42016,40929,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,3,2153,56352,32737,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,4,3367,47136,22497,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,5,2873,136224,53217,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,6,4175,57376,42977,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,7,775,58400,31713,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,8,3116,54304,51169,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,9,4143,75808,51169,Pending patch image,,False
+4,C53fdb4da7c2b6cae8d154e86,H,10,791,66592,51169,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,1,255,42800,26306,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,2,1897,38704,38594,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,3,962,90208,68994,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,4,8,41776,26306,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,5,2509,39728,36546,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,6,1724,41776,24258,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,7,1277,44848,36546,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,8,2574,88160,68994,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,9,2553,21296,68290,Pending patch image,,False
+4,C7b6bf99a7fc1310a67e2e9af,H,10,1945,45872,37570,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,1,2978,35984,56993,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,2,2471,41104,60065,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,3,3935,32912,51873,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,4,4651,115957,57153,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,5,5421,33936,62113,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,6,5559,104693,39745,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,7,5078,37008,36513,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,8,2924,100597,42817,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,9,549,33936,63137,Pending patch image,,False
+4,C66be5c371c776564e484e3b3,H,10,1467,46224,59041,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,1,381,22032,38226,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,2,292,41488,64850,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,3,1481,39440,44370,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,4,1235,103249,50257,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,5,1933,44560,50514,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,6,664,99153,22609,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,7,562,35344,39250,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,8,936,86865,27729,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,9,1791,79697,36945,Pending patch image,,False
+4,Cbede2aba47b09ab24587308c,H,10,56,103249,48209,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,1,803,19697,59568,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,2,269,13425,16032,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,3,1946,41665,34832,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,4,2344,18113,39952,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,5,2023,15473,15008,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,6,494,85784,49616,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,7,1664,28913,54448,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,8,2346,25281,28688,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,9,2075,28353,33808,Pending patch image,,False
+4,Cfdd605beaccb4b9ea1ee878a,H,10,366,35057,46256,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,1,1010,18864,31297,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,2,1420,16816,57921,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,3,624,38320,56897,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,4,2297,50049,32146,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,5,1600,33200,60993,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,6,2199,19888,68161,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,7,1203,106626,52593,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,8,1064,16816,66113,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,9,2157,34224,60993,Pending patch image,,False
+4,C51be2bdb5a1d8ecc5724eccd,H,10,1333,37296,54849,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,1,3474,48528,69505,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,2,2413,9616,32641,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,3,4980,13712,46977,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,4,4828,30096,49025,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,5,2771,63888,26497,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,6,1205,14736,29569,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,7,3052,28048,14209,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,8,281,110160,17072,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,9,843,42384,67457,Pending patch image,,False
+4,Cadcc9e73ae8db15eda7d1c6f,H,10,4085,17808,70529,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,1,1606,130000,18145,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,2,1683,152528,44769,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,3,2296,130000,40673,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,4,609,102352,21217,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,5,1699,108496,28385,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,6,3548,114640,30433,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,7,3034,150480,45793,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,8,2866,128976,16097,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,9,571,62992,54513,Pending patch image,,False
+4,C92ad5491d5f2ab10689e11a9,H,10,2995,42512,19697,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,1,2036,103169,25138,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,2,572,93953,38450,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,3,101,94977,38450,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,4,1276,108289,48690,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,5,563,102145,46642,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,6,2046,84737,29234,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,7,1333,106241,39474,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,8,1662,17040,45553,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,9,2119,86785,40498,Pending patch image,,False
+4,C69fae561585cddcec1613730,H,10,1639,105217,39474,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,1,2264,12128,20945,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,2,3160,34656,44497,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,3,4749,52064,44497,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,4,2834,84689,24081,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,5,2646,35680,48593,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,6,171,105169,45585,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,7,4149,20320,16849,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,8,2955,34656,16849,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,9,1886,54112,32209,Pending patch image,,False
+4,C5f09db2ecc71890dddff9f59,H,10,4001,29536,41425,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,1,2685,82992,37217,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,2,929,54320,49505,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,3,1745,81968,37217,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,4,202,147760,35520,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,5,2007,70704,56673,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,6,3807,78896,39265,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,7,1351,75824,38241,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,8,3764,79920,37217,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,9,2473,84016,42337,Pending patch image,,False
+4,Ce31406186dd3f0cf749dea54,H,10,2306,152880,38592,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,1,2528,123024,42816,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,2,3211,102544,68416,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,3,966,110736,60224,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,4,2206,107664,49984,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,5,1579,29280,35920,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,6,836,39520,16464,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,7,1119,123024,43840,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,8,518,108688,51008,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,9,514,92304,67392,Pending patch image,,False
+4,C6e7550586d2f5b6cd08c79a1,H,10,2248,40544,31824,Pending patch image,,False

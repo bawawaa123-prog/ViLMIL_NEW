@@ -1,0 +1,519 @@
+{
+  "historical": [
+    {
+      "name": "Stage2 Low",
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage2_yiyuan_data_audit/06_scale_ablation/low_only/adenocarcinoma_biomedclip_low_only_strict5_s1",
+      "checkpoint_folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "checkpoint_audit": [
+        {
+          "fold": 0,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage2_yiyuan_data_audit/06_scale_ablation/low_only/adenocarcinoma_biomedclip_low_only_strict5_s1/s_0_checkpoint.pt",
+            "size": 796016402,
+            "mtime_ns": 1787299304241897000
+          },
+          "exact_strict5": true,
+          "router_keys": [],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 16,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": true
+        },
+        {
+          "fold": 1,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage2_yiyuan_data_audit/06_scale_ablation/low_only/adenocarcinoma_biomedclip_low_only_strict5_s1/s_1_checkpoint.pt",
+            "size": 796016402,
+            "mtime_ns": 1787300726627210000
+          },
+          "exact_strict5": true,
+          "router_keys": [],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 6,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": true
+        },
+        {
+          "fold": 2,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage2_yiyuan_data_audit/06_scale_ablation/low_only/adenocarcinoma_biomedclip_low_only_strict5_s1/s_2_checkpoint.pt",
+            "size": 796016402,
+            "mtime_ns": 1787302054248994000
+          },
+          "exact_strict5": true,
+          "router_keys": [],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 5,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": true
+        },
+        {
+          "fold": 3,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage2_yiyuan_data_audit/06_scale_ablation/low_only/adenocarcinoma_biomedclip_low_only_strict5_s1/s_3_checkpoint.pt",
+            "size": 796016402,
+            "mtime_ns": 1787303311366095000
+          },
+          "exact_strict5": true,
+          "router_keys": [],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 4,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": true
+        },
+        {
+          "fold": 4,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage2_yiyuan_data_audit/06_scale_ablation/low_only/adenocarcinoma_biomedclip_low_only_strict5_s1/s_4_checkpoint.pt",
+            "size": 796016402,
+            "mtime_ns": 1787304584629199000
+          },
+          "exact_strict5": true,
+          "router_keys": [],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 4,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": true
+        }
+      ],
+      "status": "Rejected for matched baseline",
+      "issues": [
+        "skip_test_evaluation: recorded 'UNRECORDED', required True",
+        "use_low_context_routing: recorded 'UNRECORDED', required False",
+        "use_routing_stabilization: recorded 'UNRECORDED', required False",
+        "use_global_proto_context: recorded 'UNRECORDED', required False",
+        "init_checkpoint_template: recorded 'UNRECORDED', required None"
+      ],
+      "recorded_config": {
+        "num_splits": 5,
+        "k_start": 0,
+        "k_end": 4,
+        "task": "task_adenocarcinoma",
+        "max_epochs": 80,
+        "results_dir": "analysis/stage2_yiyuan_data_audit/06_scale_ablation/low_only",
+        "lr": 0.0001,
+        "experiment": "adenocarcinoma_biomedclip_low_only_strict5",
+        "label_frac": 1.0,
+        "seed": 1,
+        "model_type": "ViLa_MIL_BiomedCLIP",
+        "mode": "transformer",
+        "scale_mode": "low",
+        "use_drop_out": true,
+        "weighted_sample": false,
+        "opt": "adam",
+        "patience": 10,
+        "split_dir": "splits/strict/task_adenocarcinoma_100_k5_s1"
+      },
+      "protocol_evidence": {
+        "dataset": "Existing all_data.csv by historical task convention; no historical CSV hash",
+        "features": "Existing 5x/20x BiomedCLIP folders; no historical content hash",
+        "prompt": "Stage342 retained launcher names adenocarcinoma_dual_scale_prompt.csv; Stage2 lacks contemporaneous argv/prompt hash",
+        "reg": "Stage342 retained launcher explicitly 1e-5; Stage2 config omits weight decay",
+        "bag_loss": "Stage342 launcher uses historical default; no contemporaneous argv for Stage2",
+        "text_encoder": "Stage342 training log confirms frozen text and prompt LR=.001; Stage2 lacks retained log here",
+        "prototype": "Checkpoint shape audited per fold",
+        "early_stopping": "Current implementation selects first max validation ACC; historical summary checked for consistency",
+        "independent": "Low scale config; Stage342 init_checkpoint_template=None; Stage2 warm-start field unrecorded",
+        "retained_stage342_launcher_sha256": "3d5cfea2b68ab4e06f9d1429e83f1eff422ac3d19d3a75e5473125f227edc103"
+      },
+      "note": "Low loss may bypass Router, but historical flag/schema and initialization provenance are not matched; no claim that Router caused Low errors."
+    },
+    {
+      "name": "Stage342 Low",
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/04_scale_complementarity/stage342_matched_low_only/stage342_matched_low_only_folds01_s1",
+      "checkpoint_folds": [
+        0,
+        1
+      ],
+      "checkpoint_audit": [
+        {
+          "fold": 0,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/04_scale_complementarity/stage342_matched_low_only/stage342_matched_low_only_folds01_s1/s_0_checkpoint.pt",
+            "size": 797595696,
+            "mtime_ns": 1788163228980291000
+          },
+          "exact_strict5": true,
+          "router_keys": [
+            "high_router.context_projection.weight",
+            "high_router.context_projection.bias",
+            "high_router.route_score.0.weight",
+            "high_router.route_score.0.bias",
+            "high_router.route_score.2.weight",
+            "high_router.route_score.2.bias"
+          ],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 16,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": false
+        },
+        {
+          "fold": 1,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/04_scale_complementarity/stage342_matched_low_only/stage342_matched_low_only_folds01_s1/s_1_checkpoint.pt",
+            "size": 797595696,
+            "mtime_ns": 1788164498290006000
+          },
+          "exact_strict5": true,
+          "router_keys": [
+            "high_router.context_projection.weight",
+            "high_router.context_projection.bias",
+            "high_router.route_score.0.weight",
+            "high_router.route_score.0.bias",
+            "high_router.route_score.2.weight",
+            "high_router.route_score.2.bias"
+          ],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 6,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": false
+        }
+      ],
+      "status": "Rejected for matched baseline",
+      "issues": [
+        "use_low_context_routing: recorded True, required False",
+        "use_routing_stabilization: recorded True, required False"
+      ],
+      "recorded_config": {
+        "num_splits": 5,
+        "k_start": 0,
+        "k_end": 1,
+        "task": "task_adenocarcinoma",
+        "max_epochs": 80,
+        "results_dir": "analysis/stage3_model_design/04_scale_complementarity/stage342_matched_low_only",
+        "lr": 0.0001,
+        "experiment": "stage342_matched_low_only_folds01",
+        "label_frac": 1.0,
+        "seed": 1,
+        "model_type": "ViLa_MIL_BiomedCLIP",
+        "mode": "transformer",
+        "scale_mode": "low",
+        "skip_test_evaluation": true,
+        "use_low_context_routing": true,
+        "mapping_path": "analysis/stage3_model_design/01_cross_scale_mapping/full_output/mappings",
+        "use_routing_stabilization": true,
+        "use_global_proto_context": false,
+        "init_checkpoint_template": null,
+        "use_drop_out": true,
+        "weighted_sample": false,
+        "opt": "adam",
+        "patience": 10,
+        "split_dir": "splits/strict/task_adenocarcinoma_100_k5_s1"
+      },
+      "protocol_evidence": {
+        "dataset": "Existing all_data.csv by historical task convention; no historical CSV hash",
+        "features": "Existing 5x/20x BiomedCLIP folders; no historical content hash",
+        "prompt": "Stage342 retained launcher names adenocarcinoma_dual_scale_prompt.csv; Stage2 lacks contemporaneous argv/prompt hash",
+        "reg": "Stage342 retained launcher explicitly 1e-5; Stage2 config omits weight decay",
+        "bag_loss": "Stage342 launcher uses historical default; no contemporaneous argv for Stage2",
+        "text_encoder": "Stage342 training log confirms frozen text and prompt LR=.001; Stage2 lacks retained log here",
+        "prototype": "Checkpoint shape audited per fold",
+        "early_stopping": "Current implementation selects first max validation ACC; historical summary checked for consistency",
+        "independent": "Low scale config; Stage342 init_checkpoint_template=None; Stage2 warm-start field unrecorded",
+        "retained_stage342_launcher_sha256": "3d5cfea2b68ab4e06f9d1429e83f1eff422ac3d19d3a75e5473125f227edc103"
+      },
+      "note": "Low loss may bypass Router, but historical flag/schema and initialization provenance are not matched; no claim that Router caused Low errors."
+    },
+    {
+      "name": "Stage341 Dual-trained",
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/04_scale_complementarity/stage341_matched_dual_baseline/stage341_matched_dual_baseline_folds01_s1",
+      "checkpoint_folds": [
+        0,
+        1
+      ],
+      "checkpoint_audit": [
+        {
+          "fold": 0,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/04_scale_complementarity/stage341_matched_dual_baseline/stage341_matched_dual_baseline_folds01_s1/s_0_checkpoint.pt",
+            "size": 797595696,
+            "mtime_ns": 1788155757164642000
+          },
+          "exact_strict5": true,
+          "router_keys": [
+            "high_router.context_projection.weight",
+            "high_router.context_projection.bias",
+            "high_router.route_score.0.weight",
+            "high_router.route_score.0.bias",
+            "high_router.route_score.2.weight",
+            "high_router.route_score.2.bias"
+          ],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 14,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": false
+        },
+        {
+          "fold": 1,
+          "identity": {
+            "path": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/04_scale_complementarity/stage341_matched_dual_baseline/stage341_matched_dual_baseline_folds01_s1/s_1_checkpoint.pt",
+            "size": 797595696,
+            "mtime_ns": 1788156977507647000
+          },
+          "exact_strict5": true,
+          "router_keys": [
+            "high_router.context_projection.weight",
+            "high_router.context_projection.bias",
+            "high_router.route_score.0.weight",
+            "high_router.route_score.0.bias",
+            "high_router.route_score.2.weight",
+            "high_router.route_score.2.bias"
+          ],
+          "global_context_keys": [],
+          "prototype_shape": [
+            16,
+            1,
+            512
+          ],
+          "selected_epoch": 6,
+          "first_max_val_acc_matches_summary": true,
+          "test_metrics_present": false
+        }
+      ],
+      "status": "Rejected for matched baseline",
+      "issues": [
+        "scale_mode: recorded 'dual', required 'low'",
+        "use_low_context_routing: recorded True, required False",
+        "use_routing_stabilization: recorded True, required False"
+      ],
+      "recorded_config": {
+        "num_splits": 5,
+        "k_start": 0,
+        "k_end": 1,
+        "task": "task_adenocarcinoma",
+        "max_epochs": 80,
+        "results_dir": "analysis/stage3_model_design/04_scale_complementarity/stage341_matched_dual_baseline",
+        "lr": 0.0001,
+        "experiment": "stage341_matched_dual_baseline_folds01",
+        "label_frac": 1.0,
+        "seed": 1,
+        "model_type": "ViLa_MIL_BiomedCLIP",
+        "mode": "transformer",
+        "scale_mode": "dual",
+        "skip_test_evaluation": true,
+        "use_low_context_routing": true,
+        "mapping_path": "analysis/stage3_model_design/01_cross_scale_mapping/full_output/mappings",
+        "use_routing_stabilization": true,
+        "use_global_proto_context": false,
+        "init_checkpoint_template": null,
+        "use_drop_out": true,
+        "weighted_sample": false,
+        "opt": "adam",
+        "patience": 10,
+        "split_dir": "splits/strict/task_adenocarcinoma_100_k5_s1"
+      },
+      "protocol_evidence": {
+        "dataset": "Existing all_data.csv by historical task convention; no historical CSV hash",
+        "features": "Existing 5x/20x BiomedCLIP folders; no historical content hash",
+        "prompt": "Stage342 retained launcher names adenocarcinoma_dual_scale_prompt.csv; Stage2 lacks contemporaneous argv/prompt hash",
+        "reg": "Stage342 retained launcher explicitly 1e-5; Stage2 config omits weight decay",
+        "bag_loss": "Stage342 launcher uses historical default; no contemporaneous argv for Stage2",
+        "text_encoder": "Stage342 training log confirms frozen text and prompt LR=.001; Stage2 lacks retained log here",
+        "prototype": "Checkpoint shape audited per fold",
+        "early_stopping": "Current implementation selects first max validation ACC; historical summary checked for consistency",
+        "independent": "Low scale config; Stage342 init_checkpoint_template=None; Stage2 warm-start field unrecorded",
+        "retained_stage342_launcher_sha256": "3d5cfea2b68ab4e06f9d1429e83f1eff422ac3d19d3a75e5473125f227edc103"
+      },
+      "note": "Low loss may bypass Router, but historical flag/schema and initialization provenance are not matched; no claim that Router caused Low errors."
+    }
+  ],
+  "high": [
+    {
+      "arm": "E0",
+      "fold": 0,
+      "status": "Complete",
+      "val_auc": 0.9725378787878788,
+      "val_acc": 0.9381443298969072,
+      "val_macro_f1": 0.9325217391304348,
+      "selected_epoch": 3,
+      "epochs_run": 13,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/clean_high/stage350_clean_high_folds01_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/clean_high/stage350_clean_high_folds01_s1/s_0_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E0",
+      "fold": 1,
+      "status": "Complete",
+      "val_auc": 0.98907039605124,
+      "val_acc": 0.963917525773196,
+      "val_macro_f1": 0.9602400819792124,
+      "selected_epoch": 24,
+      "epochs_run": 34,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/clean_high/stage350_clean_high_folds01_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/00_clean_high_baseline/clean_high/stage350_clean_high_folds01_s1/s_1_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E0",
+      "fold": 2,
+      "status": "Complete",
+      "val_auc": 0.9723216416129802,
+      "val_acc": 0.9378238341968912,
+      "val_macro_f1": 0.9304086538461538,
+      "selected_epoch": 4,
+      "epochs_run": 14,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold2/stage351_clean_high_fold2_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold2/stage351_clean_high_fold2_s1/s_2_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E0",
+      "fold": 3,
+      "status": "Complete",
+      "val_auc": 0.9537699832975424,
+      "val_acc": 0.927461139896373,
+      "val_macro_f1": 0.9194106418515868,
+      "selected_epoch": 9,
+      "epochs_run": 19,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold3/stage351_clean_high_fold3_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold3/stage351_clean_high_fold3_s1/s_3_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    },
+    {
+      "arm": "E0",
+      "fold": 4,
+      "status": "Complete",
+      "val_auc": 0.9777462121212122,
+      "val_acc": 0.9329896907216496,
+      "val_macro_f1": 0.9250898505955386,
+      "selected_epoch": 5,
+      "epochs_run": 15,
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold4/stage351_clean_high_fold4_s1",
+      "checkpoint": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/01_frozen_confirmation/clean_high/fold4/stage351_clean_high_fold4_s1/s_4_checkpoint.pt",
+      "metric_source": "selected checkpoint epoch_details.csv",
+      "issue": ""
+    }
+  ],
+  "low": [
+    {
+      "arm": "L",
+      "fold": 0,
+      "status": "Pending",
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/runs/low_matched_v1/fold0/stage353_low_fold0_s1",
+      "issue": "No matched independent Low run"
+    },
+    {
+      "arm": "L",
+      "fold": 1,
+      "status": "Pending",
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/runs/low_matched_v1/fold1/stage353_low_fold1_s1",
+      "issue": "No matched independent Low run"
+    },
+    {
+      "arm": "L",
+      "fold": 2,
+      "status": "Pending",
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/runs/low_matched_v1/fold2/stage353_low_fold2_s1",
+      "issue": "No matched independent Low run"
+    },
+    {
+      "arm": "L",
+      "fold": 3,
+      "status": "Pending",
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/runs/low_matched_v1/fold3/stage353_low_fold3_s1",
+      "issue": "No matched independent Low run"
+    },
+    {
+      "arm": "L",
+      "fold": 4,
+      "status": "Pending",
+      "source": "/private/ljh-data/shared/ViLMIL_NEW/ViLa-MIL-main/analysis/stage3_model_design/05_finalization/03_scale_complementarity/runs/low_matched_v1/fold4/stage353_low_fold4_s1",
+      "issue": "No matched independent Low run"
+    }
+  ],
+  "split_audit": [
+    {
+      "fold": 0,
+      "train": 580,
+      "val": 194,
+      "test": 194,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 39
+    },
+    {
+      "fold": 1,
+      "train": 580,
+      "val": 194,
+      "test": 194,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 43
+    },
+    {
+      "fold": 2,
+      "train": 581,
+      "val": 193,
+      "test": 194,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 45
+    },
+    {
+      "fold": 3,
+      "train": 582,
+      "val": 193,
+      "test": 193,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 45
+    },
+    {
+      "fold": 4,
+      "train": 581,
+      "val": 194,
+      "test": 193,
+      "literal_case_overlap": 0,
+      "candidate_cross_split_groups": 41
+    }
+  ],
+  "stage352_manifest_sha256": "8042368aea881fc95744283e67b514073da03a87a29781a92db891794e5a8106",
+  "status": "Pending Low training"
+}

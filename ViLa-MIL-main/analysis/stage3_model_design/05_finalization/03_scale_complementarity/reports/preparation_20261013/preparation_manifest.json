@@ -1,0 +1,26 @@
+{
+  "status": "Complete code preparation; matched Low fivefold experiments Pending",
+  "source_audit_sha256": "5e7846276045073238ef763365552e97de900fbe7982d4f7615a691adf65b57b",
+  "code_sha256": {
+    "run_independent_inference.py": "b5614fc8bdc73f20dc3864c0c45670478e40e30e2adde92d2059eed4a15bfc3f",
+    "stage353_common.py": "e4ccebfc1da39153959d64f12c7c535237b270a763235e81ca70e57181083c8e",
+    "train_low.py": "cf74827925ef65326ac479338c7e9dc92105e0cb7d0920f52fa7e48ac86331b7",
+    "finalize_stage352.py": "c7fa9e53fb563f7d8d0b4595837d7cbb70cf6074bccaee5b21c601d86822abd7",
+    "aggregate_stage353.py": "970995af31d5c40a6aedc5fe8e805e43582cb888f4da4403323e289bd18ed9b8",
+    "preflight.py": "3c94b5c676ed28af814dce6354683eed3ca2d8d40122f2d57695343fca6e9ac4",
+    "analyze_complementarity.py": "f32c4c1e056e07ea16db7c7f7b10e3eca0393eb7acd79a9d9dd677eb259defae",
+    "prepare_case_visualizations.py": "a454b4b9ae8a139d227804814f22ce9a67a7716b6bd8ca63d94b4bca547e5c0e",
+    "run_low_only_training.sh": "619bf1e3eae9ede9d2ce84def70fd70dcedad1193cb1049cc0afb5a838778409",
+    "README.md": "d888014b347708a43f1ec86d23d68ca72354940dc5fd0ab5b2a8c5d1e0fd65a0",
+    "protocol.md": "6bf060c647e2e83baaf3cb9d63b389bbb89e7c8890afc14f6a458e3fe5ac3a67",
+    "tests/test_stage353.py": "a913cecdc8bac6e15d189491a3899c2efb3b7f5ab3674ca33d8643d1f1434ff5"
+  },
+  "report_sha256": {
+    "experiment_status.csv": "123a63b5813980c3251e875f8cbe43235f09524a672714bde3dc959f476ed293",
+    "stage353_summary.md": "8a3ca005d8214eaa1842793a24114d5d0b4dfb34f27a79589540e43e3f1b0d92",
+    "validation_report.md": "7eafab9a88c6262213e98b647b67c378f8d471ed13ea1e10f4887dcaec15ff29"
+  },
+  "tests_passed": 11,
+  "formal_training_started": false,
+  "formal_inference_started": false
+}
